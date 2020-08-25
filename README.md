@@ -1,21 +1,11 @@
-<h1 align='center'> Hi! :wave:</h1>
-<p align='center'>Under construction!!! Stay tuned.</p>
+### Hi there 👋, my name is Bibek Saini
+#### I'm software engineer
 
-[![Bibek's github stats](https://github-readme-stats.vercel.app/api?username=itsbibeksaini)](https://github.com/anuraghazra/github-readme-stats)
+Skills: .net core / Java / Angular / Microservices / docker / kubernetes
 
 
-<h1 align='center'><i>Stay awesome!</i></h1>
-<!--
-**itsbibeksaini/itsbibeksaini** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/itsbibeksaini)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/itsbibeksaini/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>](https://www.instagram.com/itsbibeksaini/)  
 
-- 🔭 I’m currently working on Microservices( spring boot, dotnet core web api, angular )
-- 🌱 I’m currently learning kubernetes, docker
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: itsbibeksaini@gmail.com
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<a href='https://docs.github.com/en/developers'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/devbadge.gif' width='40' height='40'></a> 
+
