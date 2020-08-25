@@ -1,8 +1,5 @@
 <h1 align='center'> Hi! :wave:</h1>
-<p align='center'>
-My name is Bibek Saini.
-</p>
-<p align='center'>Under construction!!!</p>
+<p align='center'>Under construction!!! Stay tuned.</p>
 <h1 align='center'><i>Stay awesome!</i></h1>
 <!--
 **itsbibeksaini/itsbibeksaini** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
