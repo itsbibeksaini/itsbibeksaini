@@ -1,5 +1,9 @@
 <h1 align='center'> Hi! :wave:</h1>
 <p align='center'>Under construction!!! Stay tuned.</p>
+
+[![Bibek's github stats](https://github-readme-stats.vercel.app/api?username=itsbibeksaini)](https://github.com/anuraghazra/github-readme-stats)
+
+
 <h1 align='center'><i>Stay awesome!</i></h1>
 <!--
 **itsbibeksaini/itsbibeksaini** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
