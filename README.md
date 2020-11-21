@@ -1,5 +1,5 @@
 ### Hi there 👋, my name is Bibek Saini
-#### I'm a software engineer based in Mohali, IN specializing in designing architecting, developing and deploying SAAS applications, and everything in between.
+#### I'm a software engineer based in Mohali, IN specializing in designing architecture, developing and deploying SAAS applications, and everything in between.
 
 Skills: ASP.net core / Java / Angular / Microservices / docker / kubernetes
 
