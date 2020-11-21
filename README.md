@@ -1,5 +1,5 @@
 ### Hi there 👋, my name is Bibek Saini
-#### I'am 26 years old. I live in Mohali. I've done my graduation in computer science and engineering. Talking about my hobbies are coding/building new stuff / problem solving / playing pc games / listening music.
+#### I'm a software engineer based in Mohali, IN specializing in designing architecting, developing and deploying SAAS applications, and everything in between.
 
 Skills: ASP.net core / Java / Angular / Microservices / docker / kubernetes
 
