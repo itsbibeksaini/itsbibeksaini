@@ -7,8 +7,6 @@ import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio';
-
   faGithub = faGithub
   faLinkedin = faLinkedin
   faFacebook = faFacebook
