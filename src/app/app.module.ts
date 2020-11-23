@@ -11,13 +11,15 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { LinkDirective } from './directives/link/link.directive'
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './components/home/home.component';
-import { ProjectsComponent } from './components/projects/projects.component'
+import { ProjectsComponent } from './components/projects/projects.component';
+import { WorkComponent } from './components/work/work.component'
 @NgModule({
   declarations: [
     AppComponent,
     LinkDirective,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
