@@ -12,14 +12,16 @@ import { LinkDirective } from './directives/link/link.directive'
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { WorkComponent } from './components/work/work.component'
+import { WorkComponent } from './components/work/work.component';
+import { ExperienceComponent } from './components/experience/experience.component'
 @NgModule({
   declarations: [
     AppComponent,
     LinkDirective,
     HomeComponent,
     ProjectsComponent,
-    WorkComponent
+    WorkComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
