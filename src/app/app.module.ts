@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatButtonModule}  from '@angular/material/button'
-import {MatTooltipModule} from '@angular/material/tooltip'
-
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { LinkDirective } from './directives/link/link.directive'
+import {MatToolbarModule} from '@angular/material/toolbar'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LinkDirective
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import {MatTooltipModule} from '@angular/material/tooltip'
     FlexLayoutModule,
     FontAwesomeModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
