@@ -9,11 +9,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatButtonModule}  from '@angular/material/button'
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { LinkDirective } from './directives/link/link.directive'
-import {MatToolbarModule} from '@angular/material/toolbar'
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HomeComponent } from './components/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component'
 @NgModule({
   declarations: [
     AppComponent,
-    LinkDirective
+    LinkDirective,
+    HomeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
