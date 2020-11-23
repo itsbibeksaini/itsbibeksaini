@@ -4,7 +4,7 @@
       Home
     </button>
     <button mat-button color="primary" class="mr-2">
-      Experience
+      Work
     </button>
     <button mat-button color="primary">
       Projects
@@ -12,65 +12,7 @@
   </div>
 </mat-toolbar>
 <!-- Main container -->
-<div class="container-fluid centralize" style="width: 750px;">
-  <div class="row">
-    <div class="col-5 p-0">
-      <img src="assets/profile-image.jpg" class="profile-image">
-    </div>
-    <div class="col-7">
-      <div class="centralize w-100">
-        <span class="mat-h3 display-block m-0">Hi, my name is</span>
-        <span class="mat-display-1 display-block m-0">Bibek Saini.</span>
-        <span class="mat-h1 display-block m-0">I build things for web</span>
-        <span class="mat-h4 display-block mt-2">I'm a full stack software engineer bases in Mohali, IN specializing in designing architecture, developing and deploying SAAS applications, and everything in between.</span>
-      </div>
-    </div>   
-  </div>
-  <div class="row">
-    <div class="col-12 text-center">
-      <button mat-icon-button link>
-        <fa-icon [icon]="faGithub" 
-                  matTooltip="GitHub"
-                  matTooltipPosition="above"></fa-icon>
-      </button>
-      <button mat-icon-button>
-        <fa-icon [icon]="faLinkedin" 
-                  matTooltip="LinkedIn"
-                  matTooltipPosition="above"></fa-icon>
-      </button>
-      <button mat-icon-button>
-        <fa-icon [icon]="faFacebook" 
-                  matTooltip="Facebook"
-                  matTooltipPosition="above"></fa-icon>
-      </button>
-      <button mat-icon-button>
-        <fa-icon [icon]="faInstagram" 
-                  matTooltip="Instagram"
-                  matTooltipPosition="above"></fa-icon>
-      </button>
-    </div>
-    <div class="col-12">
-      <hr/>
-    </div>
-    <!-- <div class="col-12 skill-sets">
-      <img src="assets/dotnet.jpg">
-      <img src="assets/java.png">
-      <img src="assets/angular.png">
-      <img src="assets/sql.png">
-      <img src="assets/mongodb.png">
-      <img src="assets/html5.png">
-      <img src="assets/css3.png">
-      <img src="assets/js.png">
-      <img src="assets/jquery.png">
-      <img src="assets/typescript.png">
-      <img src="assets/kubernetes.png">
-    </div>
-    <div class="col-12 skill-sets mt-3">
-      <img src="assets/consul.png">
-      <img src="assets/azure.png">
-      <img src="assets/jira.png">
-      <img src="assets/confluence.png">
-      
-    </div> -->
-  </div>
+<div class="centralize" style="width: 750px;">
+  <router-outlet></router-outlet>
+  
 </div>
