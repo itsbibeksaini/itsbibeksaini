@@ -1,17 +1,22 @@
-<!-- <mat-toolbar>
-  <div class="w-100 text-right">
-    <button mat-button color="primary" class="mr-2" routerLink="/">
-      Home
-    </button>
-    <button mat-button color="primary" class="mr-2" routerLink="experience">
-      Experience
-    </button>
-    <button mat-button color="primary" routerLink="projects">
-      Projects
-    </button>
+<div class="container-fluid p-0 h-100" fxLayout="column">
+  <div fxFlex="64px">
+    <mat-toolbar>
+      <div class="w-100 text-right">
+        <button mat-button color="primary" class="mr-2" routerLink="/">
+          Home
+        </button>
+        <button mat-button color="primary" class="mr-2" routerLink="experience">
+          Experience
+        </button>
+        <button mat-button color="primary" routerLink="projects">
+          Projects
+        </button>
+      </div>
+    </mat-toolbar>
   </div>
-</mat-toolbar> -->
-<!-- Main container -->
-<div class="centralize" style="width: 750px;">
-  <router-outlet></router-outlet>
+  <div fxFlex style="overflow: hidden;overflow-y: scroll;">
+    <div class="margin-auto padding2030" style="width: 750px;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

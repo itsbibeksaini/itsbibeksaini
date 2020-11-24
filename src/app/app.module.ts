@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WorkComponent } from './components/work/work.component';
 import { ExperienceComponent } from './components/experience/experience.component'
+import {MatCardModule} from '@angular/material/card'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     FontAwesomeModule,
     MatButtonModule,
     MatTooltipModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
