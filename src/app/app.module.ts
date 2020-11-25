@@ -14,7 +14,10 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WorkComponent } from './components/work/work.component';
 import { ExperienceComponent } from './components/experience/experience.component'
-import {MatCardModule} from '@angular/material/card'
+import {MatCardModule} from '@angular/material/card';
+import { DialogComponent } from './components/projects/dialog/dialog.component'
+import {MatDialogModule} from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import {MatCardModule} from '@angular/material/card'
     HomeComponent,
     ProjectsComponent,
     WorkComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,8 @@ import {MatCardModule} from '@angular/material/card'
     MatButtonModule,
     MatTooltipModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
