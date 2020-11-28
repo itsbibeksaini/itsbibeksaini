@@ -17,6 +17,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import {MatCardModule} from '@angular/material/card';
 import { DialogComponent } from './components/projects/dialog/dialog.component'
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -36,9 +37,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     FontAwesomeModule,
     MatButtonModule,
     MatTooltipModule,
-    MatToolbarModule,
+    MatTabsModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

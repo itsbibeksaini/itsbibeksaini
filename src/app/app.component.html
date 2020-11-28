@@ -1,22 +1,39 @@
-<div class="container-fluid p-0 h-100" fxLayout="column">
-  <div fxFlex="64px">
-    <mat-toolbar>
-      <div class="w-100 text-right">
-        <button mat-button color="primary" class="mr-2" routerLink="/">
+<div class="container-fluid p-0 h-100" fxLayoutGap="10px" fxLayout="column">  
+  <div fxFlex>
+    <mat-tab-group mat-align-tabs="center">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <fa-icon [icon]="faHome" class="mr-1 icon-21"></fa-icon>
           Home
-        </button>
-        <!-- <button mat-button color="primary" class="mr-2" routerLink="experience">
-          Experience
-        </button> -->
-        <button mat-button color="primary" routerLink="projects">
+        </ng-template>
+        <div class="padding2030">
+          
+        </div>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <fa-icon [icon]="faLaptopHouse" class="mr-1 icon-21"></fa-icon>
+          Work
+        </ng-template>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <fa-icon [icon]="faLaptopCode" class="mr-1 icon-21"></fa-icon>
           Projects
-        </button>
-      </div>
-    </mat-toolbar>
-  </div>
-  <div fxFlex style="overflow: hidden;overflow-y: scroll;">
-    <div class="margin-auto padding2030">
-      <router-outlet></router-outlet>
-    </div>
+        </ng-template>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <fa-icon [icon]="faCogs" class="mr-1 icon-21"></fa-icon>
+          Skills
+        </ng-template>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <fa-icon [icon]="faAddressCard" class="mr-1 icon-21"></fa-icon>
+          Contact
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
   </div>
 </div>

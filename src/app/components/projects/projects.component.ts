@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit {
 
   readMore(){
     const dialogRef = this.dialog.open(DialogComponent, {
-      width: '650px',
+      width: '900px',
       height: '650px'
       // data: {name: this.name, animal: this.animal}
     });
