@@ -1,0 +1,39 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$warn: mat-palette($mat-red);
+
+.light-theme{
+    $light-primary: mat-palette($mat-blue, 500);
+    $light-accent: mat-palette($mat-blue, 900);
+
+    $light-theme: mat-light-theme((
+        color: (
+            primary: $light-primary,
+            accent: $light-accent,
+            warn: $warn,
+        )
+    ));
+
+    @include angular-material-theme($light-theme);
+}
+
+.dark-theme{
+    background-color: rgb(53,54,58);
+
+    $dark-primary: mat-palette($mat-grey, 50);
+    $dark-accent: mat-palette($mat-grey, 100);    
+    $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $warn);
+
+    @include angular-material-theme($dark-theme);
+
+    & hr{
+        background: mat-color($dark-primary);        
+    }
+}
+
+mat-tab-header{
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6) !important;
+    border: none !important;
+}
