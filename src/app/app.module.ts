@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import { DialogComponent } from './components/projects/dialog/dialog.component'
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatTabsModule,
     MatCardModule,
     MatDialogModule,
+    MatSlideToggleModule
     
   ],
   providers: [],
