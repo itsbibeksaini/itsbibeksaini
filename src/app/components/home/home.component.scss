@@ -9,6 +9,10 @@
 
 .info-card{
     max-width: 720px;
+
+    & fa-icon{
+        font-size: 30px !important;
+    }
 }
 
 @media (max-width: 768px) {
