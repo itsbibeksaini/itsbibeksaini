@@ -5,6 +5,7 @@
 $warn: mat-palette($mat-red);
 
 .light-theme{
+    --bg-color: #f5f5f5;
     $light-primary: mat-palette($mat-blue, 500);
     $light-accent: mat-palette($mat-blue, 900);
 
@@ -17,9 +18,14 @@ $warn: mat-palette($mat-red);
     ));
 
     @include angular-material-theme($light-theme);
+
+    --primary-color: #{mat-color($light-primary)};
+    --accent-color: #{mat-color($light-accent)};
+    
 }
 
 .dark-theme{
+    --bg-color: rgb(53,54,58);
     background-color: rgb(53,54,58);
     color: #f5f5f5;
 
@@ -32,6 +38,9 @@ $warn: mat-palette($mat-red);
     & hr{
         background: mat-color($dark-primary);        
     }
+
+    --primary-color: #{mat-color($dark-primary)};
+    --accent-color: #{mat-color($dark-accent)};
 }
 
 mat-tab-header{
