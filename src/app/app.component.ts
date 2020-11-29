@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Renderer2 } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faAddressCard, faCogs, faHome, faLaptopCode, faLaptopHouse } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faCogs, faFilePdf, faHome, faLaptopCode, faLaptopHouse } from '@fortawesome/free-solid-svg-icons';
 import { ThemeSwitcherService } from './services/theme-switcher/theme-switcher.service';
 
 @Component({
@@ -15,6 +15,7 @@ export class AppComponent {
   faAddressCard = faAddressCard
   faLaptopCode = faLaptopCode
   faCogs = faCogs
+  faFilePdf = faFilePdf
 
   themeSwitchState!:boolean
   constructor(private themeSwitcher:ThemeSwitcherService, private renderer:Renderer2){
