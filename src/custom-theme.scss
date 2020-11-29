@@ -21,6 +21,7 @@ $warn: mat-palette($mat-red);
 
 .dark-theme{
     background-color: rgb(53,54,58);
+    color: #f5f5f5;
 
     $dark-primary: mat-palette($mat-grey, 50);
     $dark-accent: mat-palette($mat-grey, 100);    
