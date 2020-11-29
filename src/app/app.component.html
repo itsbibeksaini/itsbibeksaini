@@ -39,7 +39,7 @@
 </div>
 
 <mat-card class="theme-switcher">
-  <mat-slide-toggle [(ngModel)]="themeSwitchState" (change)="switchTheme()">
+  <mat-slide-toggle [(ngModel)]="themeSwitchState" (change)="switchTheme($event)">
     Dark
   </mat-slide-toggle>
 </mat-card>

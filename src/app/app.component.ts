@@ -35,7 +35,7 @@ export class AppComponent {
 
   }
 
-  switchTheme(){
-    
+  switchTheme(evt: MatSlideToggleChange){
+    this.themeSwitcher.switchTheme(evt.checked)
   }
 }
