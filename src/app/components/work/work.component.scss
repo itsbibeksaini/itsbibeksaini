@@ -121,7 +121,13 @@ h1 {
 }
 
 .timeline__blurb {
-    font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+    font: 400 16px/28px Roboto, "Helvetica Neue", sans-serif;
     letter-spacing: normal;
     margin: .5rem 0 0;
+}
+
+.timeline__header{
+    padding: 1rem !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    border-radius: 0.25rem;
 }
