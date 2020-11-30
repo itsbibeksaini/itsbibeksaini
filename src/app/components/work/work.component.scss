@@ -11,8 +11,7 @@ h1 {
     position: relative;
     padding: 1rem;
     margin: 0 auto;
-    max-width: inherit;
-    transition: all 0.2s ease-in-out;
+    max-width: inherit;    
 
     &:before {
         content: '';
