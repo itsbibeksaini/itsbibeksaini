@@ -17,6 +17,8 @@ export class LinkDirective {
       window.open(URLS.FACEBOOK)
     else if(this.link === 'instagram')
       window.open(URLS.INSTAGRM)
+      else if(this.link === 'resume')
+      window.open(URLS.RESUME, "_self")
   }
 
 }
