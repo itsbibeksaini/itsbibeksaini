@@ -13,13 +13,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WorkComponent } from './components/work/work.component';
-import { ExperienceComponent } from './components/experience/experience.component'
 import {MatCardModule} from '@angular/material/card';
 import { DialogComponent } from './components/projects/dialog/dialog.component'
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +28,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ProjectsComponent,
     WorkComponent,
-    ExperienceComponent,
-    DialogComponent
+    DialogComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
