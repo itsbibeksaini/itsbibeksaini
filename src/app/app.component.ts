@@ -17,26 +17,29 @@ export class AppComponent {
   faCogs = faCogs
   faFilePdf = faFilePdf
 
-  themeSwitchState!:boolean
+  isDarkTheme!:boolean
   constructor(private themeSwitcher:ThemeSwitcherService, private renderer:Renderer2){
     var body = document.getElementsByTagName('body')[0];
 
-    themeSwitcher.getThemeState().subscribe(state =>{
-      
-      if(state == ThemeSwitcherService.THEME_LIGHT)
-        this.renderer.removeClass(body,ThemeSwitcherService.THEME_DARK);
-      else
-        this.renderer.removeClass(body,ThemeSwitcherService.THEME_LIGHT);
+    this.isDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    this.switchTheme(this.isDarkTheme ? ThemeSwitcherService.THEME_DARK : ThemeSwitcherService.THEME_LIGHT, body);
 
-      this.renderer.addClass(body,state);
-    })
-
-    let currentTheme:string = themeSwitcher.getThemeCurrentValue();
-    this.themeSwitchState = currentTheme === ThemeSwitcherService.THEME_DARK; // false for light theme
-
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (evt) =>{
+      this.switchTheme(evt.matches ? ThemeSwitcherService.THEME_DARK : ThemeSwitcherService.THEME_LIGHT, body);
+    });
   }
 
-  switchTheme(evt: MatSlideToggleChange){
-    this.themeSwitcher.switchTheme(evt.checked)
+  switchTheme(state:string, body:HTMLBodyElement){
+    let isDarkTheme:boolean = state === ThemeSwitcherService.THEME_DARK;
+
+    if(!isDarkTheme)
+      this.renderer.removeClass(body,ThemeSwitcherService.THEME_DARK);
+    else
+      this.renderer.removeClass(body,ThemeSwitcherService.THEME_LIGHT);
+  
+    this.renderer.addClass(body,state);
+
+    this.themeSwitcher.switchTheme(isDarkTheme);
   }
+
 }
