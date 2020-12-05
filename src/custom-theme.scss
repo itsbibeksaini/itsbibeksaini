@@ -30,8 +30,15 @@ $warn: mat-palette($mat-red);
     color: #f5f5f5;
 
     $dark-primary: mat-palette($mat-grey, 50);
-    $dark-accent: mat-palette($mat-grey, 100);    
-    $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $warn);
+    $dark-accent: mat-palette($mat-grey, 100); 
+       
+    $dark-theme: mat-dark-theme((
+        color:(
+            primary: $dark-primary,
+            accent: $dark-accent,
+            warn: $warn,
+        )
+    ));
 
     @include angular-material-theme($dark-theme);
 
