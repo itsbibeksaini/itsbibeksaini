@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {WORK_EXPERIENCE} from 'src/app/data/work_experience';
 
 @Component({
   selector: 'app-work',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
-  constructor() { }
+  workExperience = WORK_EXPERIENCE
+  constructor() {     
+  }
 
   ngOnInit(): void {
   }

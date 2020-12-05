@@ -1,57 +1,20 @@
 <div class="timeline">
-    <h2 class="timeline__item timeline__item--year">May 2018 - Present</h2>
-    <div class="timeline__item">
-        <div class="timeline__header">
-            <h3 class="timeline__title" title="Software Engineer.">Software Engineer.</h3>
-            <hr class="m-0"/>
-            <span class="timeline__blurb">CatalystOne Solutions</span>
-        </div>
-        <ul class="mt-2">
-            <li>Researched, designed and implemented scalable applications for
-                information identification, extraction, analysis, retrieval and indexing.</li>
-            <li>Tested troubleshooting methods, devised innovative solutions, and
-                documented resolutions for inclusion in knowledge base for support team
-                use.</li>
-            <li>Modified existing SAAS software to correct coding errors, upgrade
-                interfaces and improve overall performance.</li>
-            <li>Worked with project managers, developers, quality assurance and
-                customers to resolve technical issues.</li>
-            <li>Introduced methodologies and best practices to software development
-                division to enhance product definition and application customization.</li>
-        </ul>
-    </div>
+    <ng-template ngFor let-experience [ngForOf]="workExperience" let-i="index">
+        <h2 class="timeline__item timeline__item--year">
+            {{experience.START_DATE}} - {{experience.END_DATE}}
+        </h2>
 
-    <h2 class="timeline__item timeline__item--year">July 2016 - May 2018</h2>
-    <div class="timeline__item">
-        <div class="timeline__header">
-            <h3 class="timeline__title" title="Associate Software Engineer.">Associate Software Engineer.</h3>
-            <hr class="m-0"/>
-            <p class="timeline__blurb">CatalystOne Solutions</p>
+        <div class="timeline__item">
+            <div class="timeline__header">
+                <h3 class="timeline__title" title="Software Engineer.">{{experience.POSITION}}</h3>
+                <hr class="m-0"/>
+                <span class="timeline__blurb">{{experience.COMPANY}}</span>
+            </div>
+            <ul class="mt-2">
+                <li *ngFor="let description of experience.JOB_DESCRIPTION">
+                    {{description}}
+                </li>                
+            </ul>
         </div>
-        <ul class="mt-2">
-            <li>Collaborated with cross-functional development team members to analyze
-                potential system solutions based on evolving client requirements.</li>
-            <li>Identified and tracked defects with SonarQube and supported developers
-                in resolving problems by completing additional tests.</li>
-            <li>Debugged code and located root causes of problems by reviewing
-                configuration files and logs.</li>
-            <li>Collaborated with developers and product owners to stay current on
-                product features and intended functionality.</li>
-        </ul>
-    </div>
-
-    <h2 class="timeline__item timeline__item--year">April 2016 - July 2016</h2>
-    <div class="timeline__item">
-        <div class="timeline__header">
-            <h3 class="timeline__title" title="Trainee.">Trainee.</h3>
-            <hr class="m-0"/>
-            <p class="timeline__blurb">CatalystOne Solutions</p>
-        </div>
-        <ul class="mt-2">
-            <li>Participated with preparation of design documents for trackwork, including
-                alignments, specifications, criteria details and estimates.</li>
-            <li>Collaborated with developers and product owners to stay current on
-                product features and intended functionality.</li>
-        </ul>
-    </div>
+    </ng-template>
 </div>
