@@ -1,9 +1,17 @@
 import {Experience} from './experience';
 export const WORK_EXPERIENCE: Array<Experience> = new Array<Experience>()
 
+let seniorSoftwareEngineer:Experience = new Experience()
+seniorSoftwareEngineer.START_DATE = "December 2020"
+seniorSoftwareEngineer.END_DATE = "Present"
+seniorSoftwareEngineer.POSITION = "Senior Software Engineer."
+seniorSoftwareEngineer.COMPANY = "CatalystOne"
+seniorSoftwareEngineer.INDEX = 4
+WORK_EXPERIENCE.push(seniorSoftwareEngineer)
+
 let softwareEngineer:Experience = new Experience()
 softwareEngineer.START_DATE = "May 2018"
-softwareEngineer.END_DATE = "Present"
+softwareEngineer.END_DATE = "December 2020"
 softwareEngineer.POSITION = "Software engineer."
 softwareEngineer.COMPANY = "CatalystOne"
 softwareEngineer.addJobDescription("Collaborated with cross-functional development team members to analyze potential system solutions based on evolving client requirements.")
