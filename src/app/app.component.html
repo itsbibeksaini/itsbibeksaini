@@ -1,5 +1,13 @@
-<div class="container-fluid p-0 h-100" fxLayoutGap="10px" fxLayout="column">  
-  <div fxFlex>
+<div class="container-fluid p-0 h-100" fxLayoutGap="10px" fxLayout="column"> 
+  <div fxFlex *ngIf="isLoading">
+    <div class="loading-indicator-wrapper">
+      <div class="loading-indicator">
+
+      </div>
+    </div>
+    
+  </div> 
+  <div fxFlex *ngIf="!isLoading">
     <mat-tab-group mat-align-tabs="center">
       <mat-tab>
         <ng-template mat-tab-label>

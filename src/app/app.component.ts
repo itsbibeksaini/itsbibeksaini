@@ -2,6 +2,7 @@ import { Component, EventEmitter, Renderer2 } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAddressCard, faCogs, faFilePdf, faHome, faLaptopCode, faLaptopHouse } from '@fortawesome/free-solid-svg-icons';
+import { timeout } from 'rxjs/operators';
 import { ThemeSwitcherService } from './services/theme-switcher/theme-switcher.service';
 
 @Component({
@@ -18,6 +19,7 @@ export class AppComponent {
   faFilePdf = faFilePdf
 
   isDarkTheme!:boolean
+  isLoading:boolean = true;
   constructor(private themeSwitcher:ThemeSwitcherService, private renderer:Renderer2){
     var body = document.getElementsByTagName('body')[0];
 
@@ -27,6 +29,10 @@ export class AppComponent {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (evt) =>{
       this.switchTheme(evt.matches ? ThemeSwitcherService.THEME_DARK : ThemeSwitcherService.THEME_LIGHT, body);
     });
+
+    setTimeout(() =>{
+      this.isLoading = false
+    }, 2000)
   }
 
   switchTheme(state:string, body:HTMLBodyElement){
