@@ -1,44 +1,79 @@
-<div class="container-fluid animate__animated animate__zoomIn">
+<div class="container-fluid animate__animated animate__zoomIn" fxLayoutAlign="center">
   <div class="row">
-    <div class="col-3 p-2">
+    <div class="col-4 p-2">
       <mat-card>
         <mat-card-header>
           <mat-card-title>Task manager</mat-card-title>
-          <mat-card-subtitle>Microservice</mat-card-subtitle>
+          <mat-card-subtitle>Micro-service</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          Task Manager is microservice based project which offer management tools like Invoice Manager and Task Boards
+          Task Manager is microservice based project consist of multiple web apps developed on technologies ASP.net, Java as backend services and Angular as front-end client app. Web application offer various management tools like Invoice Manager and Task Boards.          
+        </mat-card-content>
+        <mat-card-content>
+          Technologies used:
+          <div class="skill-set">
+            <img src="assets/dotnet.jpg" 
+                            matTooltip=".net"
+                            matTooltipPosition="above">
+            <img src="assets/entityframework.png" matTooltip="Entity framework"
+            matTooltipPosition="above">
+            <img src="assets/java.png" matTooltip="Java"
+                        matTooltipPosition="above">
+                        <img src="assets/springboot.png" matTooltip="Spring boot"
+                        matTooltipPosition="above">
+                        <img src="assets/angular.png" matTooltip="Angular"
+                        matTooltipPosition="above">
+                        <img src="assets/sql.png" matTooltip="Sql Server"
+                        matTooltipPosition="above">
+                        <img src="assets/kubernetes.png" matTooltip="Kubernetes"
+                        matTooltipPosition="above">
+                        <img src="assets/docker.png" matTooltip="Docker"
+                        matTooltipPosition="above">
+                        <img src="assets/azure.png" matTooltip="Azure"
+                        matTooltipPosition="above">
+                        <img src="assets/helmcharts.png" matTooltip="Helm charts"
+                        matTooltipPosition="above">
+                        <img src="assets/swagger.png" matTooltip="Swagger OpenApi"
+                        matTooltipPosition="above">  
+                        <img src="assets/consul.png" matTooltip="Consul"
+                        matTooltipPosition="above">          
+          </div>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-raised-button class="w-100" color="primary">Read more</button>
+          <!-- <button mat-raised-button class="w-100" color="primary">Read more</button> -->
         </mat-card-actions>
       </mat-card>
     </div>
-    <div class="col-3 p-2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Invoice manager</mat-card-title>
-        </mat-card-header>        
-      </mat-card>
-    </div>
-    <div class="col-3 p-2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Task boards</mat-card-title>
-        </mat-card-header>        
-      </mat-card>
-    </div>
-    <div class="col-3 p-2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Music store</mat-card-title>
-        </mat-card-header>        
-      </mat-card>
-    </div>
-    <div class="col-3 p-2">
+    <div class="col-4 p-2">
       <mat-card>
         <mat-card-header>
           <mat-card-title>Mailer</mat-card-title>
+          <mat-card-subtitle>Angular app</mat-card-subtitle>          
+        </mat-card-header> 
+        <mat-card-content>
+          Mailer is a front-end app developed on Angular framework.
+        </mat-card-content>
+        <mat-card-content>
+          Technologies used:
+          <div class="skill-set">
+            <img src="assets/angular.png" matTooltip="Angular"
+            matTooltipPosition="above">
+            <img src="assets/akita.svg" matTooltip="datorama/akita"
+            matTooltipPosition="above">
+          </div>
+        </mat-card-content>
+        <mat-card-actions class="text-right">                    
+          <a mat-icon-button color="primary" href="https://mailer.itsbibeksaini.com" target="_blank">
+            <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
+          </a>
+        </mat-card-actions>       
+      </mat-card>
+    </div>
+    <div class="col-4 p-2">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Music store</mat-card-title>
+          <mat-card-subtitle>ASP.net MVC web application</mat-card-subtitle>
         </mat-card-header>        
       </mat-card>
     </div>
