@@ -20,6 +20,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { SkillsComponent } from './components/skills/skills.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     MatCardModule,
     MatDialogModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    NgImageSliderModule
     
   ],
   providers: [],
