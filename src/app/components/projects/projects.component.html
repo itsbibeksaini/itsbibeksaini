@@ -7,7 +7,19 @@
           <mat-card-subtitle>Micro-service</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="shadow-1">
-          <img style="width: 100%;" src="assets/projects/taskmanager/taskmanager_256x164.jpg">
+          <div class="position-relative image-content-wraper">
+            <div class="position-absolute caret caret-left">
+              <button mat-icon-button>
+                <fa-icon [icon]="faCaretLeft"></fa-icon>
+              </button>
+            </div>
+            <div class="position-absolute caret caret-right">
+              <button mat-icon-button>
+                <fa-icon [icon]="faCaretRight"></fa-icon>
+              </button>
+            </div>
+            <img style="width: 100%;" src="assets/projects/taskmanager/taskmanager_home_256x172.jpg">
+          </div>          
         </mat-card-content>
         <mat-card-content>
           Task Manager is microservice based project consist of multiple web apps developed on technologies ASP.net, Java as backend services and Angular as front-end client app. Web application offer various management tools like Invoice Manager and Task Boards.          

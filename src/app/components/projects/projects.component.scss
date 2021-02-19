@@ -5,3 +5,30 @@
         margin: 0.25rem;
     }
 }
+
+.image-content-wraper{
+    & fa-icon{
+        font-size: 24px;
+    }
+    
+    & .caret{
+        top:50%;
+        transform: translateY(-50%);
+        display: none;        
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 50%;
+    }
+
+    & .caret-left{
+        left: -15px;
+    }
+
+    & .caret-right{
+        right: -15px;
+    }
+
+    &:hover .caret{
+        display: block;    
+        
+    }
+}

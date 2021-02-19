@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCaretLeft, faCaretRight, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
@@ -11,6 +11,8 @@ import { DialogComponent } from './dialog/dialog.component';
 export class ProjectsComponent implements OnInit {
 
   faExternalLinkAlt = faExternalLinkAlt
+  faCaretLeft = faCaretLeft
+  faCaretRight = faCaretRight
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
