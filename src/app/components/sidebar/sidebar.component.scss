@@ -11,15 +11,12 @@
         & li{
             list-style-type: none;          
             text-align: center;
-            &:not(:last-of-type){
-                margin-bottom: 2rem;
-            }
-            
+            padding: 16px;
             & .profile-icon{
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+                box-shadow: 0 1px 8px rgba(0,0,0,0.4);
                 cursor: pointer;
             }
 
