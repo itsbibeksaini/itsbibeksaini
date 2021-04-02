@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { WorkComponent } from './components/work/work.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     MatSlideToggleModule,
     MatTooltipModule,
     MatRippleModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
