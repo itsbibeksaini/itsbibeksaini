@@ -1,1 +1,0 @@
-export {LinkDirective} from './link/link.directive'
