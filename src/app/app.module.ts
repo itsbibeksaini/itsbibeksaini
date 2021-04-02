@@ -11,6 +11,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatRippleModule} from '@angular/material/core';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatRippleModule} from '@angular/material/core';
     MatListModule,
     MatSlideToggleModule,
     MatTooltipModule,
-    MatRippleModule
+    MatRippleModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
