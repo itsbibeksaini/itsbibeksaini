@@ -22,18 +22,18 @@
             <fa-icon [icon]="faCogs" class="animate__animated animate__zoomIn animate__faster" routerLink="skills" matTooltip="Skills" matTooltipPosition="right"></fa-icon>                  
         </li>
         <li>
-            <fa-icon [icon]="faFilePdf" class="animate__animated animate__zoomIn animate__faster" matTooltip="Resume" matTooltipPosition="right"></fa-icon>                  
+            <fa-icon [icon]="faFilePdf" class="animate__animated animate__zoomIn animate__faster" matTooltip="Resume" matTooltipPosition="right" link="resume"></fa-icon>                  
         </li>
     </ul>
     <ul class="position-absolute" style="bottom: 10px;">
         <li class="animate__animated animate__zoomIn animate__faster">
             <fa-icon [icon]="faProjectDiagram" 
                       matTooltip="Project docs" 
-                      matTooltipPosition="right" link="resume"></fa-icon>
+                      matTooltipPosition="right"></fa-icon>
         </li>
         <li>
             <div>
-                <mat-slide-toggle></mat-slide-toggle>
+                <mat-slide-toggle color="primary"></mat-slide-toggle>
             </div>
             <div>
                 <span>Dark Mode</span>
