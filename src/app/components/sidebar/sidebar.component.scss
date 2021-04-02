@@ -9,7 +9,15 @@
         margin: 0;
         & li{
             list-style-type: none;          
-            text-align: center;  
+            text-align: center;
+            
+            & .profile-icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+                cursor: pointer;
+            }
         }
     }
 }
