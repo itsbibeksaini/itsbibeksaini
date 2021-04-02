@@ -18,6 +18,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import {MatButtonModule} from '@angular/material/button';
 import { LinkDirective } from './directives/link/link.directive';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LinkDirective } from './directives/link/link.directive';
     WorkComponent,
     ProjectsComponent,
     SkillsComponent,
-    LinkDirective
+    LinkDirective,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
