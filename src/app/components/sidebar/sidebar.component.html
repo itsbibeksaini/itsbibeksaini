@@ -1,6 +1,6 @@
 <div class="sidebar">
     <ul>
-        <li class="pt-3">
+        <li class="pt-3 animate__animated animate__zoomIn animate__faster">
             <img src="assets/profile-image/profile-image_40x40.jpg" 
                  routerLink="/" 
                  class="profile-icon" 
@@ -9,23 +9,28 @@
         </li>
     </ul>
     <ul class="mt-4">
-        <li>
+        <li class="animate__animated animate__zoomIn animate__faster">
             <fa-icon [icon]="faLaptopHouse" 
                       matTooltip="Work" 
                       routerLink="work"
                       matTooltipPosition="right"></fa-icon>            
         </li>
         <li>
-            <fa-icon [icon]="faLaptopCode" routerLink="projects" matTooltip="Projects" matTooltipPosition="right"></fa-icon>            
+            <fa-icon [icon]="faLaptopCode" class="animate__animated animate__zoomIn animate__faster" routerLink="projects" matTooltip="Projects" matTooltipPosition="right"></fa-icon>            
         </li>
         <li>
-            <fa-icon [icon]="faCogs" routerLink="skills" matTooltip="Skills" matTooltipPosition="right"></fa-icon>                  
+            <fa-icon [icon]="faCogs" class="animate__animated animate__zoomIn animate__faster" routerLink="skills" matTooltip="Skills" matTooltipPosition="right"></fa-icon>                  
         </li>
         <li>
-            <fa-icon [icon]="faFilePdf" matTooltip="Resume" matTooltipPosition="right"></fa-icon>                  
+            <fa-icon [icon]="faFilePdf" class="animate__animated animate__zoomIn animate__faster" matTooltip="Resume" matTooltipPosition="right"></fa-icon>                  
         </li>
     </ul>
     <ul class="position-absolute" style="bottom: 10px;">
+        <li class="animate__animated animate__zoomIn animate__faster">
+            <fa-icon [icon]="faProjectDiagram" 
+                      matTooltip="Project docs" 
+                      matTooltipPosition="right"></fa-icon>
+        </li>
         <li>
             <div>
                 <mat-slide-toggle></mat-slide-toggle>

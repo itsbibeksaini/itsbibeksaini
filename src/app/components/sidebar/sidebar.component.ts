@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCogs, faFilePdf, faLaptopCode, faLaptopHouse } from '@fortawesome/free-solid-svg-icons';
+import { faCogs, faFilePdf, faLaptopCode, faLaptopHouse, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'sidebar',
@@ -12,6 +12,7 @@ export class SidebarComponent implements OnInit {
   faLaptopCode = faLaptopCode
   faCogs = faCogs
   faFilePdf = faFilePdf
+  faProjectDiagram = faProjectDiagram
   constructor() { }
 
   ngOnInit(): void {
