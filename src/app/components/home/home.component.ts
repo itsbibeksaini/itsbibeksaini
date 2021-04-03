@@ -12,7 +12,13 @@ export class HomeComponent implements OnInit {
   faLinkedin = faLinkedin
   faFacebook = faFacebook
   faInstagram = faInstagram
-  constructor() { }
+
+  isLoading: boolean = true
+  constructor() {
+    setTimeout(()=>{
+      this.isLoading = false
+    }, 2000)
+  }
 
   ngOnInit(): void {
   }

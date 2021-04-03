@@ -1,8 +1,10 @@
 <div class="container-fluid">
     <div fxFlex="630px" fxLayout="column" class="centralize container-fluid p-0">
         <div fxFlex>
-            <div fxFlex="360px" class="animate__animated animate__zoomIn animate__faster">
-                <img src="assets/profile-image/profile-image.jpg" class="profile-image">
+            <div fxFlex="360px">
+                <div class="profile-image-skeleton" *ngIf="isLoading">
+                </div>
+                <img *ngIf="!isLoading" src="assets/profile-image/profile-image.jpg" class="profile-image animate__animated animate__zoomIn animate__faster">
             </div>
             <div fxFlex class="position-relative">
             <div class="vertical-center">
