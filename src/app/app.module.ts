@@ -19,6 +19,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import {MatButtonModule} from '@angular/material/button';
 import { LinkDirective } from './directives/link/link.directive';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     ProjectsComponent,
     SkillsComponent,
     LinkDirective,
-    AboutMeComponent
+    AboutMeComponent    
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     MatTooltipModule,
     MatRippleModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

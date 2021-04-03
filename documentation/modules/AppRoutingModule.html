@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>test</title>
+        <title>portfolio documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">test</a>
+            <a href="../" class="navbar-brand">portfolio documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -72,8 +72,28 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
+import { AboutMeComponent } from &#x27;./components/about-me/about-me.component&#x27;;
+import { HomeComponent } from &#x27;./components/home/home.component&#x27;;
+import { ProjectsComponent } from &#x27;./components/projects/projects.component&#x27;;
+import { SkillsComponent } from &#x27;./components/skills/skills.component&#x27;;
+import { WorkComponent } from &#x27;./components/work/work.component&#x27;;
 
-const routes: Routes &#x3D; [];
+const routes: Routes &#x3D; [{
+  path:&#x27;&#x27;,
+  component: HomeComponent
+},{
+  path:&#x27;work&#x27;,
+  component: WorkComponent
+},{
+  path: &#x27;projects&#x27;,
+  component: ProjectsComponent
+},{
+  path: &#x27;skills&#x27;,
+  component: SkillsComponent
+},{
+  path:&#x27;about-me&#x27;,
+  component: AboutMeComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
