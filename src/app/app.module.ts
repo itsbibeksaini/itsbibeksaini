@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { LinkDirective } from './directives/link/link.directive';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SharedModule } from './shared/shared.module';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SharedModule } from './shared/shared.module';
     ProjectsComponent,
     SkillsComponent,
     LinkDirective,
-    AboutMeComponent    
+    AboutMeComponent,
+    ContactMeComponent    
   ],
   imports: [
     BrowserModule,
