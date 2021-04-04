@@ -1,43 +1,5 @@
-<!-- <ul>
-    <li matTooltip="Task Manager" 
-        matTooltipPosition="right" class="selected">
-        <div class="info ">
-            <span class="mat-h2 display-block m-0 ml-2">Task Manager</span>
-            <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-        </div>
-    </li>
-    <li matTooltip="Mailer" 
-        matTooltipPosition="right">
-        <div class="info">
-            <span class="mat-h2 display-block m-0 ml-2">Mailer</span>
-            <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-        </div>
-    </li>
-    <li matTooltip="Music Store" 
-        matTooltipPosition="right">
-        <div class="info">
-            <span class="mat-h2 display-block m-0 ml-2">Music Store</span>
-            <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-        </div>
-    </li>
-    <li matTooltip="Chat Bot" 
-        matTooltipPosition="right">
-        <div class="info">
-            <span class="mat-h2 display-block m-0 ml-2">Chat Bot</span>
-            <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-        </div>
-    </li>
-    <li matTooltip="Import Export Utility" 
-        matTooltipPosition="right">
-        <div class="info">
-            <span class="mat-h2 display-block m-0 ml-2 " >Import Export Utility</span>
-            <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-        </div>
-    </li>
-</ul> -->
-
 <ul>
-    <li *ngFor="let item of customList" [ngClass]="{'selected': item.IS_SELECTED}">
+    <li *ngFor="let item of customList" [ngClass]="{'selected': item.IS_SELECTED}" select-item="{{item.ID}}">
         <span class="mat-h3 display-block m-0 ml-2" >{{item.TITLE}}</span>
         <span class="mat-small display-block m-0 ml-2 label">{{item.SUB_TITLE}}</span>
     </li>    

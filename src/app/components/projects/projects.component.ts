@@ -21,16 +21,17 @@ export class ProjectsComponent implements OnInit {
   }
 
   private buildProjectList(){
-    this.addProject("Task Manager", "Micro-services app", true)
-    this.addProject("Mailer", "Angular app", false)
-    this.addProject("Music Store", "Asp.net app", false)
-    this.addProject("Chat bot", "Android app", false)
-    this.addProject("Import Export Utility", "Winforms app", false)
-    this.addProject("Library management system", "C++", false)
+    this.addProject("task_manager","Task Manager", "Micro-services app", true)
+    this.addProject("mailer","Mailer", "Angular app", false)
+    this.addProject("music_store","Music Store", "Asp.net app", false)
+    this.addProject("chat_bot","Chat bot", "Android app", false)
+    this.addProject("import_export_utility","Import Export Utility", "Winforms app", false)
+    this.addProject("library_management_system","Library management system", "C++", false)
   }
 
-  private addProject(title: string, subTitle: string, isSelected: boolean){
+  private addProject(id:string, title: string, subTitle: string, isSelected: boolean){
     let project:CustomListItem = new CustomListItem()
+    project.ID = id
     project.TITLE = title
     project.SUB_TITLE = subTitle
     project.IS_SELECTED = isSelected

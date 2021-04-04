@@ -1,5 +1,13 @@
 export class CustomListItem{
     
+    private _ID! : string;
+    public get ID() : string {
+        return this._ID;
+    }
+    public set ID(v : string) {
+        this._ID = v;
+    }
+    
     private _TITLE! : string;
     public get TITLE() : string {
         return this._TITLE;
