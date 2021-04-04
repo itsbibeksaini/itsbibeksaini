@@ -1,5 +1,5 @@
 import {Experience} from './experience';
-export const WORK_EXPERIENCE: Array<Experience> = new Array<Experience>()
+export const WORK_EXPERIENCE: Experience[] = [];
 
 let seniorSoftwareEngineer:Experience = new Experience()
 seniorSoftwareEngineer.START_DATE = "December 2020"

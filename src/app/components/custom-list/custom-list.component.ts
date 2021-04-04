@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CustomListItem } from './models';
 
 @Component({
   selector: 'custom-list',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomListComponent implements OnInit {
 
+  @Input() customList!: CustomListItem[]; 
   constructor() { }
 
   ngOnInit(): void {

@@ -37,12 +37,8 @@
 </ul> -->
 
 <ul>
-    <li class="selected">
-        <span class="mat-h3 display-block m-0 ml-2" >Import Export Utility</span>
-        <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-    </li>
-    <li class="">
-        <span class="mat-h3 display-block m-0 ml-2" >Import Export Utility</span>
-        <span class="mat-small display-block m-0 ml-2 label">Micro-service App</span>
-    </li>
+    <li *ngFor="let item of customList" [ngClass]="{'selected': item.IS_SELECTED}">
+        <span class="mat-h3 display-block m-0 ml-2" >{{item.TITLE}}</span>
+        <span class="mat-small display-block m-0 ml-2 label">{{item.SUB_TITLE}}</span>
+    </li>    
 </ul>
