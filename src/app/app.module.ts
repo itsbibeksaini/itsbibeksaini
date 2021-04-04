@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { LinkDirective } from './directives/link/link.directive';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { CustomListComponent } from './components/custom-list/custom-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     SkillsComponent,
     LinkDirective,
     AboutMeComponent,
-    ContactMeComponent    
+    ContactMeComponent,
+    CustomListComponent    
   ],
   imports: [
     BrowserModule,
