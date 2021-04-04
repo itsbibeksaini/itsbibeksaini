@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CustomListQuery } from 'src/app/queries';
+import { CustomListStore } from 'src/app/stores';
 import { CustomListItem } from './models';
 
 @Component({
@@ -8,8 +10,12 @@ import { CustomListItem } from './models';
 })
 export class CustomListComponent implements OnInit {
 
-  @Input() customList!: CustomListItem[]; 
-  constructor() { }
+  customList!: CustomListItem[]
+  constructor(private customListQuery:CustomListQuery) {
+    customListQuery.select(state => state.ITEMS).subscribe(res =>{
+      this.customList = res
+    })
+  }
 
   ngOnInit(): void {
   }

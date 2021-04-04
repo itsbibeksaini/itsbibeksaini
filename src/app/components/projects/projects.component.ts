@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomListStore } from 'src/app/stores';
 import { CustomListItem } from '../custom-list/models';
 
 @Component({
@@ -10,8 +11,13 @@ export class ProjectsComponent implements OnInit {
 
   projectList: CustomListItem[] = []
 
-  constructor() {
+  constructor(private customListStore: CustomListStore) {
     this.buildProjectList()
+    customListStore.update(() => {
+      return{
+        ITEMS: this.projectList
+      }
+    })
   }
 
   private buildProjectList(){
