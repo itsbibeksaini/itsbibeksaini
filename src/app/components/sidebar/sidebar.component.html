@@ -1,11 +1,11 @@
-<div class="sidebar">
-    <ul>
+<div class="sidebar container-fluid p-0" fxLayout="column" fxLayoutGap="20px">
+    <ul fxFlex style="overflow: hidden;overflow-y: auto;">
         <li class="animate__animated animate__zoomIn animate__faster">
             <fa-icon [icon]="faHome" 
                       matTooltip="Home" 
                       routerLink="/"
                       matTooltipPosition="right"></fa-icon>            
-        </li>
+        </li>        
         <li class="animate__animated animate__zoomIn animate__faster p-2">
             <img src="assets/profile-image/profile-image_40x40.jpg" 
                  routerLink="about-me" 
@@ -33,7 +33,7 @@
         </li>
         
     </ul>
-    <ul class="position-absolute" style="bottom: 10px;">
+    <ul fxFlex="150px" >
         <li class="animate__animated animate__zoomIn animate__faster">
             <fa-icon [icon]="faProjectDiagram" 
                       matTooltip="Project docs" 
