@@ -1,1 +1,0 @@
-export {CustomListComponent} from './custom-list/custom-list.component'

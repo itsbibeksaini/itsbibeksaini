@@ -15,12 +15,13 @@ export class HomeComponent implements OnInit {
 
   isLoading: boolean = true
   constructor() {
-    setTimeout(()=>{
-      this.isLoading = false
-    }, 2000)
+    
   }
 
   ngOnInit(): void {
+    setTimeout(()=>{
+      this.isLoading = false
+    }, 2000)
   }
 
 }
