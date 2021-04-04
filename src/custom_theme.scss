@@ -21,6 +21,7 @@ $warn: mat-palette($mat-red);
 
     --primary-color: #{mat-color($light-primary)};
     --accent-color: #{mat-color($light-accent)};
+    --background-color: #f4f4f4
     
 }
 
@@ -42,12 +43,13 @@ $warn: mat-palette($mat-red);
 
     @include angular-material-theme($dark-theme);
 
-    & hr{
-        background: mat-color($dark-primary);        
-    }
+    // & hr{
+    //     background: mat-color($dark-primary);        
+    // }
 
     --primary-color: #{mat-color($dark-primary)};
     --accent-color: #{mat-color($dark-accent)};
+    --background-color: #000;
 }
 
 .mat-card{
