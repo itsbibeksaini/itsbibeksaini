@@ -18,7 +18,7 @@ h1 {
         position: absolute;
         height: 100%;
         border: 1px solid $lineColor;
-        right: 40px;
+        right: 10px;
         top: 0;
     }
 
@@ -43,7 +43,7 @@ h1 {
     border-image: linear-gradient(to right, $color 0%, $lineColor 100%);
     border-image-slice: 1;
     position: relative;
-    margin: 2rem 3rem 1rem 0rem;
+    margin: 2rem 1rem 1rem 0rem;
     clear: both;
 
     &:after,
@@ -83,7 +83,7 @@ h1 {
 .timeline__item--year {
     text-align: center;
     max-width: 280px;
-    margin: 0 48px 0 auto;
+    margin: 0 1rem 0 auto;
     font-size: 1.2rem;
     background-color: var(--bg-color);
     line-height: 1;
