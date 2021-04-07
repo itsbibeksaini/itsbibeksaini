@@ -19,9 +19,17 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setTimeout(()=>{
+
+    let firstLoad = localStorage.getItem("firstLoad") == null
+    if(firstLoad){
+      setTimeout(()=>{
+        this.isLoading = false
+      }, 500)
+      localStorage.setItem("firstLoad","false")
+    }
+    else{
       this.isLoading = false
-    }, 500)
+    }    
   }
 
 }
