@@ -1,3 +1,8 @@
+.home-warpper{
+  width: 630px;
+}
+
+
 .profile-image{
     width: 350px;
     height: 350px;
@@ -5,10 +10,37 @@
     box-shadow: 0 1px 8px rgba(0,0,0,0.4);  
 }
 
+@media screen and (max-width:425px) {
+  .centralize, .vertical-center{
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+
+
+    
+    position: relative;
+    transform: none;
+    top:0;
+    left: 0;
+  }
+
+  // .vertical-center{
+  //   position: static;
+  // }
+
+  
+
+  .profile-image, .profile-image-skeleton{
+    width: 230px !important;
+    height: 230px !important;
+  }
+}
+
 .profile-image-skeleton{    
     height: 350px;
     width: 350px;
     border-radius: 50%;
+    margin: auto;
 
     background: linear-gradient(        
       to right,
@@ -17,6 +49,7 @@
       rgba(255, 255, 255, 0) 80%
     ),
     lightgray;
+
   background-repeat: repeat-y;        
   background-size: 50px 200px;        
   background-position: 0 0;  
