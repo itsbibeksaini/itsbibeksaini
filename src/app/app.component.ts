@@ -8,28 +8,24 @@ import { ThemeSwitcherService } from './services';
 })
 export class AppComponent {
   
-  isDarkTheme!:boolean
-  constructor(private themeSwitcher:ThemeSwitcherService, private renderer:Renderer2){
-    var body = document.getElementsByTagName('body')[0];
-
-    this.isDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    this.switchTheme(this.isDarkTheme ? ThemeSwitcherService.THEME_DARK : ThemeSwitcherService.THEME_LIGHT, body);
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (evt) =>{
-      this.switchTheme(evt.matches ? ThemeSwitcherService.THEME_DARK : ThemeSwitcherService.THEME_LIGHT, body);
-    });
-  }
-
-  switchTheme(state:string, body:HTMLBodyElement){
-    let isDarkTheme:boolean = state === ThemeSwitcherService.THEME_DARK;
-
-    if(!isDarkTheme)
-      this.renderer.removeClass(body,ThemeSwitcherService.THEME_DARK);
-    else
-      this.renderer.removeClass(body,ThemeSwitcherService.THEME_LIGHT);
   
-    this.renderer.addClass(body,state);
+  constructor(private themeSwitcher:ThemeSwitcherService, private renderer:Renderer2){
 
-    this.themeSwitcher.switchTheme(isDarkTheme);
+    let loadSystemDefaultTheme:boolean = themeSwitcher.getCurrentTheme() == null
+
+    if(loadSystemDefaultTheme){
+      var body = document.getElementsByTagName('body')[0];
+
+      let isDarkTheme:boolean = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      themeSwitcher.switchTheme(isDarkTheme);
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (evt) =>{          
+        themeSwitcher.switchTheme(evt.matches);
+      });
+    }
+    else
+      this.themeSwitcher.setTheme()
+    
+    
   }
 }

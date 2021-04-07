@@ -41,10 +41,10 @@
         </li>
         <li class="pl-0 pr-0">
             <div>
-                <mat-slide-toggle color="primary"></mat-slide-toggle>
+                <mat-slide-toggle [checked]="switchState" (change)="switchTheme($event)"></mat-slide-toggle>
             </div>
             <div>
-                <span>Dark Mode</span>
+                <span>{{switchState ? 'Light Mode' : 'Dark Mode'}}</span>
             </div>
         </li>
     </ul>
