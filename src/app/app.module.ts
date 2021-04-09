@@ -22,6 +22,9 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { CustomListComponent } from './components/custom-list/custom-list.component';
 import { SelectItemDirective } from './components/custom-list/directive/select-item/select-item.directive';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { SelectItemDirective } from './components/custom-list/directive/select-i
     MatTooltipModule,
     MatRippleModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

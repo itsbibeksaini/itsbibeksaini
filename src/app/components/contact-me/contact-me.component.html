@@ -1,1 +1,43 @@
-<p>contact-me works!</p>
+<div class="container-fluid p-0" fxLayout="column">
+    <header fxFlex="80px" class="padding2030">
+        <span class="mat-display-1">Contact me</span>
+        <hr>
+    </header>
+    <div fxFlex class="text-center">
+        <header class="padding2030" >
+            <span class="mat-display-1 display-block m-0">Have Some Questions?</span>            
+            <span class="mat-small display-block m-0">Whether have a question or just want to say hi. My Inbox is always open.</span>
+            <span class="mat-small display-block m-0">You can write to me and I'll try my best to get back to you</span>                        
+        </header>
+
+        <form class="container-fluid" fxLayoutAlign="center">
+            <div fxFlex="300px" fxFlex.xs="100%">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>First name</mat-label>
+                    <input matInput placeholder="Placeholder">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Last name</mat-label>
+                    <input matInput placeholder="Placeholder">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Whats your email?</mat-label>
+                    <input matInput placeholder="Placeholder">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Your questions...</mat-label>
+                    <textarea matInput style="max-height: 200px;min-height: 200px;"></textarea>
+                  </mat-form-field>
+                  <div class="text-right">
+                    <button mat-raised-button color="primary">Send message</button>
+                  </div>
+            </div>            
+        </form>
+    </div>
+</div>
