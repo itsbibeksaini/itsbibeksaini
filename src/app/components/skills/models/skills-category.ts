@@ -18,7 +18,7 @@ export class SkillsCategory{
         this._SUB_TITLE = v;
     }    
     
-    private _SKILLS! : Skill[];
+    private _SKILLS : Skill[] = [];
     public get SKILLS() : Skill[] {
         return this._SKILLS;
     }
