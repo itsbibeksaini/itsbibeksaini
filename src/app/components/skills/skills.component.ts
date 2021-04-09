@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SKILLS } from 'src/app/data/skills';
+import { SKILLS } from 'src/app/data/skills/skills-categories';
 import { Skill, SkillsCategory } from './models';
 
 @Component({

@@ -14,7 +14,7 @@
                 <mat-card>
                     <mat-card-title class="p-1">{{skillCategory.TITLE}}</mat-card-title>
                     <mat-card-content class="container-fluid p-0 text-center" fxLayout="row wrap" fxLayoutAlign="center">
-                        <div fxFlex="50px" class="p-1" *ngFor="let skill of skillCategory.SKILLS">
+                        <div fxFlex="50px" class="p-1 skill" *ngFor="let skill of skillCategory.SKILLS">
                             <img src="{{skill.IMAGE}}" matTooltip="{{skill.TITLE}}" matTooltipPosition="below" class="pointer">
                         </div>                                                
                     </mat-card-content>
