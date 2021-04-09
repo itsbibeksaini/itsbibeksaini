@@ -24,6 +24,13 @@
   .card-info{
     position: relative;
   }
+
+  .profile-image{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.4);  
+  }
 }
 
 @keyframes shine {	
@@ -56,11 +63,4 @@
       left: 0;
     } 
   }
-}
-
-.profile-image{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.4);  
 }
