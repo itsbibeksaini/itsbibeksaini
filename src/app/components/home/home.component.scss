@@ -1,42 +1,7 @@
-.home-warpper{
+.home-card{
   width: 630px;
-}
 
-
-.profile-image{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.4);  
-}
-
-@media screen and (max-width:425px) {
-  .centralize, .vertical-center{
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-
-
-    
-    position: relative;
-    transform: none;
-    top:0;
-    left: 0;
-  }
-
-  // .vertical-center{
-  //   position: static;
-  // }
-
-  
-
-  .profile-image, .profile-image-skeleton{
-    width: 230px !important;
-    height: 230px !important;
-  }
-}
-
-.profile-image-skeleton{    
+  & .profile-image-skeleton{
     height: 350px;
     width: 350px;
     border-radius: 50%;
@@ -50,14 +15,52 @@
     ),
     lightgray;
 
-  background-repeat: repeat-y;        
-  background-size: 50px 200px;        
-  background-position: 0 0;  
-  animation: shine 1s infinite;
+    background-repeat: repeat-y;        
+    background-size: 50px 200px;        
+    background-position: 0 0;  
+    animation: shine 1s infinite;
+  }
+
+  .card-info{
+    position: relative;
+  }
 }
 
 @keyframes shine {	
-    to {
-      background-position: 100% 0, /* move highlight to right */ 0 0;
-    }
+  to {
+    background-position: 100% 0, /* move highlight to right */ 0 0;
   }
+}
+
+@media screen and (max-width:425px) {
+  .home-card{
+    width: 100%;
+
+    & .profile-image, .profile-image-skeleton{
+      width: 230px !important;
+      height: 230px !important;
+    }
+
+    & .card-info{
+      text-align: center !important;
+    }
+
+    .centralize, .vertical-center{
+      flex: 1 1 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;    
+      
+      position: relative;
+      transform: none;
+      top:0;
+      left: 0;
+    } 
+  }
+}
+
+.profile-image{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.4);  
+}
