@@ -41,7 +41,9 @@
                 "node_modules/"
               ]
             },
-            "scripts": []
+            "scripts": [
+              "src/assets/js/smtp.js"
+            ]
           },
           "configurations": {
             "production": {

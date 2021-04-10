@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { faEnvelope, faEnvelopeOpenText, faUser } from '@fortawesome/free-solid-svg-icons';
 import { ValidateOnValueChange } from 'src/app/validators';
+import { environment } from 'src/environments/environment';
+
+declare let Email: any
 
 @Component({
   selector: 'app-contact-me',
@@ -76,10 +79,18 @@ export class ContactMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sendMessage(){
+  sendMessage(){    
     this.isSendMessageAttempt = true;
     if(this.contactMeFrom.valid){
-      
+      Email.send({
+        Host: environment.emailConfig.HOST,
+        Username: environment.emailConfig.USERNAME,
+        Password: environment.emailConfig.PASSWORD,
+        To: environment.emailConfig.TO,
+        From: this.EMAIL?.value,
+        Subject: 'Email from portfolio',
+        Body: this.MESSAGE?.value
+      }).then( (message: any) => {alert(message); this.contactMeFrom.reset()})
     }
   }
 
