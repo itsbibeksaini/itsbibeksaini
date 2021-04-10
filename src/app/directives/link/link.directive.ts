@@ -18,8 +18,10 @@ export class LinkDirective {
       window.open(URLS.FACEBOOK)
     else if(this.link === 'instagram')
       window.open(URLS.INSTAGRM)
-      else if(this.link === 'resume')
+    else if(this.link === 'resume')
       window.open(URLS.RESUME)
+    else if(this.link === 'project-docs')
+      window.open(URLS.PROJECT_DOCS)
   }
 
 }
