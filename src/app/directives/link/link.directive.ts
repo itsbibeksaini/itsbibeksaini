@@ -19,7 +19,7 @@ export class LinkDirective {
     else if(this.link === 'instagram')
       window.open(URLS.INSTAGRM)
       else if(this.link === 'resume')
-      window.open(URLS.RESUME, "_self")
+      window.open(URLS.RESUME)
   }
 
 }
