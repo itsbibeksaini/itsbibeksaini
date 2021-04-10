@@ -19,7 +19,6 @@ import { SkillsComponent } from './components/skills/skills.component';
 import {MatButtonModule} from '@angular/material/button';
 import { LinkDirective } from './directives/link/link.directive';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { CustomListComponent } from './components/custom-list/custom-list.component';
 import { SelectItemDirective } from './components/custom-list/directive/select-item/select-item.directive';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -36,7 +35,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     SkillsComponent,
     LinkDirective,
     AboutMeComponent,
-    ContactMeComponent,
     CustomListComponent,
     SelectItemDirective    
   ],

@@ -3,13 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  emailConfig: {
-    HOST: 'smtp.elasticemail.com',
-    USERNAME: 'itsbibeksaini@gmail.com',
-    PASSWORD: '74FED2A578D60ADBE8B997EA5AB4C7F1702C',
-    TO: 'itsbibeksaini@gmail.com'
-  }
+  production: false,  
 };
 
 /*
