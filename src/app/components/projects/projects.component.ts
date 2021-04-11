@@ -11,6 +11,8 @@ export class ProjectsComponent implements OnInit {
 
   projectList: CustomListItem[] = []
 
+  hideSideBar:boolean = false;
+
   constructor(private customListStore: CustomListStore) {
     this.buildProjectList()
     customListStore.update(() => {
@@ -18,6 +20,10 @@ export class ProjectsComponent implements OnInit {
         ITEMS: this.projectList
       }
     })
+
+    
+    // if(window.screen.width <= 425)
+    //   this.hideSideBar = true
   }
 
   private buildProjectList(){
