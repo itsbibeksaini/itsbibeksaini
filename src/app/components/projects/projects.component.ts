@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   private buildProjectList(){
-    this.addProject("task_manager","Task Manager", "Micro-services app", true)
+    this.addProject("task_manager","Task Manager", "Micro-services app", false)
     this.addProject("mailer","Mailer", "Angular app", false)
     this.addProject("music_store","Music Store", "Asp.net app", false)
     this.addProject("chat_bot","Chat bot", "Android app", false)
