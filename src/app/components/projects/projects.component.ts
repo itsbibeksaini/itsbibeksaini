@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomListStore } from 'src/app/stores';
+import { filter, ignoreElements } from 'rxjs/operators';
+import { CustomListQuery } from 'src/app/queries';
+import { ProjectsQuery } from 'src/app/queries/projects-query';
+import { CustomListStore, ProjectsStore } from 'src/app/stores';
 import { CustomListItem } from '../custom-list/models';
+import { Project } from './models/project';
+import { ProjectSelectorService } from './services';
 
 @Component({
   selector: 'app-projects',
@@ -10,10 +15,20 @@ import { CustomListItem } from '../custom-list/models';
 export class ProjectsComponent implements OnInit {
 
   projectList: CustomListItem[] = []
+  projectDetailsList: Project[] = []
 
   hideSideBar:boolean = false;
+  hasSelectedProject:boolean = false
+  selectedProject!:Project
 
-  constructor(private customListStore: CustomListStore) {
+  testList:Project[] = []
+
+
+  constructor(private customListStore: CustomListStore, 
+              private projectsStore:ProjectsStore, 
+              private projectsQuery:ProjectsQuery, 
+              private projectSelector:ProjectSelectorService) {
+    
     this.buildProjectList()
     customListStore.update(() => {
       return{
@@ -21,27 +36,60 @@ export class ProjectsComponent implements OnInit {
       }
     })
 
+    projectsStore.update(() => {
+      return{
+        PROJECTS: this.projectDetailsList
+      }
+    })
+
+    projectsQuery.select(state => {    
+      return state.PROJECTS
+    }).subscribe(res =>{
+      this.testList = res
+    })
     
-    // if(window.screen.width <= 425)
-    //   this.hideSideBar = true
+    projectSelector.currentSelectedID().pipe(filter(x=>x!=="")).subscribe(id =>{
+      projectsQuery.select(state => state.PROJECTS.find(x => x.ID)).subscribe(project => {
+        if(project !== undefined && project.SELECTED){
+          this.hasSelectedProject = true
+          this.selectedProject = project
+        }
+          
+      }).unsubscribe()      
+    })
   }
 
-  private buildProjectList(){
-    this.addProject("task_manager","Task Manager", "Micro-services app", false)
-    this.addProject("mailer","Mailer", "Angular app", false)
-    this.addProject("music_store","Music Store", "Asp.net app", false)
-    this.addProject("chat_bot","Chat bot", "Android app", false)
-    this.addProject("import_export_utility","Import Export Utility", "Winforms app", false)
-    this.addProject("library_management_system","Library management system", "C++", false)
+  private buildProjectList(){    
+    this.addProject("task_manager","Task Manager", "Micro-services app")
+    this.addProjectDetails("task_manager", "Task Manager", "Micro-service app","tesing" ,false)
+    
+    // this.addProject("mailer","Mailer", "Angular app", false)
+    // this.addProject("music_store","Music Store", "Asp.net app", false)
+    // this.addProject("chat_bot","Chat bot", "Android app", false)
+    // this.addProject("import_export_utility","Import Export Utility", "Winforms app", false)
+    // this.addProject("library_management_system","Library management system", "C++", false)
   }
 
-  private addProject(id:string, title: string, subTitle: string, isSelected: boolean){
+  private addProject(id:string, title: string, subTitle: string){
     let project:CustomListItem = new CustomListItem()
     project.ID = id
     project.TITLE = title
     project.SUB_TITLE = subTitle
-    project.IS_SELECTED = isSelected
+    project.IS_SELECTED = false
+    
     this.projectList.push(project)
+  }
+  
+  private addProjectDetails(id: string, title:string, subtitle: string, description: string, archieved:boolean){
+    let project:Project = new Project()
+    project.ID = id
+    project.TITLE = title
+    project.SUB_TITLE = subtitle
+    project.DESCRIPTION = description
+    project.SELECTED = false
+    project.ARCHIEVED = archieved
+
+    this.projectDetailsList.push(project)
   }
 
   ngOnInit(): void {

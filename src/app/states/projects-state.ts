@@ -1,11 +1,11 @@
 import { Project } from "../components/projects/models/project";
 
 export interface ProjectsState{
-    projects: Project[]
+    PROJECTS: Project[]
 }
 
 export function defaultProjectsState (): ProjectsState{
     return {
-        projects: []
+        PROJECTS: []
     }
 }

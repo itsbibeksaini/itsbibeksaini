@@ -12,7 +12,7 @@ export class CustomListComponent implements OnInit {
 
   customList!: CustomListItem[]
   constructor(private customListQuery:CustomListQuery) {
-    customListQuery.select(state => state.ITEMS).subscribe(res =>{
+    customListQuery.select(state => state.ITEMS).subscribe(res =>{      
       this.customList = res
     })
   }
