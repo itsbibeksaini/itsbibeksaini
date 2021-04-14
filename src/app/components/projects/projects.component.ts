@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { filter, ignoreElements } from 'rxjs/operators';
-import { CustomListQuery } from 'src/app/queries';
+import { filter } from 'rxjs/operators';
 import { ProjectsQuery } from 'src/app/queries/projects-query';
 import { CustomListStore, ProjectsStore } from 'src/app/stores';
 import { CustomListItem } from '../custom-list/models';
@@ -17,7 +16,6 @@ export class ProjectsComponent implements OnInit {
   projectList: CustomListItem[] = []
   projectDetailsList: Project[] = []
 
-  hideSideBar:boolean = false;
   hasSelectedProject:boolean = false
   selectedProject!:Project
 

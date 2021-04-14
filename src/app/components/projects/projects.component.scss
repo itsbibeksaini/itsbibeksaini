@@ -1,9 +1,10 @@
 @media screen and (max-width:425px) {
-    .project-details, .select-project-illustration{
+    .select-project-illustration, .hideSideBar{
         display: none !important;
     }
 
-    .project-details{
-        
+    .container-fluid{
+        padding: 0px !important;
     }
+    
 }

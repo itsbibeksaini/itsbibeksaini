@@ -5,13 +5,9 @@
     </header>
 
     <div fxFlex class="container-fluid padding2030" fxLayoutAlign="center">
-        <custom-list fxFlex="240px" *ngIf="!hideSideBar"></custom-list>
+        <custom-list fxFlex="240px" [ngClass]="{hideSideBar: hasSelectedProject}"></custom-list>
         
-        <div fxFlex class="container-fluid p-0 project-details" fxLayout="column" *ngIf="hasSelectedProject">
-
-            <div fxFlex="180px" fxFlex.xs="45px" fxFlex.sm="110px" class="m-2">
-                <img src="assets/projects/banner.jpg" style="width: 100%; border-radius: 0.25rem;box-shadow: 0 1px 8px rgba(0,0,0,0.4);">
-            </div>
+        <div fxFlex class="container-fluid p-0 project-details" fxLayout="column" *ngIf="hasSelectedProject">            
             <div fxFlex class="padding1015" style="overflow: hidden;overflow-y: auto;">                
                 <!-- Header -->
                 <div>
