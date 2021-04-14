@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CustomListQuery } from 'src/app/queries';
 import { CustomListItem } from './models';
+import { CustomListQuery } from './state/custom-list-query';
 
 @Component({
   selector: 'custom-list',

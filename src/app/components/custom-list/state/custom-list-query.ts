@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Query } from "@datorama/akita";
-import { CustomListState } from "../../../states";
+import { CustomListState } from "./custom-list-state";
 import { CustomListStore } from "./custom-list-store";
 
 

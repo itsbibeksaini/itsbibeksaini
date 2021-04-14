@@ -1,2 +1,0 @@
-export {CustomListState, defaultCustomListState} from '../components/custom-list/state/custom-list-state'
-export {ProjectsState, defaultProjectsState} from '../components/projects/state/projects-state'
