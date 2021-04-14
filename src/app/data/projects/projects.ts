@@ -1,7 +1,7 @@
 import { Project } from "src/app/components/projects/models/project";
 import { skill_dotnet, skill_entityframework, skill_java } from "../skills/backend-skills";
 import { skill_mongodb, skill_sql } from "../skills/database-tools";
-import { skill_docker, skill_kubernetes } from "../skills/deployment-skills";
+import { skill_azure, skill_docker, skill_kubernetes } from "../skills/deployment-skills";
 import { skill_angular, skill_typescript } from "../skills/frontend-skills";
 import { skill_grpc } from "../skills/others-skills";
 
@@ -22,5 +22,6 @@ taskManager.TECH_USED.push(skill_docker)
 taskManager.TECH_USED.push(skill_kubernetes)
 taskManager.TECH_USED.push(skill_sql)
 taskManager.TECH_USED.push(skill_mongodb)
+taskManager.TECH_USED.push(skill_azure)
 
 PROJECTS_DETAILS.push(taskManager)
