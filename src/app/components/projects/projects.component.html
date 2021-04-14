@@ -9,7 +9,7 @@
         
         <div fxFlex class="container-fluid p-0 project-details" fxLayout="column" *ngIf="hasSelectedProject">            
             <div fxFlex="35px" class="backButton" >
-                <fa-icon [icon]="faArrowLeft" style="font-size: 21px;" class="pointer"></fa-icon>
+                <fa-icon [icon]="faArrowLeft" style="font-size: 21px;" class="pointer" (click)="backButton()"></fa-icon>
             </div>
             <div fxFlex class="padding1015" style="overflow: hidden;overflow-y: auto;">                                
                 <!-- Header -->

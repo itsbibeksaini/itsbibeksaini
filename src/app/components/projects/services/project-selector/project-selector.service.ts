@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { ProjectsQuery } from 'src/app/components/projects/state/projects-query';
+import { ProjectsStore } from '../../state/projects-store';
 
 
 @Injectable({
@@ -9,13 +10,17 @@ import { ProjectsQuery } from 'src/app/components/projects/state/projects-query'
 export class ProjectSelectorService {
 
   selectedProjectID: BehaviorSubject<string>
-  constructor(private projectsQuery:ProjectsQuery) { 
+  constructor(private projectStore:ProjectsStore) { 
     this.selectedProjectID = new BehaviorSubject<string>("")
   }
 
   selectProject(id:string){    
-    this.projectsQuery.selectProject(id)
+    this.projectStore.selectProject(id)
     this.selectedProjectID.next(id)
+  }
+
+  unselectProjects(){
+    this.projectStore.unselectAll()
   }
 
   currentSelectedID():Observable<string>{

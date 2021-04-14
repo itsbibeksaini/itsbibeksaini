@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { CustomListStore } from 'src/app/stores';
+import { CustomListItem } from '../../models';
+import { CustomListStore } from '../../state/custom-list-store';
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +16,13 @@ export class CustomListService {
 
   unselectAll(){
     this.customListStore.unselectAll()
+  }
+
+  addItems(items:CustomListItem[]){
+  this.customListStore.update(() => {
+      return{
+        ITEMS: items
+      }
+    })
   }
 }

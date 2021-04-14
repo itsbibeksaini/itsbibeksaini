@@ -3,6 +3,7 @@ import { faArrowLeft, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-ico
 import { filter } from 'rxjs/operators';
 import { ProjectsQuery } from 'src/app/components/projects/state/projects-query';
 import { CustomListItem } from '../custom-list/models';
+import { CustomListService } from '../custom-list/services';
 import { CustomListStore } from '../custom-list/state/custom-list-store';
 import { Project } from './models/project';
 import { ProjectSelectorService } from './services';
@@ -25,17 +26,13 @@ export class ProjectsComponent implements OnInit {
   testList:Project[] = []
 
 
-  constructor(private customListStore: CustomListStore, 
+  constructor(private custonlistService:CustomListService,
               private projectsStore:ProjectsStore, 
               private projectsQuery:ProjectsQuery, 
               private projectSelector:ProjectSelectorService) {
     
     this.buildProjectList()
-    customListStore.update(() => {
-      return{
-        ITEMS: this.projectList
-      }
-    })
+    this.custonlistService.addItems(this.projectList)    
 
     projectsStore.update(() => {
       return{
@@ -94,6 +91,12 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  backButton(){    
+    this.hasSelectedProject = false
+    this.custonlistService.unselectAll()
+    this.projectSelector.unselectProjects()
   }
 
 }
