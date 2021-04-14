@@ -16,6 +16,10 @@ export const skill_githubdesktop:Skill = new Skill()
 skill_githubdesktop.TITLE = "Github Desktop"
 skill_githubdesktop.IMAGE = "assets/skills/others/githubdesktop.png"
 
+export const skill_grpc:Skill = new Skill()
+skill_grpc.TITLE = "GRPC Framework"
+skill_grpc.IMAGE = "assets/skills/others/grpc.png"
+
 export const skill_intelijidea:Skill = new Skill()
 skill_intelijidea.TITLE = "Intelij Idea"
 skill_intelijidea.IMAGE = "assets/skills/others/intelijidea.png"

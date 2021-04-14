@@ -39,7 +39,7 @@ deploymentSkills.SKILLS.push(dSkills.skill_kubernetes)
 
 let otherSkills: SkillsCategory = new SkillsCategory()
 otherSkills.TITLE = "Others"
-otherSkills.SKILLS.push(oSkills.skill_confluence,oSkills.skill_fork,oSkills.skill_git,oSkills.skill_githubdesktop, oSkills.skill_intelijidea,oSkills.skill_jira,oSkills.skill_postman,oSkills.skill_swagger,oSkills.skill_visualstudiocode,oSkills.skill_visualstudiomac)
+otherSkills.SKILLS.push(oSkills.skill_confluence,oSkills.skill_fork,oSkills.skill_git,oSkills.skill_githubdesktop,oSkills.skill_grpc, oSkills.skill_intelijidea,oSkills.skill_jira,oSkills.skill_postman,oSkills.skill_swagger,oSkills.skill_visualstudiocode,oSkills.skill_visualstudiomac)
 
 SKILLS.push(backendSkills)
 SKILLS.push(frontendSkills)
