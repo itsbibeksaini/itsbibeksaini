@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faArrowLeft, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { filter } from 'rxjs/operators';
 import { ProjectsQuery } from 'src/app/queries/projects-query';
 import { CustomListStore, ProjectsStore } from 'src/app/stores';
@@ -13,6 +14,7 @@ import { ProjectSelectorService } from './services';
 })
 export class ProjectsComponent implements OnInit {
 
+  faArrowLeft = faLongArrowAltLeft
   projectList: CustomListItem[] = []
   projectDetailsList: Project[] = []
 
