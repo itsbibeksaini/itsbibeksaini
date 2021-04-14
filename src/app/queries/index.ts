@@ -1,1 +1,1 @@
-export {CustomListQuery} from './custom-list-query'
+export {CustomListQuery} from '../components/custom-list/state/custom-list-query'

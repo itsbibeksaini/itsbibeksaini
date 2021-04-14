@@ -1,4 +1,4 @@
-import { CustomListItem } from "../components/custom-list/models";
+import { CustomListItem } from "../models";
 
 export interface CustomListState{
     ITEMS: CustomListItem[]
