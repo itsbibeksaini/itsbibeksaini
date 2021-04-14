@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { filter } from 'rxjs/operators';
 import { ProjectsQuery } from 'src/app/components/projects/state/projects-query';
 import { PROJECTS_DETAILS } from 'src/app/data/projects/projects';
+import { Project } from '../../models/project';
 import { ProjectsStore } from '../../state/projects-store';
 
 
@@ -11,7 +13,7 @@ import { ProjectsStore } from '../../state/projects-store';
 export class ProjectSelectorService {
 
   selectedProjectID: BehaviorSubject<string>
-  constructor(private projectStore:ProjectsStore) { 
+  constructor(private projectStore:ProjectsStore, private projectQuery: ProjectsQuery) { 
     this.selectedProjectID = new BehaviorSubject<string>("")
     this.addProjects()
   }
@@ -22,6 +24,10 @@ export class ProjectSelectorService {
         PROJECTS: PROJECTS_DETAILS
       }
     })
+  }
+
+  getSelectedProject():Observable<Project | undefined>{
+    return this.projectQuery.select(state => state.PROJECTS.find(x => x.SELECTED))
   }
 
   selectProject(id:string){    

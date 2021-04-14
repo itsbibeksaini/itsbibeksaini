@@ -6,8 +6,8 @@ let taskManager:CustomListItem = new CustomListItem()
 taskManager.ID = "task_manager"
 taskManager.TITLE = "Task Manager"
 taskManager.SUB_TITLE = "Micro-services app"
-
 PROJECT_LIST.push(taskManager)
+
 
 
 
