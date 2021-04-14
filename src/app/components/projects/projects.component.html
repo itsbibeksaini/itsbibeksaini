@@ -32,58 +32,9 @@
                     <span class="mat-h2 display-block m-0">Tech used</span>
                     <hr>
                     <div class="container-fluid" fxLayout="row wrap">
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
+                        <div fxFlex="50px" class="p-1 skill" *ngFor="let skill of selectedProject.TECH_USED">
+                            <img src="{{skill.IMAGE}}" matTooltip="{{skill.TITLE}}" matTooltipPosition="below">
                         </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        <div fxFlex="50px" class="p-1 skill">
-                            <img src="assets/skills/frontend/angular.png">
-                        </div> 
-                        
                     </div>
                     <hr>
                 </div>

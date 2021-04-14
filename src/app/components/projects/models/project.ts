@@ -1,3 +1,5 @@
+import { Skill } from "../../skills/models";
+
 export class Project{
     
     private _ID! : string;
@@ -49,6 +51,13 @@ export class Project{
     public set ARCHIEVED(v : boolean) {
         this._ARCHIEVED = v;
     }
-    
+
+    private _TECH_USED : Skill[] = [];
+    public get TECH_USED() : Skill[] {
+        return this._TECH_USED;
+    }
+    public set TECH_USED(v : Skill[]) {
+        this._TECH_USED = v;
+    }    
         
 }

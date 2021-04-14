@@ -2,7 +2,7 @@ import { Skill } from "src/app/components/skills/models"
 
 export const skill_dotnet:Skill = new Skill()
 skill_dotnet.IMAGE = "assets/skills/backend/dotnet.png"
-skill_dotnet.TITLE = "Dotnet"
+skill_dotnet.TITLE = "Dotnet core"
 
 export const skill_entityframework:Skill = new Skill()
 skill_entityframework.IMAGE = "assets/skills/backend/entityframework.png"
