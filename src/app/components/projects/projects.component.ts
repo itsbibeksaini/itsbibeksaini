@@ -2,11 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { faArrowLeft, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { filter } from 'rxjs/operators';
 import { ProjectsQuery } from 'src/app/components/projects/state/projects-query';
-import { skill_dotnet } from 'src/app/data/skills/backend-skills';
 import { CustomListItem } from '../custom-list/models';
 import { CustomListService } from '../custom-list/services';
-import { CustomListStore } from '../custom-list/state/custom-list-store';
-import { Skill } from '../skills/models';
 import { Project } from './models/project';
 import { ProjectSelectorService } from './services';
 import { ProjectsStore } from './state/projects-store';
@@ -25,52 +22,18 @@ export class ProjectsComponent implements OnInit {
   hasSelectedProject:boolean = false
   selectedProject!:Project
 
-  testList:Project[] = []
-
-
-  constructor(private custonlistService:CustomListService,
-              private projectsStore:ProjectsStore, 
+  constructor(private custonlistService:CustomListService,              
               private projectsQuery:ProjectsQuery, 
               private projectSelector:ProjectSelectorService) {
     
-    this.buildProjectList()
-    this.custonlistService.addItems(this.projectList)    
-
-    projectsStore.update(() => {
-      return{
-        PROJECTS: this.projectDetailsList
-      }
-    })
-
-    projectsQuery.select(state => {    
-      return state.PROJECTS
-    }).subscribe(res =>{
-      this.testList = res
-    })
-    
     projectSelector.currentSelectedID().pipe(filter(x=>x!=="")).subscribe(id =>{
-      projectsQuery.select(state => state.PROJECTS.find(x => x.ID)).subscribe(project => {
+      projectsQuery.select(state => state.PROJECTS.find(x => x.ID)).subscribe(project => {        
         if(project !== undefined && project.SELECTED){
           this.hasSelectedProject = true
           this.selectedProject = project
-        }
-          
+        }          
       }).unsubscribe()      
     })
-  }
-
-  private buildProjectList(){    
-    this.addProject("task_manager","Task Manager", "Micro-services app")
-
-    let taskManagerTech:Skill[] = []    
-    taskManagerTech.push(skill_dotnet)
-    this.addProjectDetails("task_manager", "Task Manager", "Micro-service app","Task manager is built on micro-services architecture providing management services like invoice manager and task board. The whole project is divided into various micro-apps based on their individual responsibility that each micro app need to perform." ,false, taskManagerTech)
-    
-    // this.addProject("mailer","Mailer", "Angular app", false)
-    // this.addProject("music_store","Music Store", "Asp.net app", false)
-    // this.addProject("chat_bot","Chat bot", "Android app", false)
-    // this.addProject("import_export_utility","Import Export Utility", "Winforms app", false)
-    // this.addProject("library_management_system","Library management system", "C++", false)
   }
 
   private addProject(id:string, title: string, subTitle: string){
@@ -83,18 +46,7 @@ export class ProjectsComponent implements OnInit {
     this.projectList.push(project)
   }
   
-  private addProjectDetails(id: string, title:string, subtitle: string, description: string, archieved:boolean, techUsed: Skill[]){
-    let project:Project = new Project()
-    project.ID = id
-    project.TITLE = title
-    project.SUB_TITLE = subtitle
-    project.DESCRIPTION = description
-    project.SELECTED = false
-    project.ARCHIEVED = archieved
-    project.TECH_USED = techUsed
-
-    this.projectDetailsList.push(project)
-  }
+  
 
   ngOnInit(): void {
   }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { PROJECT_LIST } from 'src/app/data/projects/project-list';
 import { CustomListItem } from '../../models';
 import { CustomListStore } from '../../state/custom-list-store';
 
@@ -8,7 +9,9 @@ import { CustomListStore } from '../../state/custom-list-store';
 })
 export class CustomListService {
 
-  constructor(private customListStore: CustomListStore) { }
+  constructor(private customListStore: CustomListStore) { 
+    this.addItems()
+  }
 
   selectItem(id:string){
     this.customListStore.selectItem(id)
@@ -18,10 +21,10 @@ export class CustomListService {
     this.customListStore.unselectAll()
   }
 
-  addItems(items:CustomListItem[]){
+  addItems(){
   this.customListStore.update(() => {
       return{
-        ITEMS: items
+        ITEMS: PROJECT_LIST
       }
     })
   }
