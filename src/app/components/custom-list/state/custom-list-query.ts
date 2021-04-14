@@ -1,7 +1,8 @@
 import { Injectable } from "@angular/core";
 import { Query } from "@datorama/akita";
 import { CustomListState } from "../../../states";
-import { CustomListStore } from "../../../stores";
+import { CustomListStore } from "./custom-list-store";
+
 
 @Injectable({
     providedIn: 'root',

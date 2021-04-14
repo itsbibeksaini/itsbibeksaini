@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { faArrowLeft, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { filter } from 'rxjs/operators';
-import { ProjectsQuery } from 'src/app/queries/projects-query';
-import { CustomListStore, ProjectsStore } from 'src/app/stores';
+import { ProjectsQuery } from 'src/app/components/projects/state/projects-query';
 import { CustomListItem } from '../custom-list/models';
+import { CustomListStore } from '../custom-list/state/custom-list-store';
 import { Project } from './models/project';
 import { ProjectSelectorService } from './services';
+import { ProjectsStore } from './state/projects-store';
 
 @Component({
   selector: 'app-projects',

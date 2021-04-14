@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { ProjectsQuery } from 'src/app/queries/projects-query';
-import { ProjectsStore } from 'src/app/stores';
+import { ProjectsQuery } from 'src/app/components/projects/state/projects-query';
+
 
 @Injectable({
   providedIn: 'root'

@@ -1,11 +1,11 @@
 import { Directive, HostListener, Input } from '@angular/core';
 import { ProjectSelectorService } from 'src/app/components/projects/services';
-import { CustomListQuery } from 'src/app/queries';
-import { CustomListStore } from 'src/app/stores';
+import { CustomListStore } from '../../state/custom-list-store';
 
 
 @Directive({
   selector: '[select-item]'
+
 })
 export class SelectItemDirective {
 

@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CustomListQuery } from 'src/app/queries';
-import { CustomListStore } from 'src/app/stores';
 import { CustomListItem } from './models';
 
 @Component({

@@ -1,7 +1,8 @@
 import { Injectable } from "@angular/core";
 import { Query } from "@datorama/akita";
-import { ProjectsState } from "../states";
-import { ProjectsStore } from "../stores";
+import { ProjectsState } from "../../../states";
+import { ProjectsStore } from "./projects-store";
+
 
 @Injectable({
     providedIn: 'root',

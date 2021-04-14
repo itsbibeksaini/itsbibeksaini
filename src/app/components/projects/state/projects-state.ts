@@ -1,4 +1,4 @@
-import { Project } from "../components/projects/models/project";
+import { Project } from "../models/project";
 
 export interface ProjectsState{
     PROJECTS: Project[]
