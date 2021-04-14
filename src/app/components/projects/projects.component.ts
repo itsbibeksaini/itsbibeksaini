@@ -59,7 +59,7 @@ export class ProjectsComponent implements OnInit {
 
   private buildProjectList(){    
     this.addProject("task_manager","Task Manager", "Micro-services app")
-    this.addProjectDetails("task_manager", "Task Manager", "Micro-service app","tesing" ,false)
+    this.addProjectDetails("task_manager", "Task Manager", "Micro-service app","Task manager is built on micro-services architecture providing management services like invoice manager and task board. The whole project is divided into various micro-apps based on their individual responsibility that each micro app need to perform." ,false)
     
     // this.addProject("mailer","Mailer", "Angular app", false)
     // this.addProject("music_store","Music Store", "Asp.net app", false)
