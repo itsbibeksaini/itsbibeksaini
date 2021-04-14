@@ -3,7 +3,7 @@ import { skill_dotnet, skill_entityframework, skill_java } from "../skills/backe
 import { skill_mongodb, skill_sql } from "../skills/database-tools";
 import { skill_azure, skill_docker, skill_kubernetes } from "../skills/deployment-skills";
 import { skill_angular, skill_typescript } from "../skills/frontend-skills";
-import { skill_grpc } from "../skills/others-skills";
+import { skill_consul, skill_grpc, skill_ocelot } from "../skills/others-skills";
 
 export const PROJECTS_DETAILS:Project[] = []
 
@@ -23,5 +23,8 @@ taskManager.TECH_USED.push(skill_kubernetes)
 taskManager.TECH_USED.push(skill_sql)
 taskManager.TECH_USED.push(skill_mongodb)
 taskManager.TECH_USED.push(skill_azure)
+taskManager.TECH_USED.push(skill_ocelot)
+taskManager.TECH_USED.push(skill_consul)
+
 
 PROJECTS_DETAILS.push(taskManager)

@@ -4,6 +4,10 @@ export const skill_confluence:Skill = new Skill()
 skill_confluence.TITLE = "Confluence"
 skill_confluence.IMAGE = "assets/skills/others/confluence.png"
 
+export const skill_consul:Skill = new Skill()
+skill_consul.TITLE = "Consul"
+skill_consul.IMAGE = "assets/skills/others/consul.png"
+
 export const skill_fork:Skill = new Skill()
 skill_fork.TITLE = "Fork"
 skill_fork.IMAGE = "assets/skills/others/fork.png"
@@ -27,6 +31,10 @@ skill_intelijidea.IMAGE = "assets/skills/others/intelijidea.png"
 export const skill_jira:Skill = new Skill()
 skill_jira.TITLE = "Jira"
 skill_jira.IMAGE = "assets/skills/others/jira.png"
+
+export const skill_ocelot:Skill = new Skill()
+skill_ocelot.TITLE = "Ocelot Api Gateway"
+skill_ocelot.IMAGE = "assets/skills/others/ocelot.png"
 
 export const skill_postman:Skill = new Skill()
 skill_postman.TITLE = "Postman"
