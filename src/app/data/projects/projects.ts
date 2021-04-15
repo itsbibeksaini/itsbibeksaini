@@ -1,9 +1,9 @@
 import { Project } from "src/app/components/projects/models/project";
-import { skill_dotnet, skill_entityframework, skill_java } from "../skills/backend-skills";
+import { skill_dotnet, skill_entityframework, skill_java, skill_springboot } from "../skills/backend-skills";
 import { skill_mongodb, skill_sql } from "../skills/database-tools";
 import { skill_azure, skill_docker, skill_kubernetes } from "../skills/deployment-skills";
 import { skill_angular, skill_typescript } from "../skills/frontend-skills";
-import { skill_consul, skill_grpc, skill_ocelot } from "../skills/others-skills";
+import { skill_consul, skill_grpc, skill_ocelot, skill_swagger } from "../skills/others-skills";
 
 export const PROJECTS_DETAILS:Project[] = []
 
@@ -15,6 +15,7 @@ taskManager.DESCRIPTION = "Task manager is built on micro-services architecture 
 taskManager.TECH_USED.push(skill_angular)
 taskManager.TECH_USED.push(skill_dotnet)
 taskManager.TECH_USED.push(skill_java)
+taskManager.TECH_USED.push(skill_springboot)
 taskManager.TECH_USED.push(skill_entityframework)
 taskManager.TECH_USED.push(skill_grpc)
 taskManager.TECH_USED.push(skill_typescript)
@@ -25,6 +26,7 @@ taskManager.TECH_USED.push(skill_mongodb)
 taskManager.TECH_USED.push(skill_azure)
 taskManager.TECH_USED.push(skill_ocelot)
 taskManager.TECH_USED.push(skill_consul)
+taskManager.TECH_USED.push(skill_swagger)
 
 
 PROJECTS_DETAILS.push(taskManager)
