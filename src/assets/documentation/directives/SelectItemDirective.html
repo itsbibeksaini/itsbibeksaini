@@ -123,12 +123,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(customListQuery: <a href="../injectables/CustomListQuery.html">CustomListQuery</a>)</code>
+<code>constructor(customListService: <a href="../injectables/CustomListStore.html">CustomListStore</a>, projectSelector: <a href="../injectables/ProjectSelectorService.html">ProjectSelectorService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -146,10 +146,22 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>customListQuery</td>
+                                                        <td>customListService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/CustomListQuery.html" target="_self" >CustomListQuery</a></code>
+                                                                        <code><a href="../injectables/CustomListStore.html" target="_self" >CustomListStore</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectSelector</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProjectSelectorService.html" target="_self" >ProjectSelectorService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -184,7 +196,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:10</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:12</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -215,8 +227,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:15</a></div>
                 </td>
             </tr>
 
@@ -232,19 +244,22 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Directive, HostListener, Input } from &#x27;@angular/core&#x27;;
-import { CustomListQuery } from &#x27;src/app/queries&#x27;;
+import { ProjectSelectorService } from &#x27;src/app/components/projects/services&#x27;;
+import { CustomListStore } from &#x27;../../state/custom-list-store&#x27;;
 
 
 @Directive({
   selector: &#x27;[select-item]&#x27;
+
 })
 export class SelectItemDirective {
 
   @Input(&#x27;select-item&#x27;) selectedItem!: string
-  constructor(private customListQuery: CustomListQuery) { }
+  constructor(private customListService:CustomListStore, private projectSelector:ProjectSelectorService) { }
 
   @HostListener(&quot;click&quot;) click(){
-    this.customListQuery.selectItem(this.selectedItem)
+    this.customListService.selectItem(this.selectedItem)    
+    this.projectSelector.selectProject(this.selectedItem)
   }
   
 

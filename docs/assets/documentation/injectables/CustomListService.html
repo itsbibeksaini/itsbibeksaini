@@ -27,7 +27,7 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content directive">
+               <div class="content injectable">
                    <div class="content-data">
 
 
@@ -35,9 +35,10 @@
 
 
 
+
 <ol class="breadcrumb">
-  <li>Directives</li>
-  <li>SelectItemDirective</li>
+  <li>Injectables</li>
+  <li>CustomListService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -55,42 +56,33 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/components/custom-list/directive/select-item/select-item.directive.ts</code>
+            <code>src/app/components/custom-list/services/custom-list/custom-list.service.ts</code>
         </p>
 
 
 
-
-        <section>
-            <h3>Metadata</h3>
-            <table class="table table-sm table-hover">
-                <tbody>
-
-                    <tr>
-                        <td class="col-md-3">Selector</td>
-                        <td class="col-md-9"><code>[select-item]</code></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
 
             <section>
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
 
-
                 <tr>
                     <td class="col-md-4">
-                        <h6><b>Inputs</b></h6>
+                        <h6><b>Methods</b></h6>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#select-item">select-item</a>
+                                <a href="#addItems">addItems</a>
+                            </li>
+                            <li>
+                                <a href="#selectItem">selectItem</a>
+                            </li>
+                            <li>
+                                <a href="#unselectAll">unselectAll</a>
                             </li>
                         </ul>
                     </td>
@@ -98,20 +90,7 @@
 
 
 
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>HostListeners</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#click">click</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
+
 
         </tbody>
     </table>
@@ -123,12 +102,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(customListService: <a href="../injectables/CustomListStore.html">CustomListStore</a>, projectSelector: <a href="../injectables/ProjectSelectorService.html">ProjectSelectorService</a>)</code>
+<code>constructor(customListStore: <a href="../injectables/CustomListStore.html">CustomListStore</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/components/custom-list/services/custom-list/custom-list.service.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -146,22 +125,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>customListService</td>
+                                                        <td>customListStore</td>
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/CustomListStore.html" target="_self" >CustomListStore</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>projectSelector</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/ProjectSelectorService.html" target="_self" >ProjectSelectorService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -179,96 +146,199 @@
 </section>
 
             <section>
-    <h3 id="inputs">Inputs</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="select-item"></a>
-                        <b>select-item</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:12</a></div>
-                            </td>
-                        </tr>
-            </tbody>
-        </table>
-</section>
-
-
-            <section>
-    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="click"></a>
+                    <a name="addItems"></a>
                     <span class="name">
                         <b>
-                            click
+                            addItems
                         </b>
-                        <a href="#click"><span class="icon ion-ios-link"></span></a>
+                        <a href="#addItems"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>click()</code>
+<code>addItems()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/components/custom-list/directive/select-item/select-item.directive.ts:15</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/custom-list/services/custom-list/custom-list.service.ts:24</a></div>
                 </td>
             </tr>
 
 
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectItem"></a>
+                    <span class="name">
+                        <b>
+                            selectItem
+                        </b>
+                        <a href="#selectItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectItem(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/components/custom-list/services/custom-list/custom-list.service.ts:16</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unselectAll"></a>
+                    <span class="name">
+                        <b>
+                            unselectAll
+                        </b>
+                        <a href="#unselectAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unselectAll()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/components/custom-list/services/custom-list/custom-list.service.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </section>
-
-
 
     </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Directive, HostListener, Input } from &#x27;@angular/core&#x27;;
-import { ProjectSelectorService } from &#x27;src/app/components/projects/services&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { PROJECT_LIST } from &#x27;src/app/data/projects/project-list&#x27;;
+import { CustomListItem } from &#x27;../../models&#x27;;
 import { CustomListStore } from &#x27;../../state/custom-list-store&#x27;;
 
 
-@Directive({
-  selector: &#x27;[select-item]&#x27;
-
+@Injectable({
+  providedIn: &#x27;root&#x27;
 })
-export class SelectItemDirective {
+export class CustomListService {
 
-  @Input(&#x27;select-item&#x27;) selectedItem!: string
-  constructor(private customListService:CustomListStore, private projectSelector:ProjectSelectorService) { }
-
-  @HostListener(&quot;click&quot;) click(){
-    this.customListService.selectItem(this.selectedItem)    
-    this.projectSelector.selectProject(this.selectedItem)
+  constructor(private customListStore: CustomListStore) { 
+    this.addItems()
   }
-  
 
+  selectItem(id:string){
+    this.customListStore.selectItem(id)
+  }
+
+  unselectAll(){
+    this.customListStore.unselectAll()
+  }
+
+  addItems(){
+  this.customListStore.update(() &#x3D;&gt; {
+      return{
+        ITEMS: PROJECT_LIST
+      }
+    })
+  }
 }
 </code></pre>
     </div>
 
 </div>
-
 
 
 
@@ -297,8 +367,8 @@ export class SelectItemDirective {
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'directive';
-            var COMPODOC_CURRENT_PAGE_URL = 'SelectItemDirective.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CustomListService.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

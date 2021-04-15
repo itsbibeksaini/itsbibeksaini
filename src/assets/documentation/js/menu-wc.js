@@ -139,6 +139,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="classes/Experience.html" data-type="entity-link">Experience</a>
                             </li>
                             <li class="link">
+                                <a href="classes/Project.html" data-type="entity-link">Project</a>
+                            </li>
+                            <li class="link">
                                 <a href="classes/Skill.html" data-type="entity-link">Skill</a>
                             </li>
                             <li class="link">
@@ -158,7 +161,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     <a href="injectables/CustomListQuery.html" data-type="entity-link">CustomListQuery</a>
                                 </li>
                                 <li class="link">
+                                    <a href="injectables/CustomListService.html" data-type="entity-link">CustomListService</a>
+                                </li>
+                                <li class="link">
                                     <a href="injectables/CustomListStore.html" data-type="entity-link">CustomListStore</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/ProjectSelectorService.html" data-type="entity-link">ProjectSelectorService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/ProjectsQuery.html" data-type="entity-link">ProjectsQuery</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/ProjectsStore.html" data-type="entity-link">ProjectsStore</a>
                                 </li>
                                 <li class="link">
                                     <a href="injectables/ThemeSwitcherService.html" data-type="entity-link">ThemeSwitcherService</a>
@@ -175,6 +190,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
                             <li class="link">
                                 <a href="interfaces/CustomListState.html" data-type="entity-link">CustomListState</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/ProjectsState.html" data-type="entity-link">ProjectsState</a>
                             </li>
                         </ul>
                     </li>

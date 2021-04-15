@@ -43,7 +43,7 @@
 
 <ol class="breadcrumb">
   <li>Interfaces</li>
-  <li>CustomListState</li>
+  <li>ProjectsState</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/components/custom-list/state/custom-list-state.ts</code>
+            <code>src/app/components/projects/state/projects-state.ts</code>
         </p>
 
 
@@ -79,7 +79,7 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
-                                        <a href="#ITEMS">ITEMS</a>
+                                        <a href="#PROJECTS">PROJECTS</a>
                                 </li>
                             </ul>
                         </td>
@@ -96,13 +96,13 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <a name="ITEMS"></a>
-                                        <span class="name"><b>ITEMS</b><a href="#ITEMS"><span class="icon ion-ios-link"></span></a></span>
+                                        <a name="PROJECTS"></a>
+                                        <span class="name"><b>PROJECTS</b><a href="#PROJECTS"><span class="icon ion-ios-link"></span></a></span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>ITEMS:         <code><a href="../classes/CustomListItem.html" target="_self" >CustomListItem[]</a></code>
+                                        <code>PROJECTS:         <code><a href="../classes/Project.html" target="_self" >Project[]</a></code>
 </code>
                                     </td>
                                 </tr>
@@ -110,7 +110,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>        <code><a href="../classes/CustomListItem.html" target="_self" >CustomListItem[]</a></code>
+                                            <i>Type : </i>        <code><a href="../classes/Project.html" target="_self" >Project[]</a></code>
 
                                         </td>
                                     </tr>
@@ -126,15 +126,15 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CustomListItem } from &quot;../models&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Project } from &quot;../models/project&quot;;
 
-export interface CustomListState{
-    ITEMS: CustomListItem[]
+export interface ProjectsState{
+    PROJECTS: Project[]
 }
 
-export function defaultCustomListState(): CustomListState{
+export function defaultProjectsState (): ProjectsState{
     return {
-        ITEMS: []
+        PROJECTS: []
     }
 }</code></pre>
     </div>
@@ -163,7 +163,7 @@ export function defaultCustomListState(): CustomListState{
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
-            var COMPODOC_CURRENT_PAGE_URL = 'CustomListState.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProjectsState.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

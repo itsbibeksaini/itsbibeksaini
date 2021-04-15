@@ -38,7 +38,7 @@
 
 <ol class="breadcrumb">
   <li>Injectables</li>
-  <li>CustomListStore</li>
+  <li>ProjectsStore</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -56,7 +56,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/components/custom-list/state/custom-list-store.ts</code>
+            <code>src/app/components/projects/state/projects-store.ts</code>
         </p>
 
 
@@ -82,14 +82,14 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#selectItem">selectItem</a>
+                                <a href="#selectProject">selectProject</a>
                             </li>
                             <li>
                                 <a href="#unselectAll">unselectAll</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#unselectItem">unselectItem</a>
+                                <a href="#unSelectProject">unSelectProject</a>
                             </li>
                         </ul>
                     </td>
@@ -114,7 +114,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/components/custom-list/state/custom-list-store.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/components/projects/state/projects-store.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -131,18 +131,18 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="selectItem"></a>
+                    <a name="selectProject"></a>
                     <span class="name">
                         <b>
-                            selectItem
+                            selectProject
                         </b>
-                        <a href="#selectItem"><span class="icon ion-ios-link"></span></a>
+                        <a href="#selectProject"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>selectItem(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>selectProject(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
@@ -150,7 +150,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/components/custom-list/state/custom-list-store.ts:15</a></div>
+                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:15</a></div>
                 </td>
             </tr>
 
@@ -219,8 +219,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="35"
-                            class="link-to-prism">src/app/components/custom-list/state/custom-list-store.ts:35</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:33</a></div>
                 </td>
             </tr>
 
@@ -240,28 +240,28 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="unselectItem"></a>
+                    <a name="unSelectProject"></a>
                     <span class="name">
                         <b>
                             <span class="modifier">Private</span>
-                            unselectItem
+                            unSelectProject
                         </b>
-                        <a href="#unselectItem"><span class="icon ion-ios-link"></span></a>
+                        <a href="#unSelectProject"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>unselectItem(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    <code>unSelectProject(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="26"
-                            class="link-to-prism">src/app/components/custom-list/state/custom-list-store.ts:26</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:24</a></div>
                 </td>
             </tr>
 
@@ -316,43 +316,42 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &quot;@angular/core&quot;;
 import { Store, StoreConfig } from &quot;@datorama/akita&quot;;
-import { CustomListState, defaultCustomListState } from &quot;./custom-list-state&quot;;
+import { ProjectsState, defaultProjectsState } from &quot;./projects-state&quot;;
 
 
 @Injectable({
     providedIn: &#x27;root&#x27;,
 })
-@StoreConfig({ name: &#x27;custom-list&#x27; })
-export class CustomListStore extends Store&lt;CustomListState&gt;{
+@StoreConfig({ name: &#x27;projects&#x27; })
+export class ProjectsStore extends Store&lt;ProjectsState&gt;{
     constructor(){
-        super(defaultCustomListState())
+        super(defaultProjectsState())
     }
 
-    selectItem(id:string){
-        this.unselectItem(id)
-
+    selectProject(id:string){
         this.update(state &#x3D;&gt; {
-            let item &#x3D; state.ITEMS.find(x &#x3D;&gt; x.ID &#x3D;&#x3D;&#x3D; id)
+            let project &#x3D; state.PROJECTS.find(x &#x3D;&gt; x.ID &#x3D;&#x3D;&#x3D; id)
 
-            if(item !&#x3D;&#x3D; undefined)
-                item.IS_SELECTED &#x3D; true
+            if(project !&#x3D;&#x3D; undefined)
+                project.SELECTED &#x3D; true
         })
     }
 
-    private unselectItem(id: string){
+    private unSelectProject(id: string){
         this.update(state &#x3D;&gt; {
-            let selectedItem &#x3D; state.ITEMS.find(x&#x3D;&gt; x.ID &#x3D;&#x3D;&#x3D; id)
+            let selectedProject &#x3D; state.PROJECTS.find(x &#x3D;&gt; x.ID &#x3D;&#x3D;&#x3D; id)
 
-            if(selectedItem !&#x3D;&#x3D; undefined)
-                selectedItem.IS_SELECTED &#x3D; false
+            if(selectedProject !&#x3D;&#x3D; undefined)
+                selectedProject.SELECTED &#x3D; false
         })
     }
 
     unselectAll(){
-        this.update(state &#x3D;&gt;{
-            let selectedItem &#x3D; state.ITEMS.find(x&#x3D;&gt;x.IS_SELECTED)
-            if(selectedItem !&#x3D;&#x3D; undefined)
-                selectedItem.IS_SELECTED &#x3D; false
+        this.update(state &#x3D;&gt; {
+            let selectProject &#x3D; state.PROJECTS.find(x &#x3D;&gt; x.SELECTED)
+
+            if(selectProject !&#x3D;&#x3D; undefined)
+                selectProject.SELECTED &#x3D; false
         })
     }
 }</code></pre>
@@ -388,7 +387,7 @@ export class CustomListStore extends Store&lt;CustomListState&gt;{
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
-            var COMPODOC_CURRENT_PAGE_URL = 'CustomListStore.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProjectsStore.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

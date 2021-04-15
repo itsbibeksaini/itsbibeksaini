@@ -170,7 +170,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/custom-list/custom-list.component.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/custom-list/custom-list.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -239,8 +239,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="20"
-                            class="link-to-prism">src/app/components/custom-list/custom-list.component.ts:20</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/custom-list/custom-list.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -282,7 +282,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/custom-list/custom-list.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/custom-list/custom-list.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -296,9 +296,8 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
-import { CustomListQuery } from &#x27;src/app/queries&#x27;;
-import { CustomListStore } from &#x27;src/app/stores&#x27;;
 import { CustomListItem } from &#x27;./models&#x27;;
+import { CustomListQuery } from &#x27;./state/custom-list-query&#x27;;
 
 @Component({
   selector: &#x27;custom-list&#x27;,
@@ -309,7 +308,7 @@ export class CustomListComponent implements OnInit {
 
   customList!: CustomListItem[]
   constructor(private customListQuery:CustomListQuery) {
-    customListQuery.select(state &#x3D;&gt; state.ITEMS).subscribe(res &#x3D;&gt;{
+    customListQuery.select(state &#x3D;&gt; state.ITEMS).subscribe(res &#x3D;&gt;{      
       this.customList &#x3D; res
     })
   }
@@ -324,7 +323,7 @@ export class CustomListComponent implements OnInit {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ul&gt;
     &lt;li *ngFor&#x3D;&quot;let item of customList&quot; [ngClass]&#x3D;&quot;{&#x27;selected&#x27;: item.IS_SELECTED}&quot; select-item&#x3D;&quot;{{item.ID}}&quot;&gt;
-        &lt;span class&#x3D;&quot;mat-h3 display-block m-0 ml-2 ellipses&quot;  &gt;{{item.TITLE}}&lt;/span&gt;
+        &lt;span class&#x3D;&quot;mat-h2 display-block m-0 ml-2 ellipses&quot;  &gt;{{item.TITLE}}&lt;/span&gt;
         &lt;span class&#x3D;&quot;mat-small display-block m-0 ml-2 label ellipses&quot;&gt;{{item.SUB_TITLE}}&lt;/span&gt;
     &lt;/li&gt;    
 &lt;/ul&gt;</code></pre>
@@ -343,15 +342,16 @@ export class CustomListComponent implements OnInit {
 
     &amp; li{
         list-style-type: none;        
-        padding: 10px 15px;
+        padding: 5px 15px;
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
+        
         
         &amp;:not(:last-of-type){
             margin-bottom: 0.25rem;
         }
         
         &amp;.selected{
+            transition: all 0.2s ease-in-out;
             border-top-left-radius: 40px;
             border-bottom-left-radius: 40px;
             box-shadow: 0 1px 8px rgba(0,0,0,0.4);
@@ -359,7 +359,9 @@ export class CustomListComponent implements OnInit {
             color: black;
         }
     }
-}</code></pre>
+}
+
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -387,7 +389,7 @@ export class CustomListComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ul>    <li *ngFor="let item of customList" [ngClass]="{\'selected\': item.IS_SELECTED}" select-item="{{item.ID}}">        <span class="mat-h3 display-block m-0 ml-2 ellipses"  >{{item.TITLE}}</span>        <span class="mat-small display-block m-0 ml-2 label ellipses">{{item.SUB_TITLE}}</span>    </li>    </ul></div>'
+        var COMPONENT_TEMPLATE = '<div><ul>    <li *ngFor="let item of customList" [ngClass]="{\'selected\': item.IS_SELECTED}" select-item="{{item.ID}}">        <span class="mat-h2 display-block m-0 ml-2 ellipses"  >{{item.TITLE}}</span>        <span class="mat-small display-block m-0 ml-2 label ellipses">{{item.SUB_TITLE}}</span>    </li>    </ul></div>'
     var COMPONENTS = [{'name': 'AboutMeComponent', 'selector': 'app-about-me'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CustomListComponent', 'selector': 'custom-list'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'SidebarComponent', 'selector': 'sidebar'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WorkComponent', 'selector': 'app-work'}];
     var DIRECTIVES = [{'name': 'LinkDirective', 'selector': '[link]'},{'name': 'SelectItemDirective', 'selector': '[select-item]'}];
     var ACTUAL_COMPONENT = {'name': 'CustomListComponent'};
