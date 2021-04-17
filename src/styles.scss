@@ -46,3 +46,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; transition:
     text-align: center !important;
   }
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
