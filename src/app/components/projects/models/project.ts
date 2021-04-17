@@ -1,4 +1,5 @@
 import { Skill } from "../../skills/models";
+import { GalleryImage } from "./gallery-image";
 
 export class Project{
     
@@ -17,7 +18,6 @@ export class Project{
     public set TITLE(v : string) {
         this._TITLE = v;
     }
-    
     
     private _SUB_TITLE! : string;
     public get SUB_TITLE() : string {
@@ -59,5 +59,14 @@ export class Project{
     public set TECH_USED(v : Skill[]) {
         this._TECH_USED = v;
     }    
+    
+    private _GALLERY : GalleryImage[] = [];
+    public get GALLERY() : GalleryImage[] {
+        return this._GALLERY;
+    }
+    public set GALLERY(v : GalleryImage[]) {
+        this._GALLERY = v;
+    }
+    
         
 }
