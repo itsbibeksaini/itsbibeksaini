@@ -44,7 +44,17 @@
                     <hr>
                         <div class="container-fluid" fxLayoutAlign="center">
                             <div fxFlex="500px" fxFlex.sm="100%" fxFlex.xs="100%" style="border-radius: 0.25rem;">
-                                <img src="assets/projects/taskmanager/tm_microservices.png" style="width: 100%;border-radius: 0.25rem;">
+                                <!-- <img src="assets/projects/taskmanager/tm_microservices.png" style="width: 100%;border-radius: 0.25rem;"> -->
+                                <ngb-carousel *ngIf="images">
+                                    <ng-template ngbSlide *ngFor="let image of images">
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="image" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
+                                        </div>
+                                        <!-- <div class="carousel-caption">
+                                            <h3>Permission center</h3>                                            
+                                        </div> -->
+                                    </ng-template>
+                                </ngb-carousel>
                             </div>
                         </div>
                     <hr>

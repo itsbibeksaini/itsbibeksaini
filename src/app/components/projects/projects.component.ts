@@ -12,6 +12,8 @@ import { ProjectSelectorService } from './services';
 })
 export class ProjectsComponent implements OnInit {
 
+  images = ['assets/projects/taskmanager/tm_microservices.png', 'assets/projects/taskmanager/premission-center.png']
+
   faArrowLeft = faLongArrowAltLeft
   projectList: CustomListItem[] = []
   projectDetailsList: Project[] = []
