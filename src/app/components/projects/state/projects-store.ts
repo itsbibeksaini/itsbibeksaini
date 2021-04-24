@@ -13,6 +13,8 @@ export class ProjectsStore extends Store<ProjectsState>{
     }
 
     selectProject(id:string){
+        this.unselectAll()
+
         this.update(state => {
             let project = state.PROJECTS.find(x => x.ID === id)
 
