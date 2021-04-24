@@ -2,14 +2,16 @@ import { CustomListItem } from "src/app/components/custom-list/models";
 
 export const PROJECT_LIST: CustomListItem[] = []
 
-let taskManager:CustomListItem = new CustomListItem()
-taskManager.ID = "task_manager"
-taskManager.TITLE = "Task Manager"
-taskManager.SUB_TITLE = "Micro-services app"
-PROJECT_LIST.push(taskManager)
+addProject("task_manager", "Task Manager", "Micro-services app")
+addProject("mailer","Mailer app", "Angular app")
 
-
-
+function addProject(id:string, title:string, subTtile:string){
+    let project:CustomListItem = new CustomListItem()
+    project.ID = id
+    project.TITLE = title
+    project.SUB_TITLE = subTtile
+    PROJECT_LIST.push(project)
+}
 
 
 // this.addProject("mailer","Mailer", "Angular app", false)

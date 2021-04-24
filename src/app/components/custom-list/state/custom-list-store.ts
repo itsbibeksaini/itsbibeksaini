@@ -13,7 +13,7 @@ export class CustomListStore extends Store<CustomListState>{
     }
 
     selectItem(id:string){
-        this.unselectItem(id)
+        this.unselectAll()
 
         this.update(state => {
             let item = state.ITEMS.find(x => x.ID === id)
