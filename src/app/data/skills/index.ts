@@ -1,5 +1,0 @@
-export * as backendTools from './backend-skills'
-export * as databaseTools from './database-tools'
-export * as deploymentSkills from './deployment-skills'
-export * as frontendSkills from './frontend-skills'
-export * as otherSkills from './others-skills'
