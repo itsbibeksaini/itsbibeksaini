@@ -31,3 +31,7 @@ skill_akita.TITLE = "datorama/akita"
 export const skill_bootstrap:Skill = new Skill()
 skill_bootstrap.IMAGE = "assets/skills/frontend/bootstrap.png"
 skill_bootstrap.TITLE = "Bootstrap"
+
+export const skill_sass:Skill = new Skill()
+skill_sass.IMAGE = "assets/skills/frontend/sass.png"
+skill_sass.TITLE = "SASS"
