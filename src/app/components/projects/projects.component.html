@@ -19,7 +19,7 @@
                 </div>
                 <!--Links-->
                 <div>
-                    <a class="ml-1 link" href="https://clientapp.structure.itsbibeksaini.com/overview.html" target="_blank">Project
+                    <a class="ml-1 link" *ngIf="selectedProject.PROJECT_STRUCTURE_LINK" [href]="selectedProject.PROJECT_STRUCTURE_LINK" target="_blank">Project
                         structure</a>
                     <hr>
                 </div>

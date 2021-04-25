@@ -68,5 +68,13 @@ export class Project{
         this._GALLERY = v;
     }
     
+    private _PROJECT_STRUCTURE_LINK! : string;
+    public get PROJECT_STRUCTURE_LINK() : string {
+        return this._PROJECT_STRUCTURE_LINK;
+    }
+    public set PROJECT_STRUCTURE_LINK(v : string) {
+        this._PROJECT_STRUCTURE_LINK = v;
+    }
+    
         
 }
