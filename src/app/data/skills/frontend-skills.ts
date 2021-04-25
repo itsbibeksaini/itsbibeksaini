@@ -23,3 +23,7 @@ skill_js.TITLE = "JavaScript"
 export const skill_typescript:Skill = new Skill()
 skill_typescript.IMAGE = "assets/skills/frontend/typescript.png"
 skill_typescript.TITLE = "TypeScript"
+
+export const skill_akita:Skill = new Skill()
+skill_akita.IMAGE = "assets/skills/frontend/akita.png"
+skill_akita.TITLE = "datorama/akita"

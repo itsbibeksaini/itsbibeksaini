@@ -76,5 +76,14 @@ export class Project{
         this._PROJECT_STRUCTURE_LINK = v;
     }
     
+    private _APP_LINK! : string;
+    public get APP_LINK() : string {
+        return this._APP_LINK;
+    }
+    public set APP_LINK(v : string) {
+        this._APP_LINK = v;
+    }
+    
+    
         
 }

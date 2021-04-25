@@ -22,6 +22,7 @@ frontendSkills.SKILLS.push(feSkills.skill_html5)
 frontendSkills.SKILLS.push(feSkills.skill_jquery)
 frontendSkills.SKILLS.push(feSkills.skill_js)
 frontendSkills.SKILLS.push(feSkills.skill_typescript)
+frontendSkills.SKILLS.push(feSkills.skill_akita)
 
 let databaseToolsSkills: SkillsCategory = new SkillsCategory()
 databaseToolsSkills.TITLE = "Database Tools"

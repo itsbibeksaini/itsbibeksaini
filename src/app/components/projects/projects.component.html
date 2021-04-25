@@ -33,7 +33,7 @@
                     <hr>
                 </div>
                 <!-- Tech used -->
-                <div>
+                <div *ngIf="selectedProject.TECH_USED.length > 0">
                     <span class="mat-h2 display-block m-0">Tech used</span>
                     <hr>
                     <div class="container-fluid" fxLayout="row wrap">
@@ -44,7 +44,7 @@
                     <hr>
                 </div>
                 <!-- Gallery -->
-                <div>
+                <div *ngIf="selectedProject.GALLERY.length > 0">
                     <span class="mat-h2 display-block m-0">Gallery</span>
                     <hr>
                         <div class="container-fluid" fxLayoutAlign="center">
