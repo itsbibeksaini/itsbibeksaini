@@ -39,6 +39,8 @@ deploymentSkills.SKILLS.push(dSkills.skill_azure)
 deploymentSkills.SKILLS.push(dSkills.skill_docker)
 deploymentSkills.SKILLS.push(dSkills.skill_helmcharts)
 deploymentSkills.SKILLS.push(dSkills.skill_kubernetes)
+deploymentSkills.SKILLS.push(dSkills.skill_aks)
+deploymentSkills.SKILLS.push(dSkills.skill_azure_pipeline)
 
 let otherSkills: SkillsCategory = new SkillsCategory()
 otherSkills.TITLE = "Others"
