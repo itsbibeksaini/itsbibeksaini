@@ -11,3 +11,5 @@ mailer.PROJECT_STRUCTURE_LINK = ""
 
 mailer.TECH_USED.push(frontendSkills.skill_angular)
 mailer.TECH_USED.push(frontendSkills.skill_akita)
+mailer.TECH_USED.push(frontendSkills.skill_typescript)
+mailer.TECH_USED.push(frontendSkills.skill_bootstrap)
