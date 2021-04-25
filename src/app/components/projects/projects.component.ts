@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { CustomListItem } from '../custom-list/models';
 import { CustomListService } from '../custom-list/services';
 import { Project } from './models/project';
@@ -15,6 +15,7 @@ export class ProjectsComponent implements OnInit {
   images = ['assets/projects/taskmanager/tm_microservices.png', 'assets/projects/taskmanager/premission-center.png']
 
   faArrowLeft = faLongArrowAltLeft
+  faExternalLinkAlt = faExternalLinkAlt
   projectList: CustomListItem[] = []
   projectDetailsList: Project[] = []
 

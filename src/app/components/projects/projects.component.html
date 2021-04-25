@@ -18,9 +18,25 @@
                     <span class="mat-small display-block m-0 ml-1">{{selectedProject.SUB_TITLE}}</span>                    
                 </div>
                 <!--Links-->
+                <div class="mt-4">
+                    <div *ngIf="selectedProject.PROJECT_STRUCTURE_LINK">
+                        <a mat-raised-button color="primary"  [href]="selectedProject.PROJECT_STRUCTURE_LINK" target="_blank">
+                            <fa-icon [icon]="faExternalLinkAlt" class="mr-1"></fa-icon>
+                            Project structure
+                        </a>
+                    </div>
+                    
+                    <div *ngIf="selectedProject.APP_LINK" class="mt-1">
+                        <a mat-raised-button color="primary" [href]="selectedProject.APP_LINK" target="_blank">
+                            <fa-icon [icon]="faExternalLinkAlt" class="mr-1"></fa-icon>
+                            App link
+                        </a>
+                    </div>
+                </div>
+                <div  class="mt-1">
+                    
+                </div>
                 <div>
-                    <a class="ml-1 link" *ngIf="selectedProject.PROJECT_STRUCTURE_LINK" [href]="selectedProject.PROJECT_STRUCTURE_LINK" target="_blank">Project
-                        structure</a>
                     <hr>
                 </div>
                 <!-- Description -->
