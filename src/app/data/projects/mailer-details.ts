@@ -1,3 +1,4 @@
+import { GalleryImage } from "src/app/components/projects/models/gallery-image";
 import { Project } from "src/app/components/projects/models/project";
 import * as frontendSkills from '../skills/frontend-skills'
 
@@ -14,3 +15,13 @@ mailer.TECH_USED.push(frontendSkills.skill_akita)
 mailer.TECH_USED.push(frontendSkills.skill_typescript)
 mailer.TECH_USED.push(frontendSkills.skill_bootstrap)
 mailer.TECH_USED.push(frontendSkills.skill_sass)
+
+addGalelryImage("assets/projects/mailer/mailer-home.png")
+addGalelryImage("assets/projects/mailer/mailer-folder-selected.png")
+addGalelryImage("assets/projects/mailer/mailer-mail-selected.png")
+
+function addGalelryImage(imgSrc:string){
+    let galleryImage:GalleryImage = new GalleryImage()
+    galleryImage.IMAGE = imgSrc    
+    mailer.GALLERY.push(galleryImage)
+}
