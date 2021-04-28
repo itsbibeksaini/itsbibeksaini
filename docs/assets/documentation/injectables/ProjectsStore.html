@@ -219,8 +219,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:35</a></div>
                 </td>
             </tr>
 
@@ -260,8 +260,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:24</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/components/projects/state/projects-store.ts:26</a></div>
                 </td>
             </tr>
 
@@ -329,6 +329,8 @@ export class ProjectsStore extends Store&lt;ProjectsState&gt;{
     }
 
     selectProject(id:string){
+        this.unselectAll()
+
         this.update(state &#x3D;&gt; {
             let project &#x3D; state.PROJECTS.find(x &#x3D;&gt; x.ID &#x3D;&#x3D;&#x3D; id)
 
