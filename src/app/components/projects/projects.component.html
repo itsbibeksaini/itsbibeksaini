@@ -46,6 +46,9 @@
                     <span>
                         {{selectedProject.DESCRIPTION}}
                     </span>
+                    <div *ngIf="selectedProject.ARCHITECTURE_DIAGRAM" class="architecture-diagram" style="">
+                        <img [src]="selectedProject.ARCHITECTURE_DIAGRAM">
+                    </div>
                     <hr>
                 </div>
                 <!-- Tech used -->

@@ -12,6 +12,15 @@
     }
 }
 
+.architecture-diagram{
+    max-width: 500px;
+    margin:auto;
+
+    & img{
+        width: 100%;
+    }
+}
+
 .backButton{
     padding: 10px 15px;
     display: none;

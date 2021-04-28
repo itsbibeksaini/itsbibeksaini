@@ -84,6 +84,14 @@ export class Project{
         this._APP_LINK = v;
     }
     
+    private _ARCHITECTURE_DIAGRAM! : string;
+    public get ARCHITECTURE_DIAGRAM() : string {
+        return this._ARCHITECTURE_DIAGRAM;
+    }
+    public set ARCHITECTURE_DIAGRAM(v : string) {
+        this._ARCHITECTURE_DIAGRAM = v;
+    }
+    
     
         
 }
