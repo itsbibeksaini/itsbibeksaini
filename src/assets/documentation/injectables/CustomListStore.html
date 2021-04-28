@@ -329,7 +329,7 @@ export class CustomListStore extends Store&lt;CustomListState&gt;{
     }
 
     selectItem(id:string){
-        this.unselectItem(id)
+        this.unselectAll()
 
         this.update(state &#x3D;&gt; {
             let item &#x3D; state.ITEMS.find(x &#x3D;&gt; x.ID &#x3D;&#x3D;&#x3D; id)
