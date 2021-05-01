@@ -92,6 +92,12 @@ export class Project{
         this._ARCHITECTURE_DIAGRAM = v;
     }
     
-    
+    private _REPO_LINK! : string;
+    public get REPO_LINK() : string {
+        return this._REPO_LINK;
+    }
+    public set REPO_LINK(v : string) {
+        this._REPO_LINK = v;
+    }
         
 }

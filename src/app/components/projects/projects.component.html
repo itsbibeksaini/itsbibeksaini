@@ -32,6 +32,12 @@
                             App link
                         </a>
                     </div>
+                    <div *ngIf="selectedProject.REPO_LINK" class="mt-1">
+                        <a mat-raised-button color="primary" [href]="selectedProject.REPO_LINK" target="_blank">
+                            <fa-icon [icon]="faGithub" class="mr-1"></fa-icon>
+                            Visit repository
+                        </a>
+                    </div>
                 </div>
                 <div  class="mt-1">
                     
