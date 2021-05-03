@@ -1,0 +1,30 @@
+<div class="container-fluid h-100 p-0" fxLayout="column">
+    <header fxFlex="80px" class="padding2030">
+        <span class="mat-display-1">Contact me</span>
+        <hr>
+    </header>
+
+    <div fxFlex class="padding2030 contact-me">
+        <div style="max-width: 500px; margin: auto;">
+            <img src="assets/illustrations/contact-me.svg">
+        </div>
+
+        <div class="container-fluid" fxLayoutAlign="center" fxLayout="row wrap">
+            <div fxFlex="fit-content" fxFlex.xs="100%" class="p-2">
+                <div style="border: 1px solid;border-radius: 0.25rem;padding: 20px 30px;">
+                    <fa-icon [icon]="faMobileAlt" style="font-size: 21px;" class="mr-1"></fa-icon>
+                    <span class="mat-h1 m-0">Phone</span>
+                    <p class="mat-small m-0">+91 9478889924</p>
+                </div>
+                
+            </div>
+            <div fxFlex="fit-content" fxFlex.xs="100%" class="p-2">                
+                <div matRipple (click)="sendMail()" style="border: 1px solid;border-radius: 0.25rem;padding: 20px 30px;cursor: pointer;">
+                    <fa-icon [icon]="faEnvelope" style="font-size: 21px;" class="mr-1"></fa-icon>
+                    <span class="mat-h1 m-0">E-Mail</span>
+                    <p class="mat-small m-0">itsbibeksaini@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

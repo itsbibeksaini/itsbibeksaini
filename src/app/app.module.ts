@@ -25,6 +25,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LinkDirective,
     AboutMeComponent,
     CustomListComponent,
-    SelectItemDirective    
+    SelectItemDirective,
+    ContactComponent    
   ],
   imports: [
     BrowserModule,

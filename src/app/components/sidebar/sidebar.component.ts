@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import { faAddressCard, faCogs, faFilePdf, faHome, faIdBadge, faLaptopCode, faLaptopHouse, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faAddressCard, faCogs, faFilePdf, faHome, faIdBadge, faLaptopCode, faLaptopHouse, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { ThemeSwitcherService } from 'src/app/services';
 
 @Component({
@@ -17,6 +17,7 @@ export class SidebarComponent implements OnInit {
   faProjectDiagram = faProjectDiagram
   faHome = faHome
   faAddressCard = faAddressCard
+  faAddressBook = faAddressBook
 
   switchState: boolean = false
   constructor(private themeSwitcher: ThemeSwitcherService) {
