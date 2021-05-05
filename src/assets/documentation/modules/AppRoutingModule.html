@@ -73,6 +73,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
 import { AboutMeComponent, HomeComponent, ProjectsComponent, SkillsComponent, WorkComponent } from &#x27;./components&#x27;;
+import { ContactComponent } from &#x27;./components/contact/contact.component&#x27;;
 
 const routes: Routes &#x3D; [{
   path:&#x27;&#x27;,
@@ -89,6 +90,9 @@ const routes: Routes &#x3D; [{
 },{
   path:&#x27;about-me&#x27;,
   component: AboutMeComponent
+}, {
+  path:&#x27;contact&#x27;,
+  component: ContactComponent
 }];
 
 @NgModule({

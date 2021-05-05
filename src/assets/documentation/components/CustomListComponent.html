@@ -389,7 +389,7 @@ export class CustomListComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ul>    <li *ngFor="let item of customList" [ngClass]="{\'selected\': item.IS_SELECTED}" select-item="{{item.ID}}">        <span class="mat-h2 display-block m-0 ml-2 ellipses"  >{{item.TITLE}}</span>        <span class="mat-small display-block m-0 ml-2 label ellipses">{{item.SUB_TITLE}}</span>    </li>    </ul></div>'
-    var COMPONENTS = [{'name': 'AboutMeComponent', 'selector': 'app-about-me'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CustomListComponent', 'selector': 'custom-list'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'SidebarComponent', 'selector': 'sidebar'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WorkComponent', 'selector': 'app-work'}];
+    var COMPONENTS = [{'name': 'AboutMeComponent', 'selector': 'app-about-me'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CustomListComponent', 'selector': 'custom-list'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'SidebarComponent', 'selector': 'sidebar'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WorkComponent', 'selector': 'app-work'}];
     var DIRECTIVES = [{'name': 'LinkDirective', 'selector': '[link]'},{'name': 'SelectItemDirective', 'selector': '[select-item]'}];
     var ACTUAL_COMPONENT = {'name': 'CustomListComponent'};
 </script>
