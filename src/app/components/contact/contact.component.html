@@ -5,21 +5,29 @@
     </header>
 
     <div fxFlex class="padding2030 contact-me">
-        <div style="max-width: 500px; margin: auto;">
+        <div class="content">
             <img src="assets/illustrations/contact-me.svg">
+        </div>
+
+        <div class="text-center content">
+            <p>
+                Have some questions or just want to say hi? You can either text me or send me an e-mail, I'll try my best to get back to you.
+            </p>
+            <p>
+                Looking forward to hear from you!
+            </p>
         </div>
 
         <div class="container-fluid" fxLayoutAlign="center" fxLayout="row wrap">
             <div fxFlex="fit-content" fxFlex.xs="100%" class="p-2">
-                <div style="border: 1px solid;border-radius: 0.25rem;padding: 20px 30px;">
+                <div matRipple (click)="sendText()" class="contact-capsule">
                     <fa-icon [icon]="faMobileAlt" style="font-size: 21px;" class="mr-1"></fa-icon>
                     <span class="mat-h1 m-0">Phone</span>
                     <p class="mat-small m-0">+91 9478889924</p>
-                </div>
-                
+                </div>                
             </div>
             <div fxFlex="fit-content" fxFlex.xs="100%" class="p-2">                
-                <div matRipple (click)="sendMail()" style="border: 1px solid;border-radius: 0.25rem;padding: 20px 30px;cursor: pointer;">
+                <div matRipple (click)="sendMail()" class="contact-capsule">
                     <fa-icon [icon]="faEnvelope" style="font-size: 21px;" class="mr-1"></fa-icon>
                     <span class="mat-h1 m-0">E-Mail</span>
                     <p class="mat-small m-0">itsbibeksaini@gmail.com</p>

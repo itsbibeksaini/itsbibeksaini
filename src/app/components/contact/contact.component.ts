@@ -19,4 +19,8 @@ export class ContactComponent implements OnInit {
     window.location.href = "mailto:itsbibeksaini@gmail.com";
   }
 
+  sendText(){
+    window.location.href = "sms:+919478889924"
+  }
+
 }

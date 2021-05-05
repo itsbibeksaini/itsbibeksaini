@@ -1,5 +1,15 @@
 .contact-me{
+    .content{
+        max-width: 500px; 
+        margin: auto;
+    }
 
+    .contact-capsule{
+        border: 1px solid;
+        border-radius: 0.25rem;
+        padding: 20px 30px;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width:425px) {
