@@ -27,7 +27,7 @@
         },
         versionControlTools:{
             ["Git", "GitHub", "Github Desktop", "Fork", "Mercurial"]
-        }
+        },
         frameworksAndDesignPatterns: {
             ["REST pattern", "gRPC", "Consul", "Ocelot", "Confluence", "Swagger(OpenApi)"]
         }
