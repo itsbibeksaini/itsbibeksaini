@@ -32,7 +32,7 @@
             ["REST pattern", "gRPC", "Consul", "Ocelot", "Confluence", "Swagger(OpenApi)"]
         }
     },
-    architecture: ["Micro-Services", "Single page applications", "monolithic design"]
+    architecture: ["Micro-Services", "Single page applications", "monolithic design"],
     currentFocus: ["Micro-front ends", "React"]
   }
   
