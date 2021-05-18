@@ -34,6 +34,8 @@
     },
     architecture: ["Micro-Services", "Single page applications", "monolithic design"],
     currentFocus: ["Micro-front ends", "React"]
-  }
-  
+  }    
 ```
+##
+
+[![Bibek's GitHub stats](https://github-readme-stats.vercel.app/api?username=itsbibeksaini&show_icons=true&theme=dark)](https://github.com/itsbibeksaini/github-readme-stats)
