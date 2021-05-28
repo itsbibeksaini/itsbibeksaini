@@ -1,6 +1,6 @@
 <ul>
     <li *ngFor="let item of customList" [ngClass]="{'selected': item.IS_SELECTED}" select-item="{{item.ID}}">
-        <span class="mat-h2 display-block m-0 ml-2 ellipses"  >{{item.TITLE}}</span>
-        <span class="mat-small display-block m-0 ml-2 label ellipses">{{item.SUB_TITLE}}</span>
+        <span class="mat-h2 display-block m-0 ellipses"  >{{item.TITLE}}</span>
+        <span class="mat-small display-block m-0 label ellipses">{{item.SUB_TITLE}}</span>
     </li>    
 </ul>
