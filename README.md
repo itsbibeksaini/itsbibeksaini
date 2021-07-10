@@ -36,5 +36,4 @@
     currentFocus: ["Micro-front ends", "React"]
   }    
 ```
-
 ##
