@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArchive, faExternalLinkAlt, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { CustomListItem } from '../custom-list/models';
 import { CustomListService } from '../custom-list/services';
 import { Project } from './models/project';
@@ -18,6 +18,8 @@ export class ProjectsComponent implements OnInit {
   faArrowLeft = faLongArrowAltLeft
   faExternalLinkAlt = faExternalLinkAlt
   faGithub = faGithub
+  faArchive = faArchive
+
   projectList: CustomListItem[] = []
   projectDetailsList: Project[] = []
 

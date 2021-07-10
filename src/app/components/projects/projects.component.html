@@ -13,6 +13,10 @@
             </div>
             <div fxFlex class="padding1015" style="overflow: hidden;overflow-y: auto;">                                
                 <!-- Header -->
+                <div class="alert alert-warning" *ngIf="selectedProject.ARCHIEVED">
+                    <fa-icon [icon]="faArchive"></fa-icon>
+                    <span class="ms-1">This project has been archived and no activity is ongoing.</span>
+                </div>
                 <div>
                     <span class="mat-h1 display-block m-0">{{selectedProject.TITLE}}</span>
                     <span class="mat-small display-block m-0 ml-1">{{selectedProject.SUB_TITLE}}</span>                    
