@@ -11,6 +11,9 @@ let backendSkills: SkillsCategory = new SkillsCategory()
 backendSkills.TITLE = "Backend"
 backendSkills.SKILLS.push(beSkills.skill_dotnet)
 backendSkills.SKILLS.push(beSkills.skill_entityframework)
+backendSkills.SKILLS.push(beSkills.skill_aspnetmvc)
+backendSkills.SKILLS.push(beSkills.skill_csharpnet)
+backendSkills.SKILLS.push(beSkills.skill_linq)
 backendSkills.SKILLS.push(beSkills.skill_java)
 backendSkills.SKILLS.push(beSkills.skill_springboot)
 

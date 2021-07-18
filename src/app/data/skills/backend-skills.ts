@@ -15,3 +15,15 @@ skill_java.TITLE = "Java"
 export const skill_springboot:Skill = new Skill()
 skill_springboot.IMAGE = "assets/skills/backend/springboot.png"
 skill_springboot.TITLE = "Spring boot"
+
+export const skill_aspnetmvc:Skill = new Skill()
+skill_aspnetmvc.IMAGE = "assets/skills/backend/asp.net-mvc.png"
+skill_aspnetmvc.TITLE = "ASP.NET MVC"
+
+export const skill_csharpnet:Skill = new Skill()
+skill_csharpnet.IMAGE = "assets/skills/backend/csharpnet.png"
+skill_csharpnet.TITLE = "C#.NET"
+
+export const skill_linq:Skill = new Skill()
+skill_linq.IMAGE = "assets/skills/backend/linq.png"
+skill_linq.TITLE = "C# LINQ"
