@@ -53,44 +53,57 @@
                 <div>
                     <span class="mat-h2 display-block m-0">Description</span>
                     <hr>
-                    <span>
-                        {{selectedProject.DESCRIPTION}}
-                    </span>
-                    <div *ngIf="selectedProject.ARCHITECTURE_DIAGRAM" class="architecture-diagram" style="">
+                    <div *ngIf="selectedProject.DESCRIPTION">
+                        <span>
+                            {{selectedProject.DESCRIPTION}}
+                        </span>
+                    </div>
+                    
+                    <div *ngIf="!selectedProject.DESCRIPTION" style="color: #999;" class="text-center">
+                        <span class="mat-h1">No data to show</span>
+                    </div>
+                    
+                    <div *ngIf="selectedProject.ARCHITECTURE_DIAGRAM" class="architecture-diagram">
                         <img [src]="selectedProject.ARCHITECTURE_DIAGRAM">
                     </div>
                     <hr>
                 </div>
                 <!-- Tech used -->
-                <div *ngIf="selectedProject.TECH_USED.length > 0">
+                <div>
                     <span class="mat-h2 display-block m-0">Tech used</span>
                     <hr>
-                    <div class="container-fluid" fxLayout="row wrap">
+                    <div class="container-fluid" fxLayout="row wrap" *ngIf="selectedProject.TECH_USED.length > 0">
                         <div fxFlex="50px" class="p-1 skill" *ngFor="let skill of selectedProject.TECH_USED">
                             <img src="{{skill.IMAGE}}" matTooltip="{{skill.TITLE}}" matTooltipPosition="below">
                         </div> 
                     </div>
+                    <div *ngIf="selectedProject.TECH_USED.length == 0" style="color: #999;" class="text-center">
+                        <span class="mat-h1">No data to show</span>
+                    </div>
                     <hr>
                 </div>
                 <!-- Gallery -->
-                <div *ngIf="selectedProject.GALLERY.length > 0">
+                <div>
                     <span class="mat-h2 display-block m-0">Gallery</span>
                     <hr>
-                        <div class="container-fluid" fxLayoutAlign="center">
-                            <div fxFlex="500px" fxFlex.sm="100%" fxFlex.xs="100%" style="border-radius: 0.25rem;">
-                                <!-- <img src="assets/projects/taskmanager/tm_microservices.png" style="width: 100%;border-radius: 0.25rem;"> -->
-                                <ngb-carousel *ngIf="images">
-                                    <ng-template ngbSlide *ngFor="let image of selectedProject.GALLERY">
-                                        <div class="picsum-img-wrapper">
-                                            <img [src]="image.IMAGE" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
-                                        </div>
-                                        <!-- <div class="carousel-caption">
-                                            <h3 class="{{image.PLACEHOLDER_COLOR}}">{{image.PLACEHOLDER}}</h3>                                            
-                                        </div> -->
-                                    </ng-template>
-                                </ngb-carousel>
-                            </div>
+                    <div class="container-fluid" fxLayoutAlign="center" *ngIf="selectedProject.GALLERY.length > 0">
+                        <div fxFlex="500px" fxFlex.sm="100%" fxFlex.xs="100%" style="border-radius: 0.25rem;">
+                            <!-- <img src="assets/projects/taskmanager/tm_microservices.png" style="width: 100%;border-radius: 0.25rem;"> -->
+                            <ngb-carousel *ngIf="images">
+                                <ng-template ngbSlide *ngFor="let image of selectedProject.GALLERY">
+                                    <div class="picsum-img-wrapper">
+                                        <img [src]="image.IMAGE" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
+                                    </div>
+                                    <!-- <div class="carousel-caption">
+                                        <h3 class="{{image.PLACEHOLDER_COLOR}}">{{image.PLACEHOLDER}}</h3>                                            
+                                    </div> -->
+                                </ng-template>
+                            </ngb-carousel>
                         </div>
+                    </div>
+                    <div *ngIf="selectedProject.GALLERY.length == 0" style="color: #999;" class="text-center">
+                        <span class="mat-h1">No data to show</span>
+                    </div>
                     <hr>
                 </div>
             </div>
