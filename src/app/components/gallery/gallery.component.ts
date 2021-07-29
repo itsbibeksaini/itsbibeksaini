@@ -5,7 +5,8 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  styleUrls: ['./gallery.component.scss'],
+  
 })
 export class GalleryComponent implements OnInit {
 
