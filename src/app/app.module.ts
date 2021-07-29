@@ -27,6 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './components/contact/contact.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ImageViewerComponent } from './components/gallery/image-viewer/image-viewer.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     CustomListComponent,
     SelectItemDirective,
     ContactComponent,
-    GalleryComponent    
+    GalleryComponent,
+    ImageViewerComponent    
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
