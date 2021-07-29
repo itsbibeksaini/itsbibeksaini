@@ -1,0 +1,11 @@
+.gallery-thumb {
+  width: 100%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid;
+
+  &:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22) !important;
+  }
+}
