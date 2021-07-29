@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent, HomeComponent, ProjectsComponent, SkillsComponent, WorkComponent } from './components';
 import { ContactComponent } from './components/contact/contact.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { GalleryImage } from './components/projects/models/gallery-image';
 
 const routes: Routes = [{
   path:'',
@@ -21,6 +23,9 @@ const routes: Routes = [{
 }, {
   path:'contact',
   component: ContactComponent
+},{
+  path: 'gallery',
+  component: GalleryComponent
 }];
 
 @NgModule({

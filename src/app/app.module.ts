@@ -26,6 +26,7 @@ import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './components/contact/contact.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutMeComponent,
     CustomListComponent,
     SelectItemDirective,
-    ContactComponent    
+    ContactComponent,
+    GalleryComponent    
   ],
   imports: [
     BrowserModule,
