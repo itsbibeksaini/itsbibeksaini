@@ -9,11 +9,11 @@
   --noOfGutters: calc(var(--noOfColumns) - 1);
 
   // Aspect ratio goes here:
-  --ratioA: 16;
-  --ratioB: 9;
+  --ratioA: 1;
+  --ratioB: 1;
 
   // Use the aspect ratio to calculate the factor for multiplication:
-  --factor: calc(var(--ratioB) / var(--ratioA));
+  --factor: 0;
 
   // Calculating the row height:
   --rh: calc(
@@ -26,7 +26,7 @@
   @media (min-width: 60em) {
     --wrapper: 60em;
     --gutter: 20px;
-    --noOfColumns: 4;
+    --noOfColumns: 12;
     --ratioA: 1;
     --ratioB: 1;
   }
