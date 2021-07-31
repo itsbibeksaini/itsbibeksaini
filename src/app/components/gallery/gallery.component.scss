@@ -1,6 +1,5 @@
 .gallery-wrapper {
   box-sizing: border-box;
-  background-color: var(--gutter);
 }
 
 img {
@@ -12,6 +11,7 @@ img {
 }
 
 .grid {
+  max-width: var(--wrapper);
   display: grid;
   grid-template-columns: repeat(var(--noOfColumns), minmax(0, 1fr));
   grid-auto-flow: dense;
@@ -32,17 +32,9 @@ img {
 }
 
 .grid__item--lg {
-  grid-column: span 4;
+  grid-column: span 2;
   grid-row: span 2;
   background-color: blue;
-  position: relative;
-  border: 1px solid red;
-}
-
-.grid__item--sm {
-  grid-column: span 1;
-  grid-row: span 2;
-  //   background-color: blue;
   position: relative;
 }
 
@@ -65,9 +57,9 @@ img {
 
 .caption {
   position: absolute;
-  width: 100%;
   bottom: 0;
+  width: 100%;  
   padding: 1.5em;
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 0.25rem;
+  background-color: rgba(0,0,0,0.4);
 }
