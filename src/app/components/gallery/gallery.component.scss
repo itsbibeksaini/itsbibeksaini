@@ -28,14 +28,31 @@ img {
 }
 
 .grid__item {
-  background-color: steelBlue;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid;
+
+  &:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22) !important;
+  }
 }
 
 .grid__item--lg {
+  grid-column: span 4;
+  grid-row: span 4;
+  
+  position: relative;
+}
+
+.grid__item--sm {
   grid-column: span 2;
   grid-row: span 2;
-  background-color: blue;
-  position: relative;
+}
+
+.grid__item--xs {
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 .grid__item--right {
@@ -58,8 +75,8 @@ img {
 .caption {
   position: absolute;
   bottom: 0;
-  width: 100%;  
+  width: 100%;
   padding: 1.5em;
   border-radius: 0.25rem;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
