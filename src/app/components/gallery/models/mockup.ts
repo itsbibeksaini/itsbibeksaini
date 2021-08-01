@@ -8,14 +8,6 @@ export class Mockup{
         this._IMG_THUMB = v;
     }
     
-    private _IMG_PREV! : string;
-    public get IMG_PREV() : string {
-        return this._IMG_PREV;
-    }
-    public set IMG_PREV(v : string) {
-        this._IMG_PREV = v;
-    }
-
     private _SIZE! : string;
     public get SIZE() : string {
         return this._SIZE;
