@@ -10,7 +10,7 @@
 
     <div class="gallery-wrapper padding2030">
         <div class="grid">
-            <div *ngFor="let mockupThumb of displayableMockups" [ngClass]="mockupThumb.SIZE" class="grid__item animate__animated animate__zoomIn animate__faster">                
+            <div *ngFor="let mockupThumb of displayableMockups" [ngClass]="mockupThumb.SIZE" (click)="prevThumb(mockupThumb.ID)" class="grid__item animate__animated animate__zoomIn animate__faster">                
                 <img [src]="mockupThumb.IMG_THUMB">
             </div>
         </div>

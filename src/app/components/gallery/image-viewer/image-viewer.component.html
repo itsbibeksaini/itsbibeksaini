@@ -1,6 +1,6 @@
 <mat-dialog-content class="mat-typography container-fluid m-0 p-0" style="max-height: 800px;max-width: 1440px;">
-    <div fxFlex="1000px">
-        <img src="assets/gallery/taskboards.png" style="width: 100%;">
+    <div fxFlex="1000px">        
+        <img *ngFor="let prevImg of prevImages" [src]="prevImg">
     </div>
     <div fxFlex="400px">
 

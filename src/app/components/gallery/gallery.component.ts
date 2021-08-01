@@ -19,8 +19,7 @@ export class GalleryComponent implements OnInit {
     this.displayableMockups = MOCKUPS
 
     for(let i=0; i<this.displayableMockups.length; i++){      
-      let thumbSize = this.availableSizes[Math.floor(Math.random() * this.availableSizes.length)] 
-      console.log(thumbSize)
+      let thumbSize = this.availableSizes[Math.floor(Math.random() * this.availableSizes.length)]       
       this.displayableMockups[i].SIZE = thumbSize
     }
         
@@ -29,8 +28,13 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  viewImage(){
-    const dialogRef = this.dialog.open(ImageViewerComponent);
+  prevThumb(key: string){
+
+    let linkedImages = this.displayableMockups.filter(x => x.ID === key)[0].LINKED_IMG;
+
+    const dialogRef = this.dialog.open(ImageViewerComponent,{
+      data: linkedImages
+    });
 
   }
 }

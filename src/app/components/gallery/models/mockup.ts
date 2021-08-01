@@ -1,4 +1,12 @@
 export class Mockup{
+    
+    private _ID! : string;
+    public get ID() : string {
+        return this._ID;
+    }
+    public set ID(v : string) {
+        this._ID = v;
+    }
         
     private _IMG_THUMB! : string;
     public get IMG_THUMB() : string {

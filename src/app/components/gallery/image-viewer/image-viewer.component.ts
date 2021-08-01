@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-image-viewer',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageViewerComponent implements OnInit {
 
-  constructor() { }
+  prevImages:string[];
+  constructor(@Inject(MAT_DIALOG_DATA) public data: string[]) { 
+    this.prevImages = data
+  }
 
   ngOnInit(): void {
   }

@@ -3,8 +3,10 @@ import { FILENAMES } from "./filenames";
 
 export const MOCKUPS:Mockup[] = []
 
+let index = 0;
 for(let mockupFile of FILENAMES.keys()){
     let mockup: Mockup = new Mockup()
+    mockup.ID = "THUMB_" + index
     mockup.IMG_THUMB = "assets/gallery/thumbnails/" + mockupFile
 
     let linkedImages = FILENAMES.get(mockupFile)
@@ -16,6 +18,5 @@ for(let mockupFile of FILENAMES.keys()){
     }
         
     MOCKUPS.push(mockup)
+    index++
 }
-
-console.log(MOCKUPS)
