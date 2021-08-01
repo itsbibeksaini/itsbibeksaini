@@ -3,7 +3,7 @@
   --gutter: 10px;
   --wrapper: calc(100vw - (2 * var(--gutter)));
 
-  --noOfColumns: 2;
+  --noOfColumns: 12;
 
   // Number of gutters is columns minus 1:
   --noOfGutters: calc(var(--noOfColumns) - 1);
@@ -23,10 +23,10 @@
       ) * var(--factor)
   );
 
-  @media (min-width: 60em) {
+  @media (max-width: 425px) {
     --wrapper: 60em;
     --gutter: 20px;
-    --noOfColumns: 12;
+    --noOfColumns: 2;
     --ratioA: 1;
     --ratioB: 1;
   }

@@ -1,5 +1,9 @@
 .gallery-wrapper {
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 img {
@@ -30,7 +34,7 @@ img {
 .grid__item {
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
   border: 1px solid;
 
   &:hover {
@@ -43,6 +47,21 @@ img {
   grid-row: span 4;
 
   position: relative;
+
+  @media (max-width: 768px) {
+    .caption {
+      display: none;
+    }
+  }
+
+  @media (max-width: 425px) {
+    grid-column: span 1;
+    grid-row: span 1;
+
+    .caption {
+      display: none;
+    }
+  }
 }
 
 .grid__item--sm {
