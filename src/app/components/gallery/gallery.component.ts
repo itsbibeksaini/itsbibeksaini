@@ -18,11 +18,21 @@ export class GalleryComponent implements OnInit {
   constructor(public dialog: MatDialog) {     
     this.displayableMockups = MOCKUPS
 
+    let lastIndex = 0;
     for(let i=0; i<this.displayableMockups.length; i++){      
-      let thumbSize = this.availableSizes[Math.floor(Math.random() * this.availableSizes.length)]       
-      this.displayableMockups[i].SIZE = thumbSize
+      let randomIndex = this.getRandomNumber(lastIndex)
+      this.displayableMockups[i].SIZE = this.availableSizes[randomIndex]
+      lastIndex = randomIndex
     }
-        
+  }
+
+  getRandomNumber(lastNumber:number):number{
+    let randomNumber = Math.floor(Math.random() * this.availableSizes.length)
+    while(lastNumber === randomNumber){
+      randomNumber = Math.floor(Math.random() * this.availableSizes.length)
+    }
+
+    return randomNumber
   }
 
   ngOnInit(): void {
@@ -32,8 +42,10 @@ export class GalleryComponent implements OnInit {
 
     let linkedImages = this.displayableMockups.filter(x => x.ID === key)[0].LINKED_IMG;
 
-    const dialogRef = this.dialog.open(ImageViewerComponent,{
-      data: linkedImages
+    this.dialog.open(ImageViewerComponent,{
+      data: linkedImages,
+      autoFocus: false,
+      disableClose: true
     });
 
   }
