@@ -1,0 +1,13 @@
+mat-dialog-content {
+  min-width: 320px;
+  max-height: 1000px;
+  max-width: 1440px;
+
+  & header {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+
+    & fa-icon {
+      cursor: pointer;
+    }
+  }
+}

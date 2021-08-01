@@ -1,8 +1,20 @@
-<mat-dialog-content class="mat-typography container-fluid m-0 p-0" style="max-height: 800px;max-width: 1440px;">
-    <div fxFlex="1000px">        
-        <img *ngFor="let prevImg of prevImages" [src]="prevImg">
+<mat-dialog-content class="mat-typography m-0 p-0" fxLayout="row wrap">
+    <header class="p-2 pe-3 w-100 text-end" >
+        <fa-icon [icon]="faTimes" mat-dialog-close></fa-icon>
+    </header>
+    <div class="container-fluid p-3">
+        <div fxFlex="70%" fxFlex.xs="100%" style="box-shadow: 0 3px 8px rgba(0,0,0,0.4);">        
+        <ngb-carousel *ngIf="prevImages.length > 0" >
+            <ng-template ngbSlide *ngFor="let prevImg of prevImages">
+                <div class="picsum-img-wrapper">
+                    <img [src]="prevImg" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
     </div>
-    <div fxFlex="400px">
-
+    <div fxFlex="30%" fxFlex.xs="100%" class="ps-3 pe-3" >
+        wewqe
     </div>
+    </div>
+    
 </mat-dialog-content>
