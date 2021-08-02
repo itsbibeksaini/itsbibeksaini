@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -12,11 +12,15 @@ export class ImageViewerComponent implements OnInit {
   faTimes = faTimes
 
   prevImages:string[];
-  constructor(@Inject(MAT_DIALOG_DATA) public data: string[]) { 
+  constructor(@Inject(MAT_DIALOG_DATA) public data: string[], private dialogRef: MatDialogRef<ImageViewerComponent>) { 
     this.prevImages = data
   }
 
   ngOnInit(): void {
+  }
+
+  closeDialog(){
+    this.dialogRef.close();
   }
 
 }

@@ -1,5 +1,5 @@
-<header class="p-1 pe-3 text-end dialog-header" mat-dialog-title>
-    <fa-icon [icon]="faTimes" mat-dialog-close></fa-icon>
+<header class="p-1 ps-3 text-start dialog-header" mat-dialog-title>
+    <fa-icon [icon]="faTimes" (click)="closeDialog()"></fa-icon>
 </header>
 
 <div class=" container-fluid p-3 h-100 m-0" fxLayout="row wrap">
@@ -18,7 +18,7 @@
             <hr>
         </header>
         <div>
-            <span class="mat-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            <span class="mat-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>            
         </div>
     </div>    
 </div>
