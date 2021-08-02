@@ -42,11 +42,12 @@ export class GalleryComponent implements OnInit {
 
     let linkedImages = this.displayableMockups.filter(x => x.ID === key)[0].LINKED_IMG;
 
-    this.dialog.open(ImageViewerComponent,{
-      data: linkedImages,
-      autoFocus: false,
-      disableClose: true
-    });
-
+    if(linkedImages.length > 0)
+      this.dialog.open(ImageViewerComponent,{
+        data: linkedImages,
+        autoFocus: false,
+        disableClose: true
+      });
+      
   }
 }
