@@ -1,26 +1,24 @@
-<mat-dialog-content class="mat-typography m-0 p-0" fxLayout="row wrap">
-    <header class="p-2 pe-3 w-100 text-end dialog-header" >
-        <fa-icon [icon]="faTimes" mat-dialog-close></fa-icon>
-    </header>
-    <div class="container-fluid p-3" fxLayout="row wrap">
-        <div fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" style="box-shadow: 0 3px 8px rgba(0,0,0,0.4);">        
-            <ngb-carousel *ngIf="prevImages.length > 0" >
-                <ng-template ngbSlide *ngFor="let prevImg of prevImages">
-                    <div class="picsum-img-wrapper">
-                        <img [src]="prevImg" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
-                    </div>
-                </ng-template>
-            </ngb-carousel>
-        </div>
-        <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" class="p-3">
-            <header>
-                <span class="mat-h1 display-block m-0">TITLE</span>
-                <hr>
-            </header>
-            <div>
-                <span class="mat-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </div>
-        </div>
+<header class="p-1 pe-3 text-end dialog-header" mat-dialog-title>
+    <fa-icon [icon]="faTimes" mat-dialog-close></fa-icon>
+</header>
+
+<div class=" container-fluid p-3 h-100 m-0" fxLayout="row wrap">
+    <div fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" style="box-shadow: 0 3px 8px rgba(0,0,0,0.4);">
+        <ngb-carousel *ngIf="prevImages.length > 0" >
+            <ng-template ngbSlide *ngFor="let prevImg of prevImages">
+                <div class="picsum-img-wrapper">
+                    <img [src]="prevImg" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
     </div>
-    
-</mat-dialog-content>
+    <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" class="p-3">
+        <header>
+            <span class="mat-h1 display-block m-0">TITLE</span>
+            <hr>
+        </header>
+        <div>
+            <span class="mat-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </div>
+    </div>    
+</div>
