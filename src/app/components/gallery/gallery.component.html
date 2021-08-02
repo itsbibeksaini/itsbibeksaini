@@ -4,20 +4,15 @@
         <hr>
     </header>
 
-    <div fxFlex class="padding2030 text-center">
-        <span class="mat-small display-block m-0">A glimps of mockups on which I worked on.</span>
+    <div class="text-center padding1015">
+        <span>Some mockups on which I worked.</span>        
     </div>
-    <div fxFlex class="cotainer-fluid padding2030" fxLayout="row wrap" fxLayoutAlign="center">
-        
-        <div fxFlex="180px" fxFlex.xs="50%" class="p-2">
-            <div>
-                <img src="assets/gallery/taskboards.png" class="gallery-thumb">
+
+    <div class="gallery-wrapper padding2030">
+        <div class="grid">
+            <div *ngFor="let mockupThumb of displayableMockups" [ngClass]="mockupThumb.SIZE" (click)="prevThumb(mockupThumb.ID)" class="grid__item animate__animated animate__zoomIn animate__faster">                
+                <img [src]="mockupThumb.IMG_THUMB">
             </div>
         </div>
-        <div fxFlex="180px" fxFlex.xs="50%" class="p-2">
-            <div>
-                <img src="assets/gallery/taskboards.png" class="gallery-thumb">
-            </div>
-        </div>        
     </div>
 </div>

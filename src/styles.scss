@@ -1,50 +1,89 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; transition: all 0.5s ease-in-out; }
-.vertical-center{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);  
+:root {
+  // We just need to know these 3 values up front:
+  --gutter: 10px;
+  --wrapper: calc(100vw - (2 * var(--gutter)));
+
+  --noOfColumns: 12;
+
+  // Number of gutters is columns minus 1:
+  --noOfGutters: calc(var(--noOfColumns) - 1);
+
+  // Aspect ratio goes here:
+  --ratioA: 1;
+  --ratioB: 1;
+
+  // Use the aspect ratio to calculate the factor for multiplication:
+  --factor: 0;
+
+  // Calculating the row height:
+  --rh: calc(
+    (
+        (var(--wrapper) - (var(--noOfGutters) * var(--gutter))) /
+          var(--noOfColumns)
+      ) * var(--factor)
+  );
+
+  @media (max-width: 425px) {
+    --wrapper: 60em;
+    --gutter: 20px;
+    --noOfColumns: 2;
+    --ratioA: 1;
+    --ratioB: 1;
+  }
 }
 
-.centralize{
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centralize {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  
-
+  transform: translate(-50%, -50%);
 }
 
-.display-block{
+.display-block {
   display: block;
 }
 
-.padding1015{
+.padding1015 {
   padding: 10px 15px !important;
 }
 
-.padding2030{
+.padding2030 {
   padding: 20px 30px !important;
 }
 
-.shadow-1{
-  box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+.shadow-1 {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.ellipses{
+.ellipses {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-
-@media screen and (max-width:425px) {
-  header{
+@media screen and (max-width: 425px) {
+  header {
     text-align: center !important;
   }
 }
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
