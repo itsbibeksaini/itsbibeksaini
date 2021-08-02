@@ -3,7 +3,7 @@
 </header>
 
 <div class=" container-fluid p-3 h-100 m-0" fxLayout="row wrap">
-    <div fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" style="box-shadow: 0 3px 8px rgba(0,0,0,0.4);">
+    <div fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="100%" style="box-shadow: 0 3px 8px rgba(0,0,0,0.4);">
         <ngb-carousel *ngIf="prevImages.length > 0" >
             <ng-template ngbSlide *ngFor="let prevImg of prevImages">
                 <div class="picsum-img-wrapper">
@@ -12,7 +12,7 @@
             </ng-template>
         </ngb-carousel>
     </div>
-    <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" class="p-3">
+    <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="100%" class="p-3">
         <header>
             <span class="mat-h1 display-block m-0">TITLE</span>
             <hr>
