@@ -1,3 +1,5 @@
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=itsbibeksaini.itsbibeksaini)
+
 ### Hi, my name is
 # Bibek Saini
 ## I build things for web
@@ -37,7 +39,3 @@
   }    
 ```
 ##
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=itsbibeksaini&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=itsbibeksaini.itsbibeksaini)
