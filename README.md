@@ -38,6 +38,6 @@
 ```
 ##
 
-(https://github-readme-stats.vercel.app/api/top-langs/?username=itsbibeksaini&hide=TeX)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=itsbibeksaini&langs_count=10)]
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=itsbibeksaini.itsbibeksaini)
