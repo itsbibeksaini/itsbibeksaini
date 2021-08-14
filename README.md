@@ -1,5 +1,3 @@
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=itsbibeksaini.itsbibeksaini)
-
 ### Hi, my name is
 # Bibek Saini
 ## I build things for web
