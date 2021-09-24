@@ -4,6 +4,10 @@ export const skill_angular:Skill = new Skill()
 skill_angular.IMAGE = "assets/skills/frontend/angular.png"
 skill_angular.TITLE = "Angular"
 
+export const skill_react:Skill = new Skill()
+skill_react.IMAGE = "assets/skills/frontend/react.png"
+skill_react.TITLE = "React"
+
 export const skill_css3:Skill = new Skill()
 skill_css3.IMAGE = "assets/skills/frontend/css3.png"
 skill_css3.TITLE = "CSS3"
@@ -35,3 +39,4 @@ skill_bootstrap.TITLE = "Bootstrap"
 export const skill_sass:Skill = new Skill()
 skill_sass.IMAGE = "assets/skills/frontend/sass.png"
 skill_sass.TITLE = "SASS"
+

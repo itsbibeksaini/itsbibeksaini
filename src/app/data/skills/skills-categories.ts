@@ -15,11 +15,13 @@ backendSkills.SKILLS.push(beSkills.skill_aspnetmvc)
 backendSkills.SKILLS.push(beSkills.skill_csharpnet)
 backendSkills.SKILLS.push(beSkills.skill_linq)
 backendSkills.SKILLS.push(beSkills.skill_java)
+backendSkills.SKILLS.push(beSkills.skill_kotlin)
 backendSkills.SKILLS.push(beSkills.skill_springboot)
 
 let frontendSkills: SkillsCategory = new SkillsCategory()
 frontendSkills.TITLE = "Frontend"
 frontendSkills.SKILLS.push(feSkills.skill_angular)
+frontendSkills.SKILLS.push(feSkills.skill_react)
 frontendSkills.SKILLS.push(feSkills.skill_css3)
 frontendSkills.SKILLS.push(feSkills.skill_html5)
 frontendSkills.SKILLS.push(feSkills.skill_jquery)

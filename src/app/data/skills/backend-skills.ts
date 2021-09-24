@@ -27,3 +27,7 @@ skill_csharpnet.TITLE = "C#.NET"
 export const skill_linq:Skill = new Skill()
 skill_linq.IMAGE = "assets/skills/backend/linq.png"
 skill_linq.TITLE = "C# LINQ"
+
+export const skill_kotlin:Skill = new Skill()
+skill_kotlin.IMAGE = "assets/skills/backend/kotlin.png"
+skill_kotlin.TITLE = "Kotlin"
