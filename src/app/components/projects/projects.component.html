@@ -1,121 +1,106 @@
 <div class="container-fluid h-100 p-0" fxLayout="column">
-    <header fxFlex="80px" class="padding2030">
+    <header fxFlex="80px">
         <span class="mat-display-1">Projects</span>
         <hr>
     </header>
+    <div fxFlex>
+        <div class="container-fluid padding1015 mt-3" fxLayoutAlign="center" fxLayout="row wrap">
+            <div fxFlex="320px" class="p-3" style="position: relative;">
+                <!-- Project card -->
+                <mat-card class="project-card">
+                    <header>
+                        <span class="mat-h2 display-block m-0">Task Manager</span>
+                        <span class="mat-small display-block m-0">Micro-services App</span>
+                        <hr class="mb-0"/>
+                    </header>
+                    <div class="pt-2 pb-2 project-intro">
+                        <span class="mat-body">Task manager is built on micro-services architecture providing management services like invoice manager and task board. </span>
+                    </div>
+                    <div>
 
-    <div fxFlex class="container-fluid padding2030" fxLayoutAlign="center">
-        <custom-list fxFlex="240px" fxFlex.xs="300px" [ngClass]="{hideSideBar: hasSelectedProject}"></custom-list>
-        
-        <div fxFlex class="container-fluid p-0 project-details" fxLayout="column" *ngIf="hasSelectedProject">            
-            <div fxFlex="40px" class="backButton" >
-                <fa-icon [icon]="faArrowLeft" style="font-size: 21px;" class="pointer" (click)="backButton()"></fa-icon>                
+                    </div>
+                </mat-card>
             </div>
-            <div fxFlex class="padding1015" style="overflow: hidden;overflow-y: auto;">                                
-                <!-- Header -->
-                <div class="alert alert-warning" *ngIf="selectedProject.ARCHIEVED">
-                    <fa-icon [icon]="faArchive"></fa-icon>
-                    <span class="ms-1">This project has been archived and there is no activity ongoing.</span>
-                </div>
-                <div>
-                    <span class="mat-h1 display-block m-0">{{selectedProject.TITLE}}</span>
-                    <span class="mat-small display-block m-0 ml-1">{{selectedProject.SUB_TITLE}}</span>                    
-                </div>
-                <!--Links-->
-                <div class="mt-4">
-                    <div *ngIf="selectedProject.PROJECT_STRUCTURE_LINK">
-                        <a mat-raised-button color="primary"  [href]="selectedProject.PROJECT_STRUCTURE_LINK" target="_blank">
-                            <fa-icon [icon]="faExternalLinkAlt" class="mr-1"></fa-icon>
-                            Project documentation
-                        </a>
+            <div fxFlex="320px" class="p-3" style="position: relative;">
+                <!-- Project card -->
+                <mat-card class="project-card">
+                    <header>
+                        <span class="mat-h2 display-block m-0">Task Manager</span>
+                        <span class="mat-small display-block m-0">Micro-services App</span>
+                        <hr class="mb-0"/>
+                    </header>
+                    <div class="pt-2 pb-2 project-intro">
+                        <span class="mat-body">Task manager is built on micro-services architecture providing management services like invoice manager and task board. </span>
                     </div>
-                    
-                    <div *ngIf="selectedProject.APP_LINK" class="mt-1">
-                        <a mat-raised-button color="primary" [href]="selectedProject.APP_LINK" target="_blank">
-                            <fa-icon [icon]="faExternalLinkAlt" class="mr-1"></fa-icon>
-                            App link
-                        </a>
+                    <div>
+
                     </div>
-                    <div *ngIf="selectedProject.REPO_LINK" class="mt-1">
-                        <a mat-raised-button color="primary" [href]="selectedProject.REPO_LINK" target="_blank">
-                            <fa-icon [icon]="faGithub" class="mr-1"></fa-icon>
-                            Visit repository
-                        </a>
+                </mat-card>
+            </div>
+            <div fxFlex="320px" class="p-3" style="position: relative;">
+                <!-- Project card -->
+                <mat-card class="project-card">
+                    <header>
+                        <span class="mat-h2 display-block m-0">Task Manager</span>
+                        <span class="mat-small display-block m-0">Micro-services App</span>
+                        <hr class="mb-0"/>
+                    </header>
+                    <div class="pt-2 pb-2 project-intro">
+                        <span class="mat-body">Task manager is built on micro-services architecture providing management services like invoice manager and task board. </span>
                     </div>
-                </div>
-                <div  class="mt-1">
-                    
-                </div>
-                <div>
-                    <hr>
-                </div>
-                <!-- Description -->
-                <div>
-                    <span class="mat-h2 display-block m-0">Description</span>
-                    <hr>
-                    <div *ngIf="selectedProject.DESCRIPTION">
-                        <span>
-                            {{selectedProject.DESCRIPTION}}
-                        </span>
+                    <div>
+
                     </div>
-                    
-                    <div *ngIf="!selectedProject.DESCRIPTION" style="color: #999;" class="text-center">
-                        <span class="mat-h1">No data to show</span>
+                </mat-card>
+            </div>
+            <div fxFlex="320px" class="p-3" style="position: relative;">
+                <!-- Project card -->
+                <mat-card class="project-card">
+                    <header>
+                        <span class="mat-h2 display-block m-0">Task Manager</span>
+                        <span class="mat-small display-block m-0">Micro-services App</span>
+                        <hr class="mb-0"/>
+                    </header>
+                    <div class="pt-2 pb-2 project-intro">
+                        <span class="mat-body">Task manager is built on micro-services architecture providing management services like invoice manager and task board. </span>
                     </div>
-                    
-                    <div *ngIf="selectedProject.ARCHITECTURE_DIAGRAM" class="architecture-diagram">
-                        <img [src]="selectedProject.ARCHITECTURE_DIAGRAM">
+                    <div>
+
                     </div>
-                    <hr>
-                </div>
-                <!-- Tech used -->
-                <div>
-                    <span class="mat-h2 display-block m-0">Tech used</span>
-                    <hr>
-                    <div class="container-fluid" fxLayout="row wrap" *ngIf="selectedProject.TECH_USED.length > 0">
-                        <div fxFlex="50px" class="p-1 skill" *ngFor="let skill of selectedProject.TECH_USED">
-                            <img src="{{skill.IMAGE}}" matTooltip="{{skill.TITLE}}" matTooltipPosition="below">
-                        </div> 
+                </mat-card>
+            </div>
+            <div fxFlex="320px" class="p-3" style="position: relative;">
+                <!-- Project card -->
+                <mat-card class="project-card">
+                    <header>
+                        <span class="mat-h2 display-block m-0">Task Manager</span>
+                        <span class="mat-small display-block m-0">Micro-services App</span>
+                        <hr class="mb-0"/>
+                    </header>
+                    <div class="pt-2 pb-2 project-intro">
+                        <span class="mat-body">Task manager is built on micro-services architecture providing management services like invoice manager and task board. </span>
                     </div>
-                    <div *ngIf="selectedProject.TECH_USED.length == 0" style="color: #999;" class="text-center">
-                        <span class="mat-h1">No data to show</span>
+                    <div>
+
                     </div>
-                    <hr>
-                </div>
-                <!-- Gallery -->
-                <div>
-                    <span class="mat-h2 display-block m-0">Gallery</span>
-                    <hr>
-                    <div class="container-fluid" fxLayoutAlign="center" *ngIf="selectedProject.GALLERY.length > 0">
-                        <div fxFlex="500px" fxFlex.sm="100%" fxFlex.xs="100%" style="border-radius: 0.25rem;">
-                            <!-- <img src="assets/projects/taskmanager/tm_microservices.png" style="width: 100%;border-radius: 0.25rem;"> -->
-                            <ngb-carousel *ngIf="images">
-                                <ng-template ngbSlide *ngFor="let image of selectedProject.GALLERY">
-                                    <div class="picsum-img-wrapper">
-                                        <img [src]="image.IMAGE" style="width: 100%;border-radius: 0.25rem;" alt="Random first slide">
-                                    </div>
-                                    <!-- <div class="carousel-caption">
-                                        <h3 class="{{image.PLACEHOLDER_COLOR}}">{{image.PLACEHOLDER}}</h3>                                            
-                                    </div> -->
-                                </ng-template>
-                            </ngb-carousel>
-                        </div>
+                </mat-card>
+            </div>
+            <div fxFlex="320px" class="p-3" style="position: relative;">
+                <!-- Project card -->
+                <mat-card class="project-card">
+                    <header>
+                        <span class="mat-h2 display-block m-0">Task Manager</span>
+                        <span class="mat-small display-block m-0">Micro-services App</span>
+                        <hr class="mb-0"/>
+                    </header>
+                    <div class="pt-2 pb-2 project-intro">
+                        <span class="mat-body">Task manager is built on micro-services architecture providing management services like invoice manager and task board. </span>
                     </div>
-                    <div *ngIf="selectedProject.GALLERY.length == 0" style="color: #999;" class="text-center">
-                        <span class="mat-h1">No data to show</span>
+                    <div>
+
                     </div>
-                    <hr>
-                </div>
+                </mat-card>
             </div>
         </div>
-
-        <div fxFlex class="text-center position-relative select-project-illustration" *ngIf="!hasSelectedProject">            
-            <div fxFlex="500px" fxFlex.sm="380px" class="centralize"  style="transition: all 0.2s ease-in-out;">
-                <img src="assets/illustrations/select-item.svg" class="animate__animated animate__zoomIn animate__faster">
-                <span class="mat-h1">Select project to view details</span>
-            </div>
-            
-        </div>
-        
     </div>
 </div>
