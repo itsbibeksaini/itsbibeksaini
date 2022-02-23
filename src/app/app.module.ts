@@ -29,6 +29,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ImageViewerComponent } from './components/gallery/image-viewer/image-viewer.component';
+import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ImageViewerComponent } from './components/gallery/image-viewer/image-vi
     SelectItemDirective,
     ContactComponent,
     GalleryComponent,
-    ImageViewerComponent    
+    ImageViewerComponent,
+    ProjectCardComponent    
   ],
   imports: [
     BrowserModule,
