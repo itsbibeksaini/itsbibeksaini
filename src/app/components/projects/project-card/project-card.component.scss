@@ -15,5 +15,31 @@
     & .project-intro {
       display: block;
     }
+
+    & .tech-used {
+      display: flex !important;
+    }
+  }
+
+  & .tech-used {
+    display: none !important;
+    & .skill {
+      transition: all 0.2s ease-in-out;
+      border-radius: 0.25rem;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      position: relative;
+      &:hover {
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      & img {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }

@@ -42,4 +42,8 @@ export class ProjectSelectorService {
   currentSelectedID():Observable<string>{
     return this.selectedProjectID.asObservable()
   }
+
+  getAllProjects():Observable<Project[]>{
+    return this.projectQuery.select(state => state.PROJECTS)
+  }
 }
