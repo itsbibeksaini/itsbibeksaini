@@ -1,40 +1,4 @@
-<!-- <div class="container-fluid centralize home-warpper">
-    <div class="row">
-        <div class="col p-0">
-            <div class="profile-image-skeleton" *ngIf="isLoading">
-            </div>
-            <img *ngIf="!isLoading" src="assets/profile-image/profile-image.jpg" class="profile-image animate__animated animate__zoomIn animate__faster">
-        </div>
-        <div class="col">
-            <div class="vertical-center">
-                <span class="mat-h3 display-block m-0">Hi, my name is</span>
-                <span class="mat-display-1 display-block m-0">Bibek Saini.</span>
-                <span class="mat-h1 display-block m-0">I build things for web</span>
-                <span class="mat-h4 display-block mt-2">I'm a full stack software engineer based in Mohali, IN specializing in designing architecture, developing and deploying SAAS applications, and everything in between.</span>
-                <span class="mat-h4 display-block mt-2">Currently, I'm senior software engineer at CatalystOne focused on building HCM Cloud product.</span>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-center">
-            <hr>
-            <button type="button" mat-icon-button link="github">
-                <fa-icon [icon]="faGithub" style="font-size: 30px;"></fa-icon>
-            </button>
-            <button type="button" mat-icon-button link="linkdin">
-                <fa-icon [icon]="faLinkedin" style="font-size: 30px;"></fa-icon>
-            </button>
-            <button type="button" mat-icon-button link="facebook">
-                <fa-icon [icon]="faFacebook" style="font-size: 30px;"></fa-icon>
-            </button>
-            <button type="button" mat-icon-button link="instagram">
-                <fa-icon [icon]="faInstagram" style="font-size: 30px;"></fa-icon>
-            </button>
-        </div>
-    </div>
-</div> -->
-
-<div class="container-fluid p-0 home-card centralize" fxLayout="column">
+<div class="container-fluid p-0 home-card centralize max-supported-width" fxLayout="column">
     <div fxFlex class="container-fluid p-0" fxLayout.xs="column" fxLayout="row">
         <div fxFlex="360px" fxFlex.xs="100%" class="text-center me-2">
             <div class="profile-image-skeleton" *ngIf="isLoading">
