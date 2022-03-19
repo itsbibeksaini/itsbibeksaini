@@ -6,6 +6,7 @@ import { pdfEditor } from "./pdf-editor";
 import { todoApp } from "./todo-app";
 import { importExportUtility } from "./import-export-utility";
 import {chatBot } from "./chat-bot";
+import { invoiceManager } from "./invoice-manager";
 
 export const PROJECTS_DETAILS:Project[] = []
 
@@ -16,3 +17,4 @@ PROJECTS_DETAILS.push(pdfEditor)
 PROJECTS_DETAILS.push(todoApp)
 PROJECTS_DETAILS.push(importExportUtility)
 PROJECTS_DETAILS.push(chatBot)
+PROJECTS_DETAILS.push(invoiceManager)
