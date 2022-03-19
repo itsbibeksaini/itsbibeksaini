@@ -100,4 +100,13 @@ export class Project{
         this._REPO_LINK = v;
     }
         
+    
+    private _VIEW_DETAILS! : boolean;
+    public get VIEW_DETAILS() : boolean {
+        return this._VIEW_DETAILS;
+    }
+    public set VIEW_DETAILS(v : boolean) {
+        this._VIEW_DETAILS = v;
+    }
+    
 }

@@ -30,6 +30,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ImageViewerComponent } from './components/gallery/image-viewer/image-viewer.component';
 import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ProjectCardComponent } from './components/projects/project-card/project
     MatInputModule,
     ReactiveFormsModule,
     NgbModule,
-    MatDialogModule
+    MatDialogModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
