@@ -31,6 +31,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ImageViewerComponent } from './components/gallery/image-viewer/image-viewer.component';
 import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
 import {MatChipsModule} from '@angular/material/chips';
+import { ShowDetailsDirective } from './components/projects/show-details/show-details.directive';
+import { ProjectDetailsComponent } from './components/projects/dialogs/project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import {MatChipsModule} from '@angular/material/chips';
     ContactComponent,
     GalleryComponent,
     ImageViewerComponent,
-    ProjectCardComponent    
+    ProjectCardComponent,
+    ShowDetailsDirective,
+    ProjectDetailsComponent    
   ],
   imports: [
     BrowserModule,
