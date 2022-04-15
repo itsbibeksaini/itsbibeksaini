@@ -21,7 +21,7 @@ export class ShowDetailsDirective {
         project: this.showDetails,
       },
       disableClose:true,
-      minWidth: '70%',
+      maxWidth: '1000px',
       autoFocus: false
     });
   }
