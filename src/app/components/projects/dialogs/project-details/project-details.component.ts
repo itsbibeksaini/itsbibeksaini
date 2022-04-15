@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Project } from '../../models/project';
 
 @Component({
   selector: 'app-project-details',
@@ -10,7 +11,10 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class ProjectDetailsComponent implements OnInit {
 
   faTimes = faTimes
-  constructor() { }
+  clickedProject: Project
+  constructor(@Inject(MAT_DIALOG_DATA) public project: any) {
+    this.clickedProject = project.project
+   }
 
   ngOnInit(): void {
   }

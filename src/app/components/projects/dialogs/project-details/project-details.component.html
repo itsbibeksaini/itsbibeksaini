@@ -1,16 +1,19 @@
 <mat-card mat-dialog-content class="m-0 p-0" style="width: 100%;">
-  <header class="container-fluid shadow-1 position-relative p-1" >
+  <header class="container-fluid shadow-1 position-relative p-2" >
     <div fxFlex="1.2rem">
         <button mat-icon-button class="vertical-center" matDialogClose>
             <fa-icon [icon]="faTimes" style="font-size: 1.2rem;" ></fa-icon>
         </button>
     </div>
-    <div fxFlex class="text-center">
-        <span class="mat-h1 vertical-center" style="white-space: nowrap;">Project title</span>
+    <div fxFlex class="text-center position-relative">
+        <div class="vertical-center w-100">
+            <span class="mat-h1 display-block m-0" style="white-space: nowrap;">{{clickedProject.TITLE}}</span>
+            <span class="mat-small display-block m-0" style="white-space: nowrap;">{{clickedProject.SUB_TITLE}}</span>
+        </div>
+        
     </div>
   </header>
 
   <div class="padding2030">
-
   </div>
 </mat-card>

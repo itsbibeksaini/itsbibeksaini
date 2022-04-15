@@ -7,7 +7,7 @@
         <div class="container-fluid padding1015 mt-3" fxLayoutAlign="center" fxLayout="row wrap">
             <div fxFlex="320px" class="p-3" style="position: relative;" *ngFor="let project of projects">
                 <!-- Project card -->
-                <project-card showDetails [projectData]="project"></project-card>
+                <project-card [projectData]="project"></project-card>
             </div>
         </div>
     </div>

@@ -21,6 +21,6 @@
     </div>
     <div class="p-2 view-project" *ngIf="projectData.VIEW_DETAILS">
         <hr/>
-        <button mat-raised-button color="primary" class="w-100">View</button>
+        <button mat-raised-button [showDetails]="projectData" color="primary" class="w-100">View</button>
     </div>
 </mat-card>

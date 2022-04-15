@@ -17,6 +17,13 @@
     top: -30px;
     z-index: 1;
 
+    @media screen and (max-width: 425px) {
+      left: 0;
+      right: 0;
+      top: -30px;
+    }
+      
+
     & .project-intro {
       display: block;
     }

@@ -101,7 +101,7 @@ export class Project{
     }
         
     
-    private _VIEW_DETAILS! : boolean;
+    private _VIEW_DETAILS : boolean = true;
     public get VIEW_DETAILS() : boolean {
         return this._VIEW_DETAILS;
     }
