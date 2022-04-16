@@ -1,0 +1,70 @@
+.project-card {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: 5px solid transparent;
+  
+
+  header {
+    & .archieved-chip {
+      display: none;
+    }
+  }
+  & .project-intro {
+    display: none;
+  }
+
+  &:hover {
+    border-color: var(--primary-color);
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    top: -30px;
+    z-index: 1;
+
+    @media screen and (max-width: 425px) {
+      left: 0;
+      right: 0;
+      top: -30px;
+    }
+      
+
+    & .project-intro {
+      display: block;
+    }
+
+    & .tech-used {
+      display: flex !important;
+    }
+
+    & .view-project,
+    header .archieved-chip {
+      display: block;
+    }
+  }
+
+  & .tech-used {
+    display: none !important;
+    & .skill {
+      transition: all 0.2s ease-in-out;
+      border-radius: 0.25rem;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      position: relative;
+      &:hover {
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      & img {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  & .view-project {
+    display: none;
+  }
+}

@@ -85,5 +85,9 @@ body {
     text-align: center !important;
   }
 }
+
+.max-supported-width {
+  max-width: 1000px;
+}
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";

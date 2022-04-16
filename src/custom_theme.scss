@@ -52,7 +52,7 @@ $warn: mat.define-palette(mat.$red-palette);
 
   --primary-color: #{mat.get-color-from-palette($dark-primary)};
   --accent-color: #{mat.get-color-from-palette($dark-accent)};
-  --background-color: #000;
+  --background-color: rgb(53, 54, 58);
 }
 
 .mat-card {

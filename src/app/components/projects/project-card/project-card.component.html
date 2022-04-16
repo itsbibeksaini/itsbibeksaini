@@ -1,0 +1,26 @@
+<mat-card class="project-card">
+    <header>
+        <span class="mat-h2 display-block m-0">{{projectData.TITLE}}</span>
+        <span class="mat-small display-block m-0">{{projectData.SUB_TITLE}}</span>
+        
+
+        <div class="mt-1 archieved-chip" *ngIf="projectData.ARCHIEVED">
+            <mat-chip-list>
+                <mat-chip color="primary" selected>Archieved</mat-chip>
+            </mat-chip-list>
+        </div>
+        <hr class="mb-0"/>
+    </header>
+    <div class="pt-2 pb-2 project-intro">
+        <span class="mat-body">{{projectData.DESCRIPTION}}</span>
+    </div>
+    <div class="container-fluid p-0 text-center tech-used" fxLayout="row wrap" fxLayoutAlign="center">
+        <div fxFlex="50px" class="p-1 skill" *ngFor="let tech of projectData.TECH_USED">
+            <img src="{{tech.IMAGE}}" matTooltip="{{tech.TITLE}}" matTooltipPosition="below" class="pointer">
+        </div>     
+    </div>
+    <div class="p-2 view-project" *ngIf="projectData.VIEW_DETAILS">
+        <hr/>
+        <button mat-raised-button [showDetails]="projectData" color="primary" class="w-100">View</button>
+    </div>
+</mat-card>

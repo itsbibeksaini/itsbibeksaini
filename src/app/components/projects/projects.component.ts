@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArchive, faExternalLinkAlt, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
+import { take } from 'rxjs/operators';
+import { PROJECT_LIST } from 'src/app/data/projects/project-list';
 import { CustomListItem } from '../custom-list/models';
 import { CustomListService } from '../custom-list/services';
 import { Project } from './models/project';
@@ -20,14 +22,12 @@ export class ProjectsComponent implements OnInit {
   faGithub = faGithub
   faArchive = faArchive
 
-  projectList: CustomListItem[] = []
-  projectDetailsList: Project[] = []
+  projects!: Project[];
 
   hasSelectedProject:boolean = false
   selectedProject!:Project
 
-  constructor(private custonlistService:CustomListService,                            
-              private projectSelector:ProjectSelectorService) {
+  constructor(private projectSelector:ProjectSelectorService) {
       
       projectSelector.getSelectedProject().subscribe(project =>{
         if(project !== undefined){
@@ -35,14 +35,18 @@ export class ProjectsComponent implements OnInit {
           this.selectedProject = project
         }
       })
+
+      projectSelector.getAllProjects().pipe(take(1)).subscribe(projects =>{
+        this.projects = projects
+      })
+      
   }
 
   ngOnInit(): void {
   }
 
   backButton(){    
-    this.hasSelectedProject = false
-    this.custonlistService.unselectAll()
+    this.hasSelectedProject = false    
     this.projectSelector.unselectProjects()
   }
 
