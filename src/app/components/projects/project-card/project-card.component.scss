@@ -1,5 +1,8 @@
 .project-card {
   cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: 5px solid transparent;
+  
 
   header {
     & .archieved-chip {
@@ -11,6 +14,7 @@
   }
 
   &:hover {
+    border-color: var(--primary-color);
     position: absolute;
     left: -30px;
     right: -30px;

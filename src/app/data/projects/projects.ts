@@ -12,9 +12,9 @@ export const PROJECTS_DETAILS:Project[] = []
 
 PROJECTS_DETAILS.push(taskManager)
 PROJECTS_DETAILS.push(mailer)
+PROJECTS_DETAILS.push(invoiceManager)
 PROJECTS_DETAILS.push(musicstore)
 PROJECTS_DETAILS.push(pdfEditor)
 PROJECTS_DETAILS.push(todoApp)
 PROJECTS_DETAILS.push(importExportUtility)
 PROJECTS_DETAILS.push(chatBot)
-PROJECTS_DETAILS.push(invoiceManager)

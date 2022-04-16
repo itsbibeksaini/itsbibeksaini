@@ -1,7 +1,7 @@
 <div mat-dialog-title class="m-0">
     <header fxFlex class="container-fluid shadow-1 position-relative p-2" >
         <div fxFlex="1.2rem">
-            <button mat-icon-button class="vertical-center" matDialogClose>
+            <button mat-icon-button class="vertical-center" mat-dialog-close>
                 <fa-icon [icon]="faTimes" style="font-size: 1.2rem;" ></fa-icon>
             </button>
         </div>
@@ -29,7 +29,7 @@
           </header>
           <span class="mat-body">{{clickedProject.DESCRIPTION}}</span>
       </div>
-      <div style="background-color: var(--background-color);border-radius: 0.25rem;" class="padding1015 mt-3">
+      <div style="background-color: var(--background-color);border-radius: 0.25rem;" class="padding1015 mt-3" *ngIf="clickedProject.TECH_USED.length > 0">
         <header>
             <span class="mat-h1">Tech used</span>
             <hr/>
@@ -50,14 +50,13 @@
         </div>
       </div>
 
-      
-      <div style="background-color: var(--background-color);border-radius: 0.25rem;" class="padding1015 mt-3">
+      <div style="background-color: var(--background-color);border-radius: 0.25rem;" class="padding1015 mt-3" *ngIf="clickedProject.GALLERY.length > 0">
         <header>
             <span class="mat-h1">Gallery</span>
             <hr/>
         </header>        
         <div>            
-            <div class="container-fluid" fxLayoutAlign="center" *ngIf="clickedProject.GALLERY.length > 0">
+            <div class="container-fluid" fxLayoutAlign="center">
                 <div fxFlex="500px" fxFlex.sm="100%" fxFlex.xs="100%" style="border-radius: 0.25rem;">
                     <!-- <img src="assets/projects/taskmanager/tm_microservices.png" style="width: 100%;border-radius: 0.25rem;"> -->
                     <ngb-carousel *ngIf="images">
@@ -71,9 +70,6 @@
                         </ng-template>
                     </ngb-carousel>
                 </div>
-            </div>
-            <div *ngIf="clickedProject.GALLERY.length == 0" style="color: #999;" class="text-center">
-                <span class="mat-h1">No data to show</span>
             </div>            
         </div>
       </div>
