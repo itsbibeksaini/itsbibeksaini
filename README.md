@@ -52,10 +52,10 @@ TM Solution github organization is a collection of various repositories.
 | Service          |   gRPC   |   HTTP   |       Framework       | Language | Build status |
 | :--------------- | :------: | :------: | :--------------: | :------: | :--- |
 | ~~[GatewayApi](https://github.com/itsbibeksaini/GatewayApi)~~       |    ~~x~~     |   ~~5000~~   |   ~~ASP.NET Core~~   |    ~~C#~~    | Archived |
-| [IdentityApi](https://github.com/itsbibeksaini/IdentityApi)      |    x     |   5001   |   ASP.NET Core   |    C#    | ![Build Status](https://github.com/TMExperimentals/IdentityApi/actions/workflows/dotnet.yml/badge.svg) |
+| [IdentityApi](https://github.com/itsbibeksaini/IdentityApi)      |    x     |   8080   |   ASP.NET Core   |    C#    | ![Build Status](https://github.com/TMExperimentals/IdentityApi/actions/workflows/dotnet.yml/badge.svg) |
 | ~~[AuthApi](https://github.com/itsbibeksaini/AuthApi)~~      |  ~~x~~   | ~~5001~~ | ~~ASP.NET Core~~ |  ~~C#~~  | Archived |
 | ~~[AccountApi](https://github.com/itsbibeksaini/AccountApi)~~   | ~~6001~~ | ~~5002~~ | ~~ASP.NET Core~~ |  ~~C#~~  | Archived |
-| [PolicyApi](https://github.com/itsbibeksaini/PolicyApi)        |   6002   |   5003   |   ASP.NET Core   |    C#    | [![.NET](https://github.com/TMExperimentals/PolicyApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/TMExperimentals/PolicyApi/actions/workflows/dotnet.yml) | 
+| [PolicyApi](https://github.com/itsbibeksaini/PolicyApi)        |   6900   |   8080   |   ASP.NET Core   |    C#    | [![.NET](https://github.com/TMExperimentals/PolicyApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/TMExperimentals/PolicyApi/actions/workflows/dotnet.yml) | 
 | [SettingsApi](https://github.com/itsbibeksaini/SettingsApi)      |    x     |   5004   |    SpringBoot    |   Java   | ![Build Status](https://github.com/TMExperimentals/SettingsApi/actions/workflows/gradle.yml/badge.svg) | 
 | [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) |    x     |   5005   |   ASP.NET Core   |    C#    | ![Build Status](https://github.com/TMExperimentals/NotificationApi/actions/workflows/dotnet.yml/badge.svg) |
 | [WorklogApi](https://github.com/TMExperimentals/WorklogApi) | x | 5006 | Ktor | Kotlin | [![Java CI with Gradle](https://github.com/TMExperimentals/WorklogApi/actions/workflows/gradle.yml/badge.svg)](https://github.com/TMExperimentals/WorklogApi/actions/workflows/gradle.yml) |
