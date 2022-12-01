@@ -68,7 +68,7 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 | ~~[AuthApi](https://github.com/itsbibeksaini/AuthApi)~~  | ASP.NET | C# |
 | ~~[AccountApi](https://github.com/itsbibeksaini/AccountApi)~~ | ASP.NET | C# |
 
-### Other services
+# Other projects and services
 
 | Service | Build status |
 | :------ | :----------- |
