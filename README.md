@@ -45,23 +45,28 @@
 
 # TM Solutions
 
-TM Solution github organization is a collection of various repositories.
+TM Solution is a project aimed to provide solutions like work-logging, task boards. Project is based on microservices architecture pattern. Following are the microservice which are part of the project and provide various functionalities.
+
+To setup complete k8s cluster follow docs repo to see documentation guides: [Docs](https://github.com/TMExperimentals/docs)
 
 > Note: many repos which are the part of this organization collection are private. 
 
-| Service          |   gRPC   |   HTTP   |       Framework       | Language | Build status |
-| :--------------- | :------: | :------: | :--------------: | :------: | :--- |
-| ~~[GatewayApi](https://github.com/itsbibeksaini/GatewayApi)~~       |    ~~x~~     |   ~~5000~~   |   ~~ASP.NET Core~~   |    ~~C#~~    | Archived |
-| [IdentityApi](https://github.com/itsbibeksaini/IdentityApi)      |    x     |   8080   |   ASP.NET Core   |    C#    | ![Build Status](https://github.com/TMExperimentals/IdentityApi/actions/workflows/dotnet.yml/badge.svg) |
-| ~~[AuthApi](https://github.com/itsbibeksaini/AuthApi)~~      |  ~~x~~   | ~~5001~~ | ~~ASP.NET Core~~ |  ~~C#~~  | Archived |
-| ~~[AccountApi](https://github.com/itsbibeksaini/AccountApi)~~   | ~~6001~~ | ~~5002~~ | ~~ASP.NET Core~~ |  ~~C#~~  | Archived |
-| [PolicyApi](https://github.com/itsbibeksaini/PolicyApi)        |   6900   |   8080   |   ASP.NET Core   |    C#    | [![.NET](https://github.com/TMExperimentals/PolicyApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/TMExperimentals/PolicyApi/actions/workflows/dotnet.yml) | 
-| [SettingsApi](https://github.com/itsbibeksaini/SettingsApi)      |    x     |   5004   |    SpringBoot    |   Java   | ![Build Status](https://github.com/TMExperimentals/SettingsApi/actions/workflows/gradle.yml/badge.svg) | 
-| [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) |    x     |   5005   |   ASP.NET Core   |    C#    | ![Build Status](https://github.com/TMExperimentals/NotificationApi/actions/workflows/dotnet.yml/badge.svg) |
-| [WorklogApi](https://github.com/TMExperimentals/WorklogApi) | x | 5006 | Ktor | Kotlin | [![Java CI with Gradle](https://github.com/TMExperimentals/WorklogApi/actions/workflows/gradle.yml/badge.svg)](https://github.com/TMExperimentals/WorklogApi/actions/workflows/gradle.yml) |
-| [ClientApp](https://github.com/itsbibeksaini/ClientApp) | x | 80 | Angular | Typescript | [![Node.js CI](https://github.com/TMExperimentals/ClientApp/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/ClientApp/actions/workflows/node.js.yml) |
+| Service | Framework | Language | Build status |                  
+| :-- | :--: | :--: | :--: |
+| [IdentityApi](https://github.com/itsbibeksaini/IdentityApi) | ASP.NET | C# |
+| [PolicyApi](https://github.com/itsbibeksaini/PolicyApi) | ASP.NET | C# |
+| [SettingsApi](https://github.com/itsbibeksaini/SettingsApi) | SpringBoot | Java |
+| [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) | ASP.NET | C# |
+| [WorklogApi](https://github.com/TMExperimentals/WorklogApi) | Ktor | Kotlin |
+| [ClientApp](https://github.com/itsbibeksaini/ClientApp) | Angular | TypeScript |
 
-Follow docs repo to see documentation guides: [Docs](https://github.com/TMExperimentals/docs)
+> Archived services
+
+| Service | Framework | Language |
+| :-- | :--: | :--: |
+| ~~[GatewayApi](https://github.com/itsbibeksaini/GatewayApi)~~ | ASP.NET | C# |
+| ~~[AuthApi](https://github.com/itsbibeksaini/AuthApi)~~  | ASP.NET | C# |
+| ~~[AccountApi](https://github.com/itsbibeksaini/AccountApi)~~ | ASP.NET | C# |
 
 ### Other services
 
