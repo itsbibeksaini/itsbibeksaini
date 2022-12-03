@@ -53,7 +53,7 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 
 | Service | Framework | Language | Build status |                  
 | :-- | :--: | :--: | :--: |
-| [IdentityApi](https://github.com/itsbibeksaini/IdentityApi) | ASP.NET | C# |
+| [IdentityApi](https://github.com/itsbibeksaini/IdentityApi) | ASP.NET | C# | [![Identity API](https://github.com/itsbibeksaini/IdentityApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/itsbibeksaini/IdentityApi/actions/workflows/dotnet.yml) |
 | [PolicyApi](https://github.com/itsbibeksaini/PolicyApi) | ASP.NET | C# |
 | [SettingsApi](https://github.com/itsbibeksaini/SettingsApi) | SpringBoot | Java |
 | [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) | ASP.NET | C# |
