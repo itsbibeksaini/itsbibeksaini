@@ -74,7 +74,6 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 | :------ | :----------- |
 | [mockups-react](https://github.com/TMExperimentals/mockups-react) | [![Node.js CI](https://github.com/TMExperimentals/mockups-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/mockups-react/actions/workflows/node.js.yml) <br/> [![pages-build-deployment](https://github.com/TMExperimentals/mockups-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/TMExperimentals/mockups-react/actions/workflows/pages/pages-build-deployment) |
 | [mockups](https://github.com/TMExperimentals/mockups) | [![Node.js CI](https://github.com/TMExperimentals/mockups/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/mockups/actions/workflows/node.js.yml) |
-| [poet-experiments](https://github.com/TMExperimentals/poet-experiments) | [![Java CI with Gradle](https://github.com/TMExperimentals/poet-experiments/actions/workflows/build.yml/badge.svg)](https://github.com/TMExperimentals/poet-experiments/actions/workflows/build.yml) |
 | [micro-frontend](https://github.com/TMExperimentals/micro-frontend) | |
 | [poet-experiments](https://github.com/itsbibeksaini/poet-experiments) | [![Poet Experiments](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml/badge.svg)](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml) |
 | [gradle-plugins](https://github.com/itsbibeksaini/gradle-plugins) | |
