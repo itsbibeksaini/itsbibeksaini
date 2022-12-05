@@ -57,7 +57,7 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 | [PolicyApi](https://github.com/itsbibeksaini/PolicyApi) | ASP.NET | C# | [![Poilcy API](https://github.com/itsbibeksaini/PolicyApi/actions/workflows/github-workflow.yml/badge.svg)](https://github.com/itsbibeksaini/PolicyApi/actions/workflows/github-workflow.yml) |
 | [SettingsApi](https://github.com/itsbibeksaini/SettingsApi) | SpringBoot | Java |
 | [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) | ASP.NET | C# | [![Notification API](https://github.com/itsbibeksaini/NotificationApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/itsbibeksaini/NotificationApi/actions/workflows/dotnet.yml) |
-| [WorklogApi](https://github.com/TMExperimentals/WorklogApi) | Ktor | Kotlin |
+| [WorklogApi](https://github.com/TMExperimentals/WorklogApi) | Ktor | Kotlin | [![Worklog API](https://github.com/itsbibeksaini/WorklogApi/actions/workflows/gradle.yml/badge.svg)](https://github.com/itsbibeksaini/WorklogApi/actions/workflows/gradle.yml) |
 | [ClientApp](https://github.com/itsbibeksaini/ClientApp) | Angular | TypeScript |
 
 > Archived services
