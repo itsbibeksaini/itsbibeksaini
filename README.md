@@ -56,7 +56,7 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 | [IdentityApi](https://github.com/itsbibeksaini/IdentityApi) | ASP.NET | C# | [![Identity API](https://github.com/itsbibeksaini/IdentityApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/itsbibeksaini/IdentityApi/actions/workflows/dotnet.yml) |
 | [PolicyApi](https://github.com/itsbibeksaini/PolicyApi) | ASP.NET | C# | [![Poilcy API](https://github.com/itsbibeksaini/PolicyApi/actions/workflows/github-workflow.yml/badge.svg)](https://github.com/itsbibeksaini/PolicyApi/actions/workflows/github-workflow.yml) |
 | [SettingsApi](https://github.com/itsbibeksaini/SettingsApi) | SpringBoot | Java |
-| [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) | ASP.NET | C# |
+| [NotificationsApi](https://github.com/itsbibeksaini/NotificationApi) | ASP.NET | C# | [![Notification API](https://github.com/itsbibeksaini/NotificationApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/itsbibeksaini/NotificationApi/actions/workflows/dotnet.yml) |
 | [WorklogApi](https://github.com/TMExperimentals/WorklogApi) | Ktor | Kotlin |
 | [ClientApp](https://github.com/itsbibeksaini/ClientApp) | Angular | TypeScript |
 
