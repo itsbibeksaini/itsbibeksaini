@@ -77,5 +77,5 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 | [micro-frontend](https://github.com/TMExperimentals/micro-frontend) | SingleSPA | TypeScript |
 | [poet-experiments](https://github.com/itsbibeksaini/poet-experiments) | | Java, Kotlin | [![Poet Experiments](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml/badge.svg)](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml) |
 | [gradle-plugins](https://github.com/itsbibeksaini/gradle-plugins) | | Kotlin | [![Gradle plugins](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml/badge.svg)](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml) |
-| [Github workflow]() |
-| [Azure pipeline]() |
+| [github-workflows](https://github.com/itsbibeksaini/github-workflows) |
+| [pipeline-template](https://github.com/itsbibeksaini/pipeline-templates) |
