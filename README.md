@@ -70,12 +70,12 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 
 # Other projects and services
 
-| Service | Build status |
-| :------ | :----------- |
-| [mockups-react](https://github.com/TMExperimentals/mockups-react) | [![Node.js CI](https://github.com/TMExperimentals/mockups-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/mockups-react/actions/workflows/node.js.yml) <br/> [![pages-build-deployment](https://github.com/TMExperimentals/mockups-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/TMExperimentals/mockups-react/actions/workflows/pages/pages-build-deployment) |
-| [mockups](https://github.com/TMExperimentals/mockups) | [![Node.js CI](https://github.com/TMExperimentals/mockups/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/mockups/actions/workflows/node.js.yml) |
-| [micro-frontend](https://github.com/TMExperimentals/micro-frontend) | |
-| [poet-experiments](https://github.com/itsbibeksaini/poet-experiments) | [![Poet Experiments](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml/badge.svg)](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml) |
-| [gradle-plugins](https://github.com/itsbibeksaini/gradle-plugins) | [![Gradle plugins](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml/badge.svg)](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml) |
+| Service | Framework | Language | Build status |
+| :--- | :--- | :--- | :--- |
+| [mockups-react](https://github.com/TMExperimentals/mockups-react) | React | TypeScript | [![Node.js CI](https://github.com/TMExperimentals/mockups-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/mockups-react/actions/workflows/node.js.yml) <br/> [![pages-build-deployment](https://github.com/TMExperimentals/mockups-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/TMExperimentals/mockups-react/actions/workflows/pages/pages-build-deployment) |
+| [mockups](https://github.com/TMExperimentals/mockups) | Angular | TypeScript | [![Node.js CI](https://github.com/TMExperimentals/mockups/actions/workflows/node.js.yml/badge.svg)](https://github.com/TMExperimentals/mockups/actions/workflows/node.js.yml) |
+| [micro-frontend](https://github.com/TMExperimentals/micro-frontend) | SingleSPA | TypeScript |
+| [poet-experiments](https://github.com/itsbibeksaini/poet-experiments) | | Java, Kotlin | [![Poet Experiments](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml/badge.svg)](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml) |
+| [gradle-plugins](https://github.com/itsbibeksaini/gradle-plugins) | | Kotlin | [![Gradle plugins](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml/badge.svg)](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml) |
 | [Github workflow]() |
 | [Azure pipeline]() |
