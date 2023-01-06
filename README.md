@@ -40,6 +40,13 @@
   <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=itsbibeksaini&theme=dark" alt="itsbibeksaini" />
 </div>
 
+<div>
+<hr/>
+  <a href="https://github.com/itsbibeksaini" >
+    <img src="https://github-readme-activity-graph.cyclic.app/graph?username=itsbibeksaini&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true">
+  </a>
+</div>
+
 <div align="center"><h1>My work</h1></div>
 <br/>
 
