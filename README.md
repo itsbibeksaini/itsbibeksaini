@@ -4,6 +4,10 @@
 #### I'm a full stack software engineer based in Mohali, IN specializing in designing architecture, developing and deploying SAAS applications, and everything in between.
 #### Currently, I'm working as Senior Software Engineer at CatalystOne focused on building HCM Cloud product.
 
+<div align="center">
+  <img src="https://github.com/itsbibeksaini/itsbibeksaini/blob/master/.github/images/coder-gif.gif">
+</div>
+
 ### More about me..
 
 ```javascript
