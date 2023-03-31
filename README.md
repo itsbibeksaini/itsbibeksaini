@@ -89,4 +89,4 @@ To setup complete k8s cluster follow docs repo to see documentation guides: [Doc
 | [poet-experiments](https://github.com/itsbibeksaini/poet-experiments) | | Java, Kotlin | [![Poet Experiments](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml/badge.svg)](https://github.com/itsbibeksaini/poet-experiments/actions/workflows/build.yml) |
 | [gradle-plugins](https://github.com/itsbibeksaini/gradle-plugins) | | Kotlin | [![Gradle plugins](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml/badge.svg)](https://github.com/itsbibeksaini/gradle-plugins/actions/workflows/gradle.yml) |
 | [github-workflows](https://github.com/itsbibeksaini/github-workflows) | | YAML |
-| [pipeline-template](https://github.com/itsbibeksaini/pipeline-templates) | | YAML | 
+| [azure-pipeline-workflows](https://github.com/itsbibeksaini/azure-pipeline-workflows) | | YAML | 
