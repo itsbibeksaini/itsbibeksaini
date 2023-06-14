@@ -47,7 +47,7 @@
 <div>
 <hr/>
   <a href="https://github.com/itsbibeksaini" >
-    <img src="https://github-readme-activity-graph.cyclic.app/graph?username=itsbibeksaini&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=itsbibeksaini&bg_color=f5f5f5&color=2196F3&line=212121&point=2196F3&area_color=03A9F4&area=true&hide_border=true&hide_title=true">
   </a>
 </div>
 
