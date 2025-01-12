@@ -1,8 +1,7 @@
 ### Hi, my name is
 # Bibek Saini
 ## I build things for web
-#### I'm a full stack software engineer based in specializing in designing architecture, developing and deploying SAAS applications, and everything in between.
-#### Currently, I'm working as Senior Software Engineer at CatalystOne focused on building HCM Cloud product.
+#### I'm a full stack software engineer specializing in designing architecture, developing and deploying SAAS applications, and everything in between.
 
 <div align="center">
   <img src="https://github.com/itsbibeksaini/itsbibeksaini/blob/master/.github/images/coder-gif.gif">
