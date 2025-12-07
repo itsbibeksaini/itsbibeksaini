@@ -7,6 +7,8 @@ I specialise in designing architecture, developing seamless user experiences, an
 
 I am a strong advocate of agile methodologies and DevOps practices, and I am always looking for opportunities to learn new technologies and improve my skills.
 
+<hr/>
+
 <div align="center">
   <img src="https://github.com/itsbibeksaini/itsbibeksaini/blob/master/.github/images/coder-gif.gif">
 </div>
