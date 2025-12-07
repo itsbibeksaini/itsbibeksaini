@@ -1,7 +1,11 @@
 ### Hi, my name is
 # Bibek Saini
 ## I build things for web
-#### I'm a full stack software engineer specializing in designing architecture, developing and deploying SAAS applications, and everything in between.
+#### I am a passionate software engineer who love to learn, experiment and build something that creates value.
+
+I specialise in designing architecture, developing seamless user experiences, and handling end-to- end deployment. Passionate about solving complex problems, I work across the front-end and back-end technologies — Java, .NET, Kotlin, Angular, React, Spring Boot, Docker, Kubernetes, and Azure, to name just a few. Whether it's a single line of clean code or performance optimisation, my ultimate aim is always to build trusted systems with real value.
+
+I am a strong advocate of agile methodologies and DevOps practices, and I am always looking for opportunities to learn new technologies and improve my skills.
 
 <div align="center">
   <img src="https://github.com/itsbibeksaini/itsbibeksaini/blob/master/.github/images/coder-gif.gif">
