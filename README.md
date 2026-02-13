@@ -22,7 +22,7 @@ I am a strong advocate of agile methodologies and DevOps practices, and I am alw
     askMeAbout: ["SaaS application", "tech", "architecture design"],
     technologies: {
         backend: {
-            ["ASP.NET Core", "C#", "Entity Framework", "Java", "Spring Framework", "Spring Data"]
+            ["Java", "Kotlin", "SpringBoot", "Ktor", ".NET Core", "C#.NET", "ASP.NET"]
         },
         frontend: {
             ["Angular", "Angular Flex-Layout" "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS" "Bootstrap", 
